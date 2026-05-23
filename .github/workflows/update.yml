@@ -1,16 +1,15 @@
 name: Atualizar Dashboard Meta Ads
 
 on:
-  # Executa todos os dias às 08:00 horário de Brasília (11:00 UTC)
   schedule:
     - cron: "0 11 * * *"
-
-  # Permite executar manualmente pelo botão no GitHub
   workflow_dispatch:
 
 jobs:
   atualizar:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Clonar repositório
