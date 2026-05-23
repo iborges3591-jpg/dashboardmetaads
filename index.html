@@ -1397,7 +1397,7 @@ let compChart = null;
 // ═══════════════════════════════════════════════════════════
 //  HELPERS
 // ═══════════════════════════════════════════════════════════
-function fmtR(n) { return 'R$ ' + n.toFixed(2).replace('.',','); }
+function fmtR(n) { return 'R$ ' + n.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
 function fmtN(n) { return n.toLocaleString('pt-BR'); }
 function fmtK(n) { return n >= 1000 ? (n/1000).toFixed(1).replace('.',',')+'k' : fmtN(n); }
 
