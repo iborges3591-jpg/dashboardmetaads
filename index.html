@@ -2043,7 +2043,7 @@ function buildDatePills(data) {
   if (!container) return;
 
   // Build pills dynamically
- let html = `<button class="pill active" onclick="setDate('todos')">Todos os dias</button>`;
+let html = `<button class="pill active" onclick="setDate('todos')">Todos os dias</button>`;
   dates.forEach(d => {
     // d = "DD/MM" — parse day-of-week for 2026
     const [dd, mm] = d.split('/').map(Number);
