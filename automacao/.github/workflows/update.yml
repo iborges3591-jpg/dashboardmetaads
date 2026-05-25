@@ -1,0 +1,48 @@
+name: Atualizar Dashboard Meta Ads
+
+on:
+  # Executa todos os dias às 08:00 horário de Brasília (11:00 UTC)
+  schedule:
+    - cron: "0 11 * * *"
+
+  # Permite executar manualmente pelo botão no GitHub
+  workflow_dispatch:
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Executar script de atualização
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ID_APCD_1: ${{ secrets.META_AD_ID_APCD_1 }}
+          META_AD_ID_APCD_2: ${{ secrets.META_AD_ID_APCD_2 }}
+          META_AD_ID_APCD_3: ${{ secrets.META_AD_ID_APCD_3 }}
+          META_AD_ID_AUX_1:  ${{ secrets.META_AD_ID_AUX_1 }}
+          META_AD_ID_AUX_2:  ${{ secrets.META_AD_ID_AUX_2 }}
+          META_AD_ID_AUX_3:  ${{ secrets.META_AD_ID_AUX_3 }}
+          META_AD_ID_AUX_4:  ${{ secrets.META_AD_ID_AUX_4 }}
+          META_AD_ID_AUX_5:  ${{ secrets.META_AD_ID_AUX_5 }}
+        run: python update_dashboard.py
+
+      - name: Commitar e publicar data.json atualizado
+        run: |
+          git config user.name  "Dashboard Bot"
+          git config user.email "bot@arraes-centeno.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "📊 Atualização automática — $(date +'%d/%m/%Y %H:%M')"
+          git push
