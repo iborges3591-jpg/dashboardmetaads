@@ -156,6 +156,22 @@ body {
   color: #fff;
 }
 
+.date-input {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color .15s;
+}
+.date-input:focus { border-color: var(--navy); }
+.date-sep { font-size: 11px; font-weight: 700; color: var(--muted); }
+
 /* ══ KPI ROW ══ */
 .kpi-row {
   display: grid;
@@ -1101,9 +1117,12 @@ body {
   <!-- ── FILTROS ── -->
   <div class="section-title">🗓️ Filtrar período</div>
   <div class="filters-bar">
-    <div class="filter-group">
+    <div class="filter-group" style="flex-wrap:wrap;gap:8px;">
       <span class="filter-label">Data:</span>
-      <div id="date-pills-container" style="display:flex;flex-wrap:nowrap;overflow-x:auto;gap:6px;padding-bottom:4px;max-width:calc(100vw - 220px);scrollbar-width:thin;"></div>
+      <button class="pill active" id="btn-todos-dias" onclick="setAllDates()">Todos os dias</button>
+      <input type="date" id="date-from" class="date-input" onchange="onDateRangeChange()" title="De">
+      <span class="date-sep">→</span>
+      <input type="date" id="date-to"   class="date-input" onchange="onDateRangeChange()" title="Até">
     </div>
     <div class="filter-group">
       <span class="filter-label">Campanha:</span>
@@ -1422,7 +1441,8 @@ const ADS = [
 // ═══════════════════════════════════════════════════════════
 //  STATE
 // ═══════════════════════════════════════════════════════════
-let selectedDate = 'todos';
+let selectedDateFrom = null;
+let selectedDateTo   = null;
 let selectedCat  = 'todos';
 const sparkCharts = {};
 let compChart = null;
@@ -1441,9 +1461,18 @@ function effColor(c) {
   return          { bg:'rgba(220,38,38,.1)',   text:'#dc2626', label:'Caro' };
 }
 
+function ddmmToISO(ddmm) {
+  const [d, m] = ddmm.split('/');
+  return `2026-${m.padStart(2,'0')}-${d.padStart(2,'0')}`;
+}
 function getRows(ad) {
-  if (selectedDate === 'todos') return ad.daily;
-  return ad.daily.filter(d => d.date === selectedDate);
+  if (!selectedDateFrom && !selectedDateTo) return ad.daily;
+  return ad.daily.filter(r => {
+    const iso = ddmmToISO(r.date);
+    if (selectedDateFrom && iso < selectedDateFrom) return false;
+    if (selectedDateTo   && iso > selectedDateTo)   return false;
+    return true;
+  });
 }
 
 function aggregate(rows) {
@@ -1490,9 +1519,10 @@ function buildCards() {
 
     // trend vs previous day (only when single day selected)
     let trendHtml = '';
-    if (selectedDate !== 'todos' && agg) {
+    if ((selectedDateFrom || selectedDateTo) && agg) {
       const allDates = ad.daily.map(d => d.date);
-      const idx = allDates.indexOf(selectedDate);
+      const singleDay = (!selectedDateFrom && !selectedDateTo) ? null : (selectedDateFrom === selectedDateTo ? selectedDateFrom : null);
+      const idx = singleDay ? allDates.indexOf(allDates.find(d => ddmmToISO(d) === singleDay)) : allDates.length - 1;
       if (idx > 0) {
         const prev = ad.daily[idx-1];
         const delta = ((agg.convs - prev.convs) / Math.max(prev.convs,1)) * 100;
@@ -1730,7 +1760,7 @@ function renderIntel() {
   bar.innerHTML = `
     <div class="intel-item">
       <span class="ii-icon">🏆</span>
-      Melhor anúncio: <strong>${bestAd.num}</strong> — ${fmtR(bestCpc)}/conversa
+      Melhor anúncio: <strong>${bestAd.catLabel} · ${bestAd.num}</strong> — ${fmtR(bestCpc)}/conversa
     </div>
     <div class="intel-item"><span class="ii-divider"></span></div>
     <div class="intel-item">
@@ -1746,7 +1776,7 @@ function renderIntel() {
     <div class="intel-item"><span class="ii-divider"></span></div>
     <div class="intel-item">
       <span class="ii-icon">⚠️</span>
-      Mais caro: <strong>${worstAd.num}</strong> — ${fmtR(worstCpc)}/conversa
+      Mais caro: <strong>${worstAd.catLabel} · ${worstAd.num}</strong> — ${fmtR(worstCpc)}/conversa
     </div>` : ''}
   `;
 }
@@ -1761,7 +1791,7 @@ function updateCompChart() {
   const spent   = visible.map(a => { const agg = aggregate(getRows(a)); return agg ? +agg.spent.toFixed(2) : 0; });
 
   document.getElementById('comp-sub-label').textContent =
-    selectedDate === 'todos' ? 'Todos os dias (14–17/05)' : `Dia ${selectedDate}`;
+    (!selectedDateFrom && !selectedDateTo) ? 'Todos os dias' : `${selectedDateFrom||''} → ${selectedDateTo||''}`;
 
   if (compChart) { compChart.destroy(); compChart = null; }
 
@@ -1815,12 +1845,24 @@ function updateCompChart() {
 // ═══════════════════════════════════════════════════════════
 //  FILTER HANDLERS
 // ═══════════════════════════════════════════════════════════
-function setDate(d) {
-  selectedDate = d;
-  const datePills = document.querySelectorAll('.filters-bar .filter-group:first-child .pill');
-  datePills.forEach(b => b.classList.remove('active'));
-  const map = { todos: 0, '14/05': 1, '15/05': 2, '16/05': 3, '17/05': 4 };
-  if (map[d] !== undefined && datePills[map[d]]) datePills[map[d]].classList.add('active');
+function setAllDates() {
+  selectedDateFrom = null;
+  selectedDateTo   = null;
+  const fromEl = document.getElementById('date-from');
+  const toEl   = document.getElementById('date-to');
+  if (fromEl) fromEl.value = '';
+  if (toEl)   toEl.value   = '';
+  const btn = document.getElementById('btn-todos-dias');
+  if (btn) btn.classList.add('active');
+  renderAll();
+}
+function onDateRangeChange() {
+  const fromEl = document.getElementById('date-from');
+  const toEl   = document.getElementById('date-to');
+  selectedDateFrom = fromEl && fromEl.value ? fromEl.value : null;
+  selectedDateTo   = toEl   && toEl.value   ? toEl.value   : null;
+  const btn = document.getElementById('btn-todos-dias');
+  if (btn) btn.classList.toggle('active', !selectedDateFrom && !selectedDateTo);
   renderAll();
 }
 
@@ -2063,28 +2105,20 @@ function handleOverlayClick(e) {
 // Day-of-week labels for dynamic pills
 const DOW = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
 
-function buildDatePills(data) {
-  // Collect all unique dates from the data, preserving order
-  const seen = new Set();
-  const dates = [];
-  const anyAd = data[Object.keys(data).find(k => Array.isArray(data[k]))] || [];
-  anyAd.forEach(row => {
-    if (!seen.has(row.date)) { seen.add(row.date); dates.push(row.date); }
+function initDatePicker(data) {
+  // Determine min and max dates from data
+  const allDates = [];
+  Object.keys(data).forEach(k => {
+    if (Array.isArray(data[k])) data[k].forEach(r => allDates.push(ddmmToISO(r.date)));
   });
-
-  const container = document.getElementById('date-pills-container');
-  if (!container) return;
-
-  // Build pills dynamically
-  let html = `<button class="pill active" onclick="setDate('todos')">Todos os dias</button>`;
-  dates.forEach(d => {
-    // d = "DD/MM" — parse day-of-week for 2026
-    const [dd, mm] = d.split('/').map(Number);
-    const dt  = new Date(2026, mm - 1, dd);
-    const dow = DOW[dt.getDay()];
-    html += `<button class="pill" onclick="setDate('${d}')">${d} · ${dow}</button>`;
-  });
-  container.innerHTML = html;
+  if (!allDates.length) return;
+  allDates.sort();
+  const minDate = allDates[0];
+  const maxDate = allDates[allDates.length - 1];
+  const fromEl = document.getElementById('date-from');
+  const toEl   = document.getElementById('date-to');
+  if (fromEl) { fromEl.min = minDate; fromEl.max = maxDate; }
+  if (toEl)   { toEl.min   = minDate; toEl.max   = maxDate; }
 }
 
 (function init() {
@@ -2106,7 +2140,7 @@ function buildDatePills(data) {
         if (Array.isArray(data[ad.id])) ad.daily = data[ad.id];
       });
       // Build date filter pills from real data
-      buildDatePills(data);
+      initDatePicker(data);
       // Update "last updated" badge if present in JSON
       if (data.ultima_atualizacao && dateBadge) {
         dateBadge.textContent = `Atualizado: ${data.ultima_atualizacao}`;
