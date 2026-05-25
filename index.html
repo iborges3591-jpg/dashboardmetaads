@@ -120,10 +120,12 @@ body {
   align-items: center;
   gap: 20px;
   margin-bottom: 22px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
-.filter-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.filter-group { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; flex-shrink: 0; }
+.filter-group:first-child { flex-shrink: 1; min-width: 0; overflow: hidden; }
 .filter-label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; white-space: nowrap; }
 
 .pill {
@@ -213,8 +215,8 @@ body {
 /* ══ CARDS GRID ══ */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
   margin-bottom: 28px;
 }
 
@@ -1100,8 +1102,8 @@ body {
   <div class="section-title">🗓️ Filtrar período</div>
   <div class="filters-bar">
     <div class="filter-group">
-    <span class="filter-label">Data:</span>
-      <div id="date-pills-container" style="display:inline-flex;flex-wrap:wrap;gap:6px;"></div>
+      <span class="filter-label">Data:</span>
+      <div id="date-pills-container" style="display:flex;flex-wrap:nowrap;overflow-x:auto;gap:6px;padding-bottom:4px;max-width:calc(100vw - 220px);scrollbar-width:thin;"></div>
     </div>
     <div class="filter-group">
       <span class="filter-label">Campanha:</span>
@@ -1375,6 +1377,45 @@ const ADS = [
       { date:'20/05', views:1219, clicks:10, convs:3, costPerConv:13.66, spent:40.98, budget:45 },
       { date:'21/05', views:1190, clicks:7,  convs:3, costPerConv:13.30, spent:39.91, budget:45 },
     ]
+  },
+  {
+    id: 'apcd_3',
+    cat: 'apo',
+    catLabel: 'Aposentadoria PcD',
+    num: 'Anúncio #3',
+    person: 'Carolina',
+    headline: 'PcD COM 25 ANOS DE CONTRIBUIÇÃO APOSENTA NO INSS',
+    reception: '#3 Tenho dúvidas sobre a aposentadoria PCD',
+    igUrl: 'https://www.instagram.com/p/DYxV7bkp-nE/',
+    bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B6B5B 100%)',
+    imgFile: null,
+    daily: []
+  },
+  {
+    id: 'aux_4',
+    cat: 'aux',
+    catLabel: 'Auxílio-Acidente',
+    num: 'Anúncio #4',
+    person: 'Priscila',
+    headline: 'INDENIZAÇÃO PARA O TRABALHADOR CLT QUE FICOU AFASTADO PELO INSS POR CAUSA DE ACIDENTE',
+    reception: '#5 Tenho dúvidas sobre o benefício do INSS para acidentados.',
+    igUrl: 'https://www.instagram.com/p/DYp2endC9_h/',
+    bgGradient: 'linear-gradient(160deg, #1B3A6B 0%, #2d5fa3 60%, #1B6B5B 100%)',
+    imgFile: null,
+    daily: []
+  },
+  {
+    id: 'aux_5',
+    cat: 'aux',
+    catLabel: 'Auxílio-Acidente',
+    num: 'Anúncio #5',
+    person: 'Priscila',
+    headline: 'TRABALHADOR CLT QUE SOFREU ACIDENTE PODE TER DIREITO A INDENIZAÇÃO DO INSS',
+    reception: '#6 Tenho dúvidas sobre o benefício do INSS para acidentados.',
+    igUrl: 'https://www.instagram.com/p/DYp2yyfiX_b/',
+    bgGradient: 'linear-gradient(160deg, #1B3A6B 0%, #2d5fa3 60%, #1B6B5B 100%)',
+    imgFile: null,
+    daily: []
   },
 ];
 
@@ -2035,7 +2076,7 @@ function buildDatePills(data) {
   if (!container) return;
 
   // Build pills dynamically
-let html = `<button class="pill active" onclick="setDate('todos')">Todos os dias</button>`;
+  let html = `<button class="pill active" onclick="setDate('todos')">Todos os dias</button>`;
   dates.forEach(d => {
     // d = "DD/MM" — parse day-of-week for 2026
     const [dd, mm] = d.split('/').map(Number);
@@ -2081,3 +2122,4 @@ let html = `<button class="pill active" onclick="setDate('todos')">Todos os dias
 </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
