@@ -68,20 +68,24 @@ def get_budget(ad_key: str, date_br: str) -> int:
 
 
 def get_convs(actions: list) -> int:
-    """Extrai conversas iniciadas por mensagem da lista de actions do Meta."""
+    """
+    Extrai 'Conversas por mensagem' — métrica principal do Meta Ads Manager.
+    Usa APENAS o tipo primário para evitar dupla/tripla contagem.
+    Prioridade: messaging_conversation_started_7d > messaging_first_reply > total_messaging_connection
+    """
     if not actions:
         return 0
-    # Tipos de action que representam conversas / mensagens iniciadas
-    CONV_TYPES = {
+    # Ordem de prioridade — usa apenas o primeiro tipo encontrado
+    PRIORITY = [
         "onsite_conversion.messaging_conversation_started_7d",
-        "onsite_conversion.total_messaging_connection",
         "onsite_conversion.messaging_first_reply",
-    }
-    total = 0
-    for action in actions:
-        if action.get("action_type") in CONV_TYPES:
-            total += int(action.get("value", 0))
-    return total
+        "onsite_conversion.total_messaging_connection",
+    ]
+    for conv_type in PRIORITY:
+        for action in actions:
+            if action.get("action_type") == conv_type:
+                return int(action.get("value", 0))
+    return 0
 
 
 def br_date(iso_date: str) -> str:
