@@ -3,23 +3,6 @@ update_dashboard.py
 ===================
 Busca dados diários de cada anúncio na Meta Marketing API
 e atualiza o ficheiro data.json com os resultados.
-
-Variáveis de ambiente necessárias (GitHub Secrets):
-  META_ACCESS_TOKEN   — Token de acesso longo prazo
-  META_AD_ID_APCD_1   — ID do anúncio Aposentadoria PcD #1  (CIRURGIA COM PINOS)
-  META_AD_ID_APCD_2   — ID do anúncio Aposentadoria PcD #2  (ARTROSE)
-  META_AD_ID_APCD_3   — ID do anúncio Aposentadoria PcD #3  (25 anos PcD contribuição)
-  META_AD_ID_AUX_1    — ID do anúncio Auxílio-Acidente #1   (SEQUELAS)
-  META_AD_ID_AUX_2    — ID do anúncio Auxílio-Acidente #2   (FRENTE INSS)
-  META_AD_ID_AUX_3    — ID do anúncio Auxílio-Acidente #3   (TRABALHADOR CLT)
-  META_AD_ID_AUX_4    — ID do anúncio Auxílio-Acidente #4   (PRISCILA — Indenização)
-  META_AD_ID_AUX_5    — ID do anúncio Auxílio-Acidente #5   (PRISCILA — Trabalhador CLT)
-
-Executar localmente para teste:
-  export META_ACCESS_TOKEN="seu_token_aqui"
-  export META_AD_ID_APCD_1="12345678901234"
-  ...
-  python update_dashboard.py
 """
 
 import os
@@ -31,7 +14,6 @@ from datetime import datetime
 
 ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
-# Mapeamento: chave do dashboard → ID do anúncio (None = secret não configurado, será ignorado)
 ADS_MAP = {k: v for k, v in {
     "apcd_1": os.environ.get("META_AD_ID_APCD_1"),
     "apcd_2": os.environ.get("META_AD_ID_APCD_2"),
@@ -41,11 +23,8 @@ ADS_MAP = {k: v for k, v in {
     "aux_3":  os.environ.get("META_AD_ID_AUX_3"),
     "aux_4":  os.environ.get("META_AD_ID_AUX_4"),
     "aux_5":  os.environ.get("META_AD_ID_AUX_5"),
-}.items() if v}  # ignora anúncios sem secret configurado
+}.items() if v}
 
-# Orçamentos diários por anúncio — actualiza sempre que o orçamento mudar no Meta
-# Formato: { "ad_key": { "DD/MM": valor_reais } }
-# Se o dia não estiver listado, usa o orçamento padrão DEFAULT_BUDGET abaixo
 BUDGETS = {
     "apcd_1": {"10/05": 40, "11/05": 40, "12/05": 40, "13/05": 40, "14/05": 40, "15/05": 40, "16/05": 40, "17/05": 40, "18/05": 40, "19/05": 40, "20/05": 40, "21/05": 40, "22/05": 40, "23/05": 40, "24/05": 40, "25/05": 40, "26/05": 40, "27/05": 40, "28/05": 40, "29/05": 40, "30/05": 40, "31/05": 40},
     "apcd_2": {"10/05": 40, "11/05": 40, "12/05": 40, "13/05": 40, "14/05": 40, "15/05": 40, "16/05": 40, "17/05": 40, "18/05": 40, "19/05": 40, "20/05": 40, "21/05": 40, "22/05": 40, "23/05": 40, "24/05": 40, "25/05": 40, "26/05": 40, "27/05": 40, "28/05": 40, "29/05": 40, "30/05": 40, "31/05": 40},
@@ -58,7 +37,6 @@ BUDGETS = {
 }
 DEFAULT_BUDGET = 40
 
-# Período da campanha — ajusta o mês aqui quando mudar
 CAMPAIGN_SINCE = "2026-05-10"
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -68,14 +46,8 @@ def get_budget(ad_key: str, date_br: str) -> int:
 
 
 def get_convs(actions: list) -> int:
-    """
-    Extrai 'Conversas por mensagem' — métrica principal do Meta Ads Manager.
-    Usa APENAS o tipo primário para evitar dupla/tripla contagem.
-    Prioridade: messaging_conversation_started_7d > messaging_first_reply > total_messaging_connection
-    """
     if not actions:
         return 0
-    # Ordem de prioridade — usa apenas o primeiro tipo encontrado
     PRIORITY = [
         "onsite_conversion.messaging_conversation_started_7d",
         "onsite_conversion.messaging_first_reply",
@@ -89,7 +61,6 @@ def get_convs(actions: list) -> int:
 
 
 def br_date(iso_date: str) -> str:
-    """Converte '2026-05-14' → '14/05'."""
     dt = datetime.strptime(iso_date, "%Y-%m-%d")
     return dt.strftime("%d/%m")
 
@@ -97,10 +68,6 @@ def br_date(iso_date: str) -> str:
 # ─── Chamada à API ────────────────────────────────────────────────────────────
 
 def fetch_insights(ad_id: str, since: str, until: str) -> list:
-    """
-    Chama GET /v20.0/{ad_id}/insights com time_increment=1
-    para obter dados dia a dia.
-    """
     url = f"https://graph.facebook.com/v20.0/{ad_id}/insights"
     params = {
         "access_token": ACCESS_TOKEN,
@@ -115,8 +82,7 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
         print(f"  ⚠️  Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
         return []
 
-    data = resp.json().get("data", [])
-    return data
+    return resp.json().get("data", [])
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
@@ -126,7 +92,6 @@ def main():
     today_br = datetime.now().strftime("%d/%m/%Y")
     print(f"\n🔄 Iniciando atualização — {today_br}\n")
 
-    # Carrega data.json existente para preservar dados históricos
     data_file = "data.json"
     if os.path.exists(data_file):
         with open(data_file, "r", encoding="utf-8") as f:
@@ -144,7 +109,6 @@ def main():
     if missing:
         print(f"  ⚠️  Secrets não configurados (dados históricos mantidos): {', '.join(missing)}\n")
 
-    # Preserva dados históricos de ads cujos secrets não estão configurados
     for key in missing:
         result[key] = existing.get(key, [])
 
@@ -153,29 +117,28 @@ def main():
         rows = fetch_insights(ad_id, CAMPAIGN_SINCE, today)
 
         if not rows:
-            # Mantém dados anteriores se a API não retornar nada
             print(f"     ⚠️  Sem dados — mantendo histórico existente")
             result[ad_key] = existing.get(ad_key, [])
             continue
 
         daily = []
         for row in rows:
-            date_br    = br_date(row["date_start"])
-            views      = int(row.get("impressions", 0))
-            clicks     = int(row.get("inline_link_clicks", 0))
-            convs      = get_convs(row.get("actions", []))
-            spent      = round(float(row.get("spend", 0)), 2)
-            cpc        = round(spent / convs, 2) if convs > 0 else 0.0
-            budget     = get_budget(ad_key, date_br)
+            date_br   = br_date(row["date_start"])
+            views     = int(row.get("impressions", 0))
+            clicks    = int(row.get("inline_link_clicks", 0))
+            convs     = get_convs(row.get("actions", []))
+            spent     = round(float(row.get("spend", 0)), 2)
+            cpc       = round(spent / convs, 2) if convs > 0 else 0.0
+            budget    = get_budget(ad_key, date_br)
 
             daily.append({
-                "date":         date_br,
-                "views":        views,
-                "clicks":       clicks,
-                "convs":        convs,
-                "costPerConv":  cpc,
-                "spent":        spent,
-                "budget":       budget,
+                "date":        date_br,
+                "views":       views,
+                "clicks":      clicks,
+                "convs":       convs,
+                "costPerConv": cpc,
+                "spent":       spent,
+                "budget":      budget,
             })
 
         result[ad_key] = daily
@@ -183,7 +146,6 @@ def main():
         total_spent = sum(d["spent"] for d in daily)
         print(f"     ✅ {len(daily)} dias | {total_convs} conversas | R$ {total_spent:.2f} investido")
 
-    # Grava data.json atualizado
     with open(data_file, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
