@@ -31,6 +31,9 @@ jobs:
           META_AD_ID_AUX_1:  ${{ secrets.META_AD_ID_AUX_1 }}
           META_AD_ID_AUX_2:  ${{ secrets.META_AD_ID_AUX_2 }}
           META_AD_ID_AUX_3:  ${{ secrets.META_AD_ID_AUX_3 }}
+          META_AD_ID_APCD_3: ${{ secrets.META_AD_ID_APCD_3 }}
+          META_AD_ID_AUX_4:  ${{ secrets.META_AD_ID_AUX_4 }}
+          META_AD_ID_AUX_5:  ${{ secrets.META_AD_ID_AUX_5 }}
         run: python update_dashboard.py
 
       - name: Commitar e publicar data.json atualizado
