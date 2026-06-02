@@ -71,7 +71,7 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
     url = f"https://graph.facebook.com/v20.0/{ad_id}/insights"
     params = {
         "access_token": ACCESS_TOKEN,
-        "fields": "date_start,impressions,inline_link_clicks,actions,spend",
+        "fields": "date_start,impressions,unique_inline_link_clicks,actions,spend",
         "time_range": json.dumps({"since": since, "until": until}),
         "time_increment": 1,
         "level": "ad",
@@ -125,7 +125,7 @@ def main():
         for row in rows:
             date_br   = br_date(row["date_start"])
             views     = int(row.get("impressions", 0))
-            clicks    = int(row.get("inline_link_clicks", 0))
+            clicks    = int(row.get("unique_inline_link_clicks", 0))
             convs     = get_convs(row.get("actions", []))
             spent     = round(float(row.get("spend", 0)), 2)
             cpc       = round(spent / convs, 2) if convs > 0 else 0.0
