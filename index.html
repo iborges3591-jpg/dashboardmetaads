@@ -1973,8 +1973,8 @@ function openModal(adId) {
   const tbody = document.getElementById('m-table-body');
   if (tbody) {
     tbody.innerHTML = '';
-    ad.daily.forEach((row, i) => {
-      const prev  = i > 0 ? ad.daily[i - 1] : null;
+    rows.forEach((row, i) => {
+      const prev  = i > 0 ? rows[i - 1] : null;
       const trend = prev
         ? (row.convs > prev.convs
             ? '<span class="trend-up">▲</span>'
@@ -2003,11 +2003,11 @@ function openModal(adId) {
     modalChart = new Chart(mCanvas, {
       type: 'line',
       data: {
-        labels: ad.daily.map(d => d.date),
+        labels: rows.map(d => d.date),
         datasets: [
           {
             label: 'Conversas',
-            data: ad.daily.map(d => d.convs),
+            data: rows.map(d => d.convs),
             borderColor: '#1B6B5B',
             backgroundColor: 'rgba(27,107,91,.1)',
             borderWidth: 2.5,
@@ -2019,7 +2019,7 @@ function openModal(adId) {
           },
           {
             label: 'Custo/Conv (R$)',
-            data: ad.daily.map(d => d.costPerConv),
+            data: rows.map(d => d.costPerConv),
             borderColor: '#D4A017',
             backgroundColor: 'transparent',
             borderWidth: 2,
@@ -2032,7 +2032,7 @@ function openModal(adId) {
           },
           {
             label: 'Investido (R$)',
-            data: ad.daily.map(d => d.spent),
+            data: rows.map(d => d.spent),
             borderColor: '#1B3464',
             backgroundColor: 'transparent',
             borderWidth: 1.5,
