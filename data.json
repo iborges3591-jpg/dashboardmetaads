@@ -1,6 +1,6 @@
 {
-  "ultima_atualizacao": "08/06/2026",
-  "periodo": "10/05 a 08/06",
+  "ultima_atualizacao": "09/06/2026",
+  "periodo": "10/05 a 09/06",
   "apcd_1": [
     {
       "date": "10/05",
@@ -584,11 +584,20 @@
     },
     {
       "date": "08/06",
-      "views": 1113,
-      "clicks": 10,
-      "convs": 6,
-      "costPerConv": 4.22,
-      "spent": 25.3,
+      "views": 2526,
+      "clicks": 28,
+      "convs": 13,
+      "costPerConv": 3.91,
+      "spent": 50.88,
+      "budget": 40
+    },
+    {
+      "date": "09/06",
+      "views": 3104,
+      "clicks": 24,
+      "convs": 10,
+      "costPerConv": 5.45,
+      "spent": 54.5,
       "budget": 40
     }
   ],
@@ -1393,20 +1402,29 @@
     },
     {
       "date": "07/06",
-      "views": 2437,
+      "views": 2441,
       "clicks": 9,
       "convs": 4,
-      "costPerConv": 13.1,
-      "spent": 52.4,
+      "costPerConv": 13.12,
+      "spent": 52.47,
       "budget": 40
     },
     {
       "date": "08/06",
-      "views": 911,
-      "clicks": 1,
+      "views": 1915,
+      "clicks": 3,
+      "convs": 2,
+      "costPerConv": 23.95,
+      "spent": 47.91,
+      "budget": 40
+    },
+    {
+      "date": "09/06",
+      "views": 1337,
+      "clicks": 2,
       "convs": 1,
-      "costPerConv": 22.79,
-      "spent": 22.79,
+      "costPerConv": 42.75,
+      "spent": 42.75,
       "budget": 40
     }
   ],
@@ -1530,7 +1548,7 @@
     },
     {
       "date": "07/06",
-      "views": 1220,
+      "views": 1221,
       "clicks": 12,
       "convs": 8,
       "costPerConv": 6.4,
@@ -1539,11 +1557,20 @@
     },
     {
       "date": "08/06",
-      "views": 382,
-      "clicks": 1,
-      "convs": 2,
-      "costPerConv": 11.18,
-      "spent": 22.35,
+      "views": 1036,
+      "clicks": 5,
+      "convs": 3,
+      "costPerConv": 16.52,
+      "spent": 49.55,
+      "budget": 40
+    },
+    {
+      "date": "09/06",
+      "views": 1011,
+      "clicks": 2,
+      "convs": 0,
+      "costPerConv": 0.0,
+      "spent": 46.19,
       "budget": 40
     }
   ]
