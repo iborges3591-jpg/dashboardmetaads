@@ -1,7 +1,6 @@
 {
   "ultima_atualizacao": "15/06/2026",
   "periodo": "10/05 a 15/06",
-  "aux_pinos": [],
   "apcd_1": [
     {
       "date": "10/05",
@@ -648,11 +647,11 @@
     },
     {
       "date": "15/06",
-      "views": 3070,
+      "views": 3077,
       "clicks": 34,
       "convs": 10,
-      "costPerConv": 6.36,
-      "spent": 63.63,
+      "costPerConv": 6.37,
+      "spent": 63.71,
       "budget": 50
     }
   ],
@@ -881,6 +880,71 @@
       "costPerConv": 13.85,
       "spent": 69.23,
       "budget": 60
+    }
+  ],
+  "aux_pinos": [
+    {
+      "date": "09/06",
+      "views": 2439,
+      "clicks": 13,
+      "convs": 6,
+      "costPerConv": 7.79,
+      "spent": 46.72,
+      "budget": 50
+    },
+    {
+      "date": "10/06",
+      "views": 2617,
+      "clicks": 20,
+      "convs": 7,
+      "costPerConv": 12.51,
+      "spent": 87.6,
+      "budget": 90
+    },
+    {
+      "date": "11/06",
+      "views": 3517,
+      "clicks": 24,
+      "convs": 15,
+      "costPerConv": 6.33,
+      "spent": 95.0,
+      "budget": 100
+    },
+    {
+      "date": "12/06",
+      "views": 4882,
+      "clicks": 22,
+      "convs": 6,
+      "costPerConv": 13.86,
+      "spent": 83.15,
+      "budget": 90
+    },
+    {
+      "date": "13/06",
+      "views": 3466,
+      "clicks": 18,
+      "convs": 8,
+      "costPerConv": 9.67,
+      "spent": 77.35,
+      "budget": 80
+    },
+    {
+      "date": "14/06",
+      "views": 1721,
+      "clicks": 15,
+      "convs": 5,
+      "costPerConv": 13.12,
+      "spent": 65.59,
+      "budget": 70
+    },
+    {
+      "date": "15/06",
+      "views": 2943,
+      "clicks": 18,
+      "convs": 5,
+      "costPerConv": 20.07,
+      "spent": 100.36,
+      "budget": 70
     }
   ]
 }
