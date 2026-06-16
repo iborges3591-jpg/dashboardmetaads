@@ -120,6 +120,7 @@ def br_date(iso_date: str) -> str:
 # ─── Chamada à API ────────────────────────────────────────────────────────────
 
 def fetch_insights(ad_id: str, since: str, until: str) -> list:
+    """Busca dados diários com suporte a paginação (Meta limita a ~25 registos por página)."""
     url = f"https://graph.facebook.com/v20.0/{ad_id}/insights"
     params = {
         "access_token": ACCESS_TOKEN,
@@ -127,14 +128,30 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
         "time_range": json.dumps({"since": since, "until": until}),
         "time_increment": 1,
         "level": "ad",
+        "limit": 90,  # até 3 meses de dados diários numa só página
     }
-    resp = requests.get(url, params=params, timeout=30)
 
-    if resp.status_code != 200:
-        print(f"  ⚠️ Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
-        return []
+    all_data = []
+    current_url = url
+    current_params = params
 
-    return resp.json().get("data", [])
+    while True:
+        resp = requests.get(current_url, params=current_params, timeout=30)
+        if resp.status_code != 200:
+            print(f"  ⚠️ Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
+            return []
+
+        body = resp.json()
+        all_data.extend(body.get("data", []))
+
+        # Seguir próxima página se existir
+        next_page = body.get("paging", {}).get("next")
+        if not next_page:
+            break
+        current_url = next_page
+        current_params = {}  # URL de paginação já contém todos os parâmetros
+
+    return all_data
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
@@ -158,6 +175,7 @@ def main():
     # aux_1b é a continuação de aux_1 (mesmo anúncio, novo ID Meta a partir de 04/06).
     # É tratado internamente mas fundido em "aux_1" no output final.
     all_keys = ["apcd_1", "apcd_2", "apcd_3", "aux_1", "aux_pinos"]
+    missing = [k for k in all_keys if k not in ADS_MAP and "aux_1b" not in ADS_MAP]
     # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b — não alertar nesse caso
     missing_display = [k for k in all_keys if k not in ADS_MAP and not (k == "aux_1" and "aux_1b" in ADS_MAP)]
     if missing_display:
