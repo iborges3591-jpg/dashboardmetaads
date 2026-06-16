@@ -19,6 +19,7 @@ ADS_MAP = {k: v for k, v in {
     "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
+    "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuação de aux_1 a partir de 04/06
     "aux_pinos": os.environ.get("META_AD_ID_AUX_PINOS"),
 }.items() if v}
 
@@ -72,6 +73,15 @@ BUDGETS = {
         "21/06": 60, "22/06": 60, "23/06": 60, "24/06": 60, "25/06": 60,
         "26/06": 60, "27/06": 60, "28/06": 60, "29/06": 60, "30/06": 60,
     },
+    # aux_1b usa o mesmo orçamento de aux_1 (mesma campanha, novo ID a partir de 04/06)
+    "aux_1b": {
+        "04/06": 60, "05/06": 60, "06/06": 60, "07/06": 60, "08/06": 60,
+        "09/06": 60, "10/06": 60, "11/06": 60, "12/06": 60, "13/06": 60,
+        "14/06": 60, "15/06": 60, "16/06": 60, "17/06": 60, "18/06": 60,
+        "19/06": 60, "20/06": 60, "21/06": 60, "22/06": 60, "23/06": 60,
+        "24/06": 60, "25/06": 60, "26/06": 60, "27/06": 60, "28/06": 60,
+        "29/06": 60, "30/06": 60,
+    },
     "aux_pinos": {
         "09/06": 50,  "10/06": 90,  "11/06": 100, "12/06": 90,  "13/06": 80,
         "14/06": 70,  "15/06": 70,  "16/06": 70,  "17/06": 70,  "18/06": 70,
@@ -121,7 +131,7 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
     resp = requests.get(url, params=params, timeout=30)
 
     if resp.status_code != 200:
-        print(f"  \u26a0\ufe0f Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
+        print(f"  ⚠️ Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
         return []
 
     return resp.json().get("data", [])
@@ -131,7 +141,7 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
     today_br = datetime.now().strftime("%d/%m/%Y")
-    print(f"\n\U0001f504 Iniciando atualização — {today_br}\n")
+    print(f"\n🔄 Iniciando atualização — {today_br}\n")
 
     data_file = "data.json"
     if os.path.exists(data_file):
@@ -145,21 +155,27 @@ def main():
         "periodo": f"{br_date(CAMPAIGN_SINCE)} a {br_date(today)}",
     }
 
+    # aux_1b é a continuação de aux_1 (mesmo anúncio, novo ID Meta a partir de 04/06).
+    # É tratado internamente mas fundido em "aux_1" no output final.
     all_keys = ["apcd_1", "apcd_2", "apcd_3", "aux_1", "aux_pinos"]
-    missing = [k for k in all_keys if k not in ADS_MAP]
-    if missing:
-        print(f"  \u26a0\ufe0f Secrets não configurados (dados históricos mantidos): {', '.join(missing)}\n")
+    # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b — não alertar nesse caso
+    missing_display = [k for k in all_keys if k not in ADS_MAP and not (k == "aux_1" and "aux_1b" in ADS_MAP)]
+    if missing_display:
+        print(f"  ⚠️ Secrets não configurados (dados históricos mantidos): {', '.join(missing_display)}\n")
 
-    for key in missing:
-        result[key] = existing.get(key, [])
+    for key in all_keys:
+        if key not in ADS_MAP and not (key == "aux_1" and "aux_1b" in ADS_MAP):
+            result[key] = existing.get(key, [])
+
+    raw = {}   # armazenamento temporário antes de fundir aux_1 + aux_1b
 
     for ad_key, ad_id in ADS_MAP.items():
-        print(f"  \U0001f4ca Buscando dados de '{ad_key}' (ID: {ad_id})...")
+        print(f"  📊 Buscando dados de '{ad_key}' (ID: {ad_id})...")
         rows = fetch_insights(ad_id, CAMPAIGN_SINCE, today)
 
         if not rows:
-            print(f"  \u26a0\ufe0f Sem dados — mantendo histórico existente")
-            result[ad_key] = existing.get(ad_key, [])
+            print(f"  ⚠️ Sem dados — mantendo histórico existente")
+            raw[ad_key] = existing.get(ad_key, [])
             continue
 
         daily = []
@@ -170,7 +186,9 @@ def main():
             convs   = get_convs(row.get("actions", []))
             spent   = round(float(row.get("spend", 0)), 2)
             cpc     = round(spent / convs, 2) if convs > 0 else 0.0
-            budget  = get_budget(ad_key, date_br)
+            # aux_1b herda o orçamento de aux_1 (mesma campanha)
+            budget_key = "aux_1" if ad_key == "aux_1b" else ad_key
+            budget  = get_budget(budget_key, date_br)
 
             daily.append({
                 "date":        date_br,
@@ -182,15 +200,41 @@ def main():
                 "budget":      budget,
             })
 
-        result[ad_key] = daily
+        raw[ad_key] = daily
         total_convs = sum(d["convs"] for d in daily)
         total_spent = sum(d["spent"] for d in daily)
-        print(f"  \u2705 {len(daily)} dias | {total_convs} conversas | R$ {total_spent:.2f} investido")
+        print(f"  ✅ {len(daily)} dias | {total_convs} conversas | R$ {total_spent:.2f} investido")
+
+    # ── Fundir aux_1 + aux_1b numa única série cronológica ──────────────────────
+    aux1_data  = raw.get("aux_1",  existing.get("aux_1",  []))
+    aux1b_data = raw.get("aux_1b", [])
+
+    if aux1b_data:
+        # Evita duplicar datas (se por alguma razão ambos os IDs devolverem o mesmo dia)
+        existing_dates = {d["date"] for d in aux1_data}
+        for entry in aux1b_data:
+            if entry["date"] not in existing_dates:
+                aux1_data.append(entry)
+        # Ordenar por data (DD/MM → comparação como MMDD)
+        aux1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
+        total_convs = sum(d["convs"] for d in aux1_data)
+        total_spent = sum(d["spent"] for d in aux1_data)
+        print(f"\n  🔗 aux_1 fundido com aux_1b → {len(aux1_data)} dias totais | "
+              f"{total_convs} conversas | R$ {total_spent:.2f}")
+
+    result["aux_1"] = aux1_data
+
+    # Copiar restantes (excluindo aux_1b que já foi fundido)
+    for key in ["apcd_1", "apcd_2", "apcd_3", "aux_pinos"]:
+        if key in raw:
+            result[key] = raw[key]
+        elif key not in result:
+            result[key] = existing.get(key, [])
 
     with open(data_file, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"\n\u2705 data.json atualizado com sucesso!\n")
+    print(f"\n✅ data.json atualizado com sucesso!\n")
 
 if __name__ == "__main__":
     main()
