@@ -1,6 +1,6 @@
 {
-  "ultima_atualizacao": "17/06/2026",
-  "periodo": "10/05 a 17/06",
+  "ultima_atualizacao": "18/06/2026",
+  "periodo": "10/05 a 18/06",
   "aux_1": [
     {
       "date": "10/05",
@@ -337,20 +337,29 @@
     },
     {
       "date": "16/06",
-      "views": 9414,
-      "clicks": 32,
+      "views": 9417,
+      "clicks": 33,
       "convs": 24,
       "costPerConv": 5.78,
-      "spent": 138.74,
+      "spent": 138.77,
       "budget": 60
     },
     {
       "date": "17/06",
-      "views": 5356,
-      "clicks": 19,
+      "views": 8463,
+      "clicks": 33,
+      "convs": 19,
+      "costPerConv": 6.03,
+      "spent": 114.66,
+      "budget": 60
+    },
+    {
+      "date": "18/06",
+      "views": 3617,
+      "clicks": 15,
       "convs": 10,
-      "costPerConv": 7.13,
-      "spent": 71.32,
+      "costPerConv": 5.93,
+      "spent": 59.3,
       "budget": 60
     }
   ],
@@ -1016,20 +1025,29 @@
     },
     {
       "date": "16/06",
-      "views": 3079,
+      "views": 3080,
       "clicks": 20,
       "convs": 8,
       "costPerConv": 6.05,
-      "spent": 48.42,
+      "spent": 48.43,
       "budget": 40
     },
     {
       "date": "17/06",
-      "views": 2011,
-      "clicks": 6,
-      "convs": 3,
-      "costPerConv": 10.1,
-      "spent": 30.29,
+      "views": 3019,
+      "clicks": 10,
+      "convs": 5,
+      "costPerConv": 8.48,
+      "spent": 42.4,
+      "budget": 40
+    },
+    {
+      "date": "18/06",
+      "views": 1727,
+      "clicks": 12,
+      "convs": 5,
+      "costPerConv": 4.53,
+      "spent": 22.66,
       "budget": 40
     }
   ],
@@ -1243,11 +1261,20 @@
     },
     {
       "date": "17/06",
-      "views": 2048,
-      "clicks": 21,
-      "convs": 11,
-      "costPerConv": 3.48,
-      "spent": 38.32,
+      "views": 2705,
+      "clicks": 33,
+      "convs": 13,
+      "costPerConv": 3.87,
+      "spent": 50.25,
+      "budget": 50
+    },
+    {
+      "date": "18/06",
+      "views": 1615,
+      "clicks": 17,
+      "convs": 9,
+      "costPerConv": 3.44,
+      "spent": 30.99,
       "budget": 50
     }
   ],
@@ -1317,20 +1344,29 @@
     },
     {
       "date": "16/06",
-      "views": 4251,
+      "views": 4254,
       "clicks": 15,
       "convs": 5,
-      "costPerConv": 20.17,
-      "spent": 100.84,
+      "costPerConv": 20.18,
+      "spent": 100.92,
       "budget": 70
     },
     {
       "date": "17/06",
-      "views": 2139,
-      "clicks": 4,
-      "convs": 1,
-      "costPerConv": 59.02,
-      "spent": 59.02,
+      "views": 3119,
+      "clicks": 11,
+      "convs": 4,
+      "costPerConv": 22.83,
+      "spent": 91.33,
+      "budget": 70
+    },
+    {
+      "date": "18/06",
+      "views": 1604,
+      "clicks": 12,
+      "convs": 5,
+      "costPerConv": 10.02,
+      "spent": 50.09,
       "budget": 70
     }
   ]
