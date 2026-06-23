@@ -1,9 +1,6 @@
 name: Atualizar dados Meta Ads
 
 on:
-  schedule:
-    # Roda todo dia às 08:00 horário de Brasília (11:00 UTC)
-    - cron: "0 11 * * *"
   workflow_dispatch:
     # Permite rodar manualmente pelo GitHub quando quiser
 
@@ -12,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do repositório
+      - name: Checkout do repositÃ³rio
         uses: actions/checkout@v4
 
       - name: Configurar Python
@@ -20,7 +17,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Instalar dependências
+      - name: Instalar dependÃªncias
         run: pip install requests
 
       - name: Buscar dados da Meta API
@@ -36,7 +33,7 @@ jobs:
           META_AD_ID_AUX_5:   ${{ secrets.META_AD_ID_AUX_5 }}
         run: python fetch_meta_data.py
 
-      - name: Salvar data.json no repositório
+      - name: Salvar data.json no repositÃ³rio
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
