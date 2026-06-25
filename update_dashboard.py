@@ -16,6 +16,7 @@ ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
 ADS_MAP = {k: v for k, v in {
     "apcd_1":    os.environ.get("META_AD_ID_APCD_1"),
+    "apcd_1b":   os.environ.get("META_AD_ID_APCD_1B"),  # continuação de apcd_1 a partir de 18/06
     "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
@@ -205,7 +206,7 @@ def main():
             spent   = round(float(row.get("spend", 0)), 2)
             cpc     = round(spent / convs, 2) if convs > 0 else 0.0
             # aux_1b herda o orçamento de aux_1 (mesma campanha)
-            budget_key = "aux_1" if ad_key == "aux_1b" else ad_key
+            budget_key = "aux_1" if ad_key == "aux_1b" else ("apcd_1" if ad_key == "apcd_1b" else ad_key)
             budget  = get_budget(budget_key, date_br)
 
             daily.append({
@@ -242,8 +243,25 @@ def main():
 
     result["aux_1"] = aux1_data
 
-    # Copiar restantes (excluindo aux_1b que já foi fundido)
-    for key in ["apcd_1", "apcd_2", "apcd_3", "aux_pinos"]:
+    # ── Fundir apcd_1 + apcd_1b numa única série cronológica ─────────────────────
+    apcd1_data  = raw.get("apcd_1",  existing.get("apcd_1",  []))
+    apcd1b_data = raw.get("apcd_1b", [])
+
+    if apcd1b_data:
+        existing_dates = {d["date"] for d in apcd1_data}
+        for entry in apcd1b_data:
+            if entry["date"] not in existing_dates:
+                apcd1_data.append(entry)
+        apcd1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
+        total_convs = sum(d["convs"] for d in apcd1_data)
+        total_spent = sum(d["spent"] for d in apcd1_data)
+        print(f"\n  🔗 apcd_1 fundido com apcd_1b → {len(apcd1_data)} dias totais | "
+              f"{total_convs} conversas | R$ {total_spent:.2f}")
+
+    result["apcd_1"] = apcd1_data
+
+    # Copiar restantes (excluindo apcd_1b e aux_1b que já foram fundidos)
+    for key in ["apcd_2", "apcd_3", "aux_pinos"]:
         if key in raw:
             result[key] = raw[key]
         elif key not in result:
