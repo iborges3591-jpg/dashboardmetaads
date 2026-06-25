@@ -27,12 +27,13 @@ jobs:
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           META_AD_ID_APCD_1: ${{ secrets.META_AD_ID_APCD_1 }}
-          META_AD_ID_APCD_1B: ${{ secrets.META_AD_ID_APCD_1B }}
           META_AD_ID_APCD_2: ${{ secrets.META_AD_ID_APCD_2 }}
           META_AD_ID_APCD_3: ${{ secrets.META_AD_ID_APCD_3 }}
           META_AD_ID_AUX_1: ${{ secrets.META_AD_ID_AUX_1 }}
           META_AD_ID_AUX_1B: ${{ secrets.META_AD_ID_AUX_1B }}
           META_AD_ID_AUX_PINOS: ${{ secrets.META_AD_ID_AUX_PINOS }}
+          META_AD_ID_PRISCILA_1: ${{ secrets.META_AD_ID_PRISCILA_1 }}
+          META_AD_ID_PRISCILA_2: ${{ secrets.META_AD_ID_PRISCILA_2 }}
         run: python update_dashboard.py
 
       - name: Commitar e publicar data.json atualizado
