@@ -16,12 +16,13 @@ ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
 ADS_MAP = {k: v for k, v in {
     "apcd_1":    os.environ.get("META_AD_ID_APCD_1"),
-    "apcd_1b":   os.environ.get("META_AD_ID_APCD_1B"),  # continuação de apcd_1 a partir de 18/06
     "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
     "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuação de aux_1 a partir de 04/06
-    "aux_pinos": os.environ.get("META_AD_ID_AUX_PINOS"),
+    "aux_pinos":  os.environ.get("META_AD_ID_AUX_PINOS"),
+    "priscila_1": os.environ.get("META_AD_ID_PRISCILA_1"),  # Indenização para o trabalhador
+    "priscila_2": os.environ.get("META_AD_ID_PRISCILA_2"),  # Trabalhador CLT que sofreu
 }.items() if v}
 
 BUDGETS = {
@@ -89,6 +90,32 @@ BUDGETS = {
         "19/06": 70,  "20/06": 70,  "21/06": 70,  "22/06": 70,  "23/06": 70,
         "24/06": 70,  "25/06": 70,  "26/06": 70,  "27/06": 70,  "28/06": 70,
         "29/06": 70,  "30/06": 70,
+    },
+    "priscila_1": {
+        "10/05": 50, "11/05": 50, "12/05": 50, "13/05": 50, "14/05": 50,
+        "15/05": 50, "16/05": 50, "17/05": 50, "18/05": 50, "19/05": 50,
+        "20/05": 50, "21/05": 50, "22/05": 50, "23/05": 50, "24/05": 50,
+        "25/05": 50, "26/05": 50, "27/05": 50, "28/05": 50, "29/05": 50,
+        "30/05": 50, "31/05": 50,
+        "01/06": 50, "02/06": 50, "03/06": 50, "04/06": 50, "05/06": 50,
+        "06/06": 50, "07/06": 50, "08/06": 50, "09/06": 50, "10/06": 50,
+        "11/06": 50, "12/06": 50, "13/06": 50, "14/06": 50, "15/06": 50,
+        "16/06": 50, "17/06": 50, "18/06": 50, "19/06": 50, "20/06": 50,
+        "21/06": 50, "22/06": 50, "23/06": 50, "24/06": 50, "25/06": 50,
+        "26/06": 50, "27/06": 50, "28/06": 50, "29/06": 50, "30/06": 50,
+    },
+    "priscila_2": {
+        "10/05": 50, "11/05": 50, "12/05": 50, "13/05": 50, "14/05": 50,
+        "15/05": 50, "16/05": 50, "17/05": 50, "18/05": 50, "19/05": 50,
+        "20/05": 50, "21/05": 50, "22/05": 50, "23/05": 50, "24/05": 50,
+        "25/05": 50, "26/05": 50, "27/05": 50, "28/05": 50, "29/05": 50,
+        "30/05": 50, "31/05": 50,
+        "01/06": 50, "02/06": 50, "03/06": 50, "04/06": 50, "05/06": 50,
+        "06/06": 50, "07/06": 50, "08/06": 50, "09/06": 50, "10/06": 50,
+        "11/06": 50, "12/06": 50, "13/06": 50, "14/06": 50, "15/06": 50,
+        "16/06": 50, "17/06": 50, "18/06": 50, "19/06": 50, "20/06": 50,
+        "21/06": 50, "22/06": 50, "23/06": 50, "24/06": 50, "25/06": 50,
+        "26/06": 50, "27/06": 50, "28/06": 50, "29/06": 50, "30/06": 50,
     },
 }
 DEFAULT_BUDGET = 40
@@ -206,7 +233,7 @@ def main():
             spent   = round(float(row.get("spend", 0)), 2)
             cpc     = round(spent / convs, 2) if convs > 0 else 0.0
             # aux_1b herda o orçamento de aux_1 (mesma campanha)
-            budget_key = "aux_1" if ad_key == "aux_1b" else ("apcd_1" if ad_key == "apcd_1b" else ad_key)
+            budget_key = "aux_1" if ad_key == "aux_1b" else ad_key
             budget  = get_budget(budget_key, date_br)
 
             daily.append({
@@ -261,7 +288,7 @@ def main():
     result["apcd_1"] = apcd1_data
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que já foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_pinos"]:
+    for key in ["apcd_2", "apcd_3", "aux_pinos", "priscila_1", "priscila_2"]:
         if key in raw:
             result[key] = raw[key]
         elif key not in result:
