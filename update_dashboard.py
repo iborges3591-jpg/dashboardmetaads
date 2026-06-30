@@ -16,6 +16,7 @@ ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
 ADS_MAP = {k: v for k, v in {
     "apcd_1":    os.environ.get("META_AD_ID_APCD_1"),
+    "apcd_1b":   os.environ.get("META_AD_ID_APCD_1B"),  # continuação de apcd_1 (ARTROSE) a partir de 13/06
     "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
@@ -38,6 +39,13 @@ BUDGETS = {
         "16/06": 40, "17/06": 40, "18/06": 40, "19/06": 40, "20/06": 40,
         "21/06": 40, "22/06": 40, "23/06": 40, "24/06": 40, "25/06": 40,
         "26/06": 40, "27/06": 40, "28/06": 40, "29/06": 40, "30/06": 40,
+    },
+    "apcd_1b": {
+        # ARTROSE — continuação a partir de 13/06/2026 (mesmo orçamento R$40/dia)
+        "13/06": 40, "14/06": 40, "15/06": 40, "16/06": 40, "17/06": 40,
+        "18/06": 40, "19/06": 40, "20/06": 40, "21/06": 40, "22/06": 40,
+        "23/06": 40, "24/06": 40, "25/06": 40, "26/06": 40, "27/06": 40,
+        "28/06": 40, "29/06": 40, "30/06": 40,
     },
     "apcd_2": {
         "10/05": 40, "11/05": 40, "12/05": 40, "13/05": 40, "14/05": 40,
