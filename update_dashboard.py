@@ -16,7 +16,6 @@ ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
 ADS_MAP = {k: v for k, v in {
     "apcd_1":    os.environ.get("META_AD_ID_APCD_1"),
-    "apcd_1b":   os.environ.get("META_AD_ID_APCD_1B"),  # continuação de apcd_1 (ARTROSE) a partir de 13/06
     "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
@@ -39,13 +38,6 @@ BUDGETS = {
         "16/06": 40, "17/06": 40, "18/06": 40, "19/06": 40, "20/06": 40,
         "21/06": 40, "22/06": 40, "23/06": 40, "24/06": 40, "25/06": 40,
         "26/06": 40, "27/06": 40, "28/06": 40, "29/06": 40, "30/06": 40,
-    },
-    "apcd_1b": {
-        # ARTROSE — continuação a partir de 13/06/2026 (mesmo orçamento R$40/dia)
-        "13/06": 40, "14/06": 40, "15/06": 40, "16/06": 40, "17/06": 40,
-        "18/06": 40, "19/06": 40, "20/06": 40, "21/06": 40, "22/06": 40,
-        "23/06": 40, "24/06": 40, "25/06": 40, "26/06": 40, "27/06": 40,
-        "28/06": 40, "29/06": 40, "30/06": 40,
     },
     "apcd_2": {
         "10/05": 40, "11/05": 40, "12/05": 40, "13/05": 40, "14/05": 40,
@@ -278,22 +270,14 @@ def main():
 
     result["aux_1"] = aux1_data
 
-    # ── Fundir apcd_1 + apcd_1b numa única série cronológica ─────────────────────
-    apcd1_data  = raw.get("apcd_1",  existing.get("apcd_1",  []))
-    apcd1b_data = raw.get("apcd_1b", [])
-
-    if apcd1b_data:
-        existing_dates = {d["date"] for d in apcd1_data}
-        for entry in apcd1b_data:
-            if entry["date"] not in existing_dates:
-                apcd1_data.append(entry)
-        apcd1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
-        total_convs = sum(d["convs"] for d in apcd1_data)
-        total_spent = sum(d["spent"] for d in apcd1_data)
-        print(f"\n  🔗 apcd_1 fundido com apcd_1b → {len(apcd1_data)} dias totais | "
-              f"{total_convs} conversas | R$ {total_spent:.2f}")
-
-    result["apcd_1"] = apcd1_data
+    # apcd_1 = CIRURGIA COM PINOS — parou em ~12/06/2026, sem continuação
+    # Limpar entradas do ARTROSE que foram fundidas incorretamente (datas 13-30/06 exceto zeros originais)
+    apcd1_data = raw.get("apcd_1", existing.get("apcd_1", []))
+    _zeros_originais = {"15/06", "17/06"}
+    apcd1_data = [d for d in apcd1_data if not (
+        d["date"][3:5] == "06" and int(d["date"][:2]) > 12 and d["date"] not in _zeros_originais
+    )]
+    apcd1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que já foram fundidos)
     for key in ["apcd_2", "apcd_3", "aux_pinos", "priscila_1", "priscila_2"]:
