@@ -1,7 +1,7 @@
 """
 update_dashboard.py
 ===================
-Busca dados diÃ¡rios de cada anÃºncio na Meta Marketing API
+Busca dados diÃÂ¡rios de cada anÃÂºncio na Meta Marketing API
 e atualiza o ficheiro data.json com os resultados.
 """
 
@@ -10,7 +10,7 @@ import json
 import requests
 from datetime import datetime
 
-# âââ ConfiguraÃ§Ã£o ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ ConfiguraÃÂ§ÃÂ£o Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
@@ -19,9 +19,9 @@ ADS_MAP = {k: v for k, v in {
     "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
-    "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃ§Ã£o de aux_1 a partir de 04/06
+    "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
     "aux_pinos":  os.environ.get("META_AD_ID_AUX_PINOS"),
-    "priscila_1": os.environ.get("META_AD_ID_PRISCILA_1"),  # IndenizaÃ§Ã£o para o trabalhador
+    "priscila_1": os.environ.get("META_AD_ID_PRISCILA_1"),  # IndenizaÃÂ§ÃÂ£o para o trabalhador
     "priscila_2": os.environ.get("META_AD_ID_PRISCILA_2"),  # Trabalhador CLT que sofreu
 }.items() if v}
 
@@ -75,7 +75,7 @@ BUDGETS = {
         "21/06": 60, "22/06": 60, "23/06": 60, "24/06": 60, "25/06": 60,
         "26/06": 60, "27/06": 60, "28/06": 60, "29/06": 60, "30/06": 60,
     },
-    # aux_1b usa o mesmo orÃ§amento de aux_1 (mesma campanha, novo ID a partir de 04/06)
+    # aux_1b usa o mesmo orÃÂ§amento de aux_1 (mesma campanha, novo ID a partir de 04/06)
     "aux_1b": {
         "04/06": 60, "05/06": 60, "06/06": 60, "07/06": 60, "08/06": 60,
         "09/06": 60, "10/06": 60, "11/06": 60, "12/06": 60, "13/06": 60,
@@ -122,7 +122,7 @@ DEFAULT_BUDGET = 40
 
 CAMPAIGN_SINCE = "2026-05-10"
 
-# âââ Helpers âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Helpers Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 def get_budget(ad_key: str, date_br: str) -> int:
     return BUDGETS.get(ad_key, {}).get(date_br, DEFAULT_BUDGET)
@@ -145,10 +145,10 @@ def br_date(iso_date: str) -> str:
     dt = datetime.strptime(iso_date, "%Y-%m-%d")
     return dt.strftime("%d/%m")
 
-# âââ Chamada Ã  API ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Chamada ÃÂ  API Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 def fetch_insights(ad_id: str, since: str, until: str) -> list:
-    """Busca dados diÃ¡rios com suporte a paginaÃ§Ã£o (Meta limita a ~25 registos por pÃ¡gina)."""
+    """Busca dados diÃÂ¡rios com suporte a paginaÃÂ§ÃÂ£o (Meta limita a ~25 registos por pÃÂ¡gina)."""
     url = f"https://graph.facebook.com/v20.0/{ad_id}/insights"
     params = {
         "access_token": ACCESS_TOKEN,
@@ -156,7 +156,7 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
         "time_range": json.dumps({"since": since, "until": until}),
         "time_increment": 1,
         "level": "ad",
-        "limit": 90,  # atÃ© 3 meses de dados diÃ¡rios numa sÃ³ pÃ¡gina
+        "limit": 90,  # atÃÂ© 3 meses de dados diÃÂ¡rios numa sÃÂ³ pÃÂ¡gina
     }
 
     all_data = []
@@ -166,27 +166,27 @@ def fetch_insights(ad_id: str, since: str, until: str) -> list:
     while True:
         resp = requests.get(current_url, params=current_params, timeout=30)
         if resp.status_code != 200:
-            print(f"  â ï¸ Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
+            print(f"  Ã¢ÂÂ Ã¯Â¸Â Erro {resp.status_code} para ad {ad_id}: {resp.text[:300]}")
             return []
 
         body = resp.json()
         all_data.extend(body.get("data", []))
 
-        # Seguir prÃ³xima pÃ¡gina se existir
+        # Seguir prÃÂ³xima pÃÂ¡gina se existir
         next_page = body.get("paging", {}).get("next")
         if not next_page:
             break
         current_url = next_page
-        current_params = {}  # URL de paginaÃ§Ã£o jÃ¡ contÃ©m todos os parÃ¢metros
+        current_params = {}  # URL de paginaÃÂ§ÃÂ£o jÃÂ¡ contÃÂ©m todos os parÃÂ¢metros
 
     return all_data
 
-# âââ Main âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Main Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
     today_br = datetime.now().strftime("%d/%m/%Y")
-    print(f"\nð Iniciando atualizaÃ§Ã£o â {today_br}\n")
+    print(f"\nÃ°ÂÂÂ Iniciando atualizaÃÂ§ÃÂ£o Ã¢ÂÂ {today_br}\n")
 
     data_file = "data.json"
     if os.path.exists(data_file):
@@ -200,27 +200,27 @@ def main():
         "periodo": f"{br_date(CAMPAIGN_SINCE)} a {br_date(today)}",
     }
 
-    # aux_1b Ã© a continuaÃ§Ã£o de aux_1 (mesmo anÃºncio, novo ID Meta a partir de 04/06).
-    # Ã tratado internamente mas fundido em "aux_1" no output final.
+    # aux_1b ÃÂ© a continuaÃÂ§ÃÂ£o de aux_1 (mesmo anÃÂºncio, novo ID Meta a partir de 04/06).
+    # ÃÂ tratado internamente mas fundido em "aux_1" no output final.
     all_keys = ["apcd_1", "apcd_2", "apcd_3", "aux_1", "aux_pinos"]
     missing = [k for k in all_keys if k not in ADS_MAP and "aux_1b" not in ADS_MAP]
-    # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b â nÃ£o alertar nesse caso
+    # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b Ã¢ÂÂ nÃÂ£o alertar nesse caso
     missing_display = [k for k in all_keys if k not in ADS_MAP and not (k == "aux_1" and "aux_1b" in ADS_MAP)]
     if missing_display:
-        print(f"  â ï¸ Secrets nÃ£o configurados (dados histÃ³ricos mantidos): {', '.join(missing_display)}\n")
+        print(f"  Ã¢ÂÂ Ã¯Â¸Â Secrets nÃÂ£o configurados (dados histÃÂ³ricos mantidos): {', '.join(missing_display)}\n")
 
     for key in all_keys:
         if key not in ADS_MAP and not (key == "aux_1" and "aux_1b" in ADS_MAP):
             result[key] = existing.get(key, [])
 
-    raw = {}   # armazenamento temporÃ¡rio antes de fundir aux_1 + aux_1b
+    raw = {}   # armazenamento temporÃÂ¡rio antes de fundir aux_1 + aux_1b
 
     for ad_key, ad_id in ADS_MAP.items():
-        print(f"  ð Buscando dados de '{ad_key}' (ID: {ad_id})...")
+        print(f"  Ã°ÂÂÂ Buscando dados de '{ad_key}' (ID: {ad_id})...")
         rows = fetch_insights(ad_id, CAMPAIGN_SINCE, today)
 
         if not rows:
-            print(f"  â ï¸ Sem dados â mantendo histÃ³rico existente")
+            print(f"  Ã¢ÂÂ Ã¯Â¸Â Sem dados Ã¢ÂÂ mantendo histÃÂ³rico existente")
             raw[ad_key] = existing.get(ad_key, [])
             continue
 
@@ -232,7 +232,7 @@ def main():
             convs   = get_convs(row.get("actions", []))
             spent   = round(float(row.get("spend", 0)), 2)
             cpc     = round(spent / convs, 2) if convs > 0 else 0.0
-            # aux_1b herda o orÃ§amento de aux_1 (mesma campanha)
+            # aux_1b herda o orÃÂ§amento de aux_1 (mesma campanha)
             budget_key = "aux_1" if ad_key == "aux_1b" else ad_key
             budget  = get_budget(budget_key, date_br)
 
@@ -249,33 +249,45 @@ def main():
         raw[ad_key] = daily
         total_convs = sum(d["convs"] for d in daily)
         total_spent = sum(d["spent"] for d in daily)
-        print(f"  â {len(daily)} dias | {total_convs} conversas | R$ {total_spent:.2f} investido")
+        print(f"  Ã¢ÂÂ {len(daily)} dias | {total_convs} conversas | R$ {total_spent:.2f} investido")
 
-    # ââ Fundir aux_1 + aux_1b numa Ãºnica sÃ©rie cronolÃ³gica ââââââââââââââââââââââ
+    # Ã¢ÂÂÃ¢ÂÂ Fundir aux_1 + aux_1b numa ÃÂºnica sÃÂ©rie cronolÃÂ³gica Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     aux1_data  = raw.get("aux_1",  existing.get("aux_1",  []))
     aux1b_data = raw.get("aux_1b", [])
 
     if aux1b_data:
-        # Evita duplicar datas (se por alguma razÃ£o ambos os IDs devolverem o mesmo dia)
+        # Evita duplicar datas (se por alguma razÃÂ£o ambos os IDs devolverem o mesmo dia)
         existing_dates = {d["date"] for d in aux1_data}
         for entry in aux1b_data:
             if entry["date"] not in existing_dates:
                 aux1_data.append(entry)
-        # Ordenar por data (DD/MM â comparaÃ§Ã£o como MMDD)
+        # Ordenar por data (DD/MM Ã¢ÂÂ comparaÃÂ§ÃÂ£o como MMDD)
         aux1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
         total_convs = sum(d["convs"] for d in aux1_data)
         total_spent = sum(d["spent"] for d in aux1_data)
-        print(f"\n  ð aux_1 fundido com aux_1b â {len(aux1_data)} dias totais | "
+        print(f"\n  Ã°ÂÂÂ aux_1 fundido com aux_1b Ã¢ÂÂ {len(aux1_data)} dias totais | "
               f"{total_convs} conversas | R$ {total_spent:.2f}")
 
     result["aux_1"] = aux1_data
 
-    # apcd_1 = CIRURGIA COM PINOS — dados directos da API Meta sem filtro de datas
+    # apcd_1 = CIRURGIA COM PINOS — preencher zeros para dias sem dados (campanha pausada)
     apcd1_data = raw.get("apcd_1", existing.get("apcd_1", []))
+    # Construir set de datas já existentes
+    _existing_dates = {d["date"] for d in apcd1_data}
+    # Preencher zeros desde o início da campanha até hoje
+    from datetime import date, timedelta
+    _apcd1_since = date(2026, 5, 10)
+    _apcd1_budget = 40  # orçamento diário original
+    _d = _apcd1_since
+    while _d <= date.today():
+        _br = f"{_d.day:02d}/{_d.month:02d}"
+        if _br not in _existing_dates:
+            apcd1_data.append({"date": _br, "views": 0, "clicks": 0, "convs": 0, "costPerConv": 0, "spent": 0, "budget": _apcd1_budget})
+        _d += timedelta(days=1)
     apcd1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
     result["apcd_1"] = apcd1_data
 
-    # Copiar restantes (excluindo apcd_1b e aux_1b que jÃ¡ foram fundidos)
+    # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
     for key in ["apcd_2", "apcd_3", "aux_pinos", "priscila_1", "priscila_2"]:
         if key in raw:
             result[key] = raw[key]
@@ -285,7 +297,7 @@ def main():
     with open(data_file, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"\nâ data.json atualizado com sucesso!\n")
+    print(f"\nÃ¢ÂÂ data.json atualizado com sucesso!\n")
 
 if __name__ == "__main__":
     main()
