@@ -15,8 +15,6 @@ from datetime import datetime
 ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
 ADS_MAP = {k: v for k, v in {
-    "apcd_1":    os.environ.get("META_AD_ID_APCD_1"),
-    "apcd_2":    os.environ.get("META_AD_ID_APCD_2"),
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
     "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
@@ -202,7 +200,7 @@ def main():
 
     # aux_1b ÃÂ© a continuaÃÂ§ÃÂ£o de aux_1 (mesmo anÃÂºncio, novo ID Meta a partir de 04/06).
     # ÃÂ tratado internamente mas fundido em "aux_1" no output final.
-    all_keys = ["apcd_1", "apcd_2", "apcd_3", "aux_1", "aux_pinos"]
+    all_keys = ["apcd_3", "aux_1", "aux_pinos"]
     missing = [k for k in all_keys if k not in ADS_MAP and "aux_1b" not in ADS_MAP]
     # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b Ã¢ÂÂ nÃÂ£o alertar nesse caso
     missing_display = [k for k in all_keys if k not in ADS_MAP and not (k == "aux_1" and "aux_1b" in ADS_MAP)]
@@ -270,22 +268,8 @@ def main():
 
     result["aux_1"] = aux1_data
 
-    # apcd_1 = CIRURGIA COM PINOS — preencher zeros para dias sem dados (campanha pausada)
-    apcd1_data = raw.get("apcd_1", existing.get("apcd_1", []))
-    # Construir set de datas já existentes
-    _existing_dates = {d["date"] for d in apcd1_data}
-    # Preencher zeros desde o início da campanha até hoje
-    from datetime import date, timedelta
-    _apcd1_since = date(2026, 5, 10)
-    _apcd1_budget = 40  # orçamento diário original
-    _d = _apcd1_since
-    while _d <= date.today():
-        _br = f"{_d.day:02d}/{_d.month:02d}"
-        if _br not in _existing_dates:
-            apcd1_data.append({"date": _br, "views": 0, "clicks": 0, "convs": 0, "costPerConv": 0, "spent": 0, "budget": _apcd1_budget})
-        _d += timedelta(days=1)
-    apcd1_data.sort(key=lambda d: (d["date"][3:5], d["date"][0:2]))
-    result["apcd_1"] = apcd1_data
+    # apcd_1 = CIRURGIA COM PINOS — campanha encerrada (dados historicos preservados)
+    result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
     for key in ["apcd_2", "apcd_3", "aux_pinos", "priscila_1", "priscila_2"]:
