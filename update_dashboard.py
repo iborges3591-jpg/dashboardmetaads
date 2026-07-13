@@ -268,7 +268,7 @@ def main():
 
     result["aux_1"] = aux1_data
 
-    # apcd_1 = CIRURGIA COM PINOS — campanha encerrada (dados historicos preservados)
+    # apcd_1 = CIRURGIA COM PINOS - campanha encerrada (dados historicos preservados)
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
