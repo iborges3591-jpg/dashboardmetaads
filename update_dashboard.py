@@ -19,8 +19,6 @@ ADS_MAP = {k: v for k, v in {
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
     "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
     "aux_pinos":  os.environ.get("META_AD_ID_AUX_PINOS"),
-    "priscila_1": os.environ.get("META_AD_ID_PRISCILA_1"),  # IndenizaÃÂ§ÃÂ£o para o trabalhador
-    "priscila_2": os.environ.get("META_AD_ID_PRISCILA_2"),  # Trabalhador CLT que sofreu
 }.items() if v}
 
 BUDGETS = {
@@ -272,7 +270,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_pinos", "priscila_1", "priscila_2"]:
+    for key in ["apcd_2", "apcd_3", "aux_pinos"]:
         if key in raw:
             result[key] = raw[key]
         elif key not in result:
@@ -285,3 +283,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
