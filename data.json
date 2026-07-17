@@ -616,11 +616,11 @@
     },
     {
       "date": "17/07",
-      "views": 1141,
+      "views": 1166,
       "clicks": 3,
       "convs": 2,
-      "costPerConv": 10.25,
-      "spent": 20.5,
+      "costPerConv": 10.48,
+      "spent": 20.96,
       "budget": 40
     }
   ],
@@ -2260,11 +2260,11 @@
     },
     {
       "date": "17/07",
-      "views": 792,
+      "views": 822,
       "clicks": 10,
       "convs": 7,
-      "costPerConv": 2.19,
-      "spent": 15.33,
+      "costPerConv": 2.3,
+      "spent": 16.13,
       "budget": 40
     }
   ],
