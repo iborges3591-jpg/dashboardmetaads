@@ -80,13 +80,7 @@ BUDGETS = {
         "24/06": 60, "25/06": 60, "26/06": 60, "27/06": 60, "28/06": 60,
         "29/06": 60, "30/06": 60,
     },
-    "aux_pinos": {
-        "09/06": 50,  "10/06": 90,  "11/06": 100, "12/06": 90,  "13/06": 80,
-        "14/06": 70,  "15/06": 70,  "16/06": 70,  "17/06": 70,  "18/06": 70,
-        "19/06": 70,  "20/06": 70,  "21/06": 70,  "22/06": 70,  "23/06": 70,
-        "24/06": 70,  "25/06": 70,  "26/06": 70,  "27/06": 70,  "28/06": 70,
-        "29/06": 70,  "30/06": 70,
-    },
+    "aux_pinos": {},  # nova campanha iniciada em 14/07/2026 — usa orçamento padrão
     "priscila_1": {
         "10/05": 50, "11/05": 50, "12/05": 50, "13/05": 50, "14/05": 50,
         "15/05": 50, "16/05": 50, "17/05": 50, "18/05": 50, "19/05": 50,
@@ -118,10 +112,20 @@ DEFAULT_BUDGET = 40
 
 CAMPAIGN_SINCE = "2026-05-10"
 
+# Data de início efectiva por campanha (ignora dados anteriores)
+CAMPAIGN_START_DATES = {
+    "aux_pinos": (7, 14),  # (mês, dia) — nova campanha iniciada em 14/07/2026
+}
+
 # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Helpers Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 def get_budget(ad_key: str, date_br: str) -> int:
     return BUDGETS.get(ad_key, {}).get(date_br, DEFAULT_BUDGET)
+
+def after_start(date_br: str, min_md: tuple) -> bool:
+    """True se dd/mm >= (mês, dia) do min_md"""
+    d, m = date_br.split('/')
+    return (int(m), int(d)) >= min_md
 
 def get_convs(actions: list) -> int:
     if not actions:
@@ -275,6 +279,11 @@ def main():
             result[key] = raw[key]
         elif key not in result:
             result[key] = existing.get(key, [])
+
+    # Filtrar dados anteriores à data de início efectiva da campanha
+    for key, min_md in CAMPAIGN_START_DATES.items():
+        if key in result:
+            result[key] = [d for d in result[key] if after_start(d["date"], min_md)]
 
     with open(data_file, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
