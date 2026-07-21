@@ -663,11 +663,26 @@ body {
   overflow: hidden;
 }
 
-.modal-img-col img {
+.modal-img-col img:not(.m-blur-bg) {
+  position: relative;
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+  z-index: 1;
+}
+
+/* Blur-behind: mesma imagem, desfocada e escurecida como fundo */
+.m-blur-bg {
+  position: absolute !important;
+  inset: -30px !important;
+  width: calc(100% + 60px) !important;
+  height: calc(100% + 60px) !important;
+  object-fit: cover !important;
+  filter: blur(28px) brightness(0.45) saturate(1.4) !important;
+  z-index: 0 !important;
+  transform: scale(1.05) !important;
+  pointer-events: none !important;
 }
 
 .modal-img-col .m-img-fallback {
@@ -1036,7 +1051,7 @@ body {
     height: 220px;
     min-height: unset;
   }
-  .modal-img-col img { width: 100%; height: 220px; object-fit: contain; }
+  .modal-img-col img:not(.m-blur-bg) { width: 100%; height: 220px; object-fit: contain; position: relative; z-index: 1; }
   .modal-img-col .m-img-fallback { min-height: 220px; }
 
   /* Dados: overflow-y desligado (o .modal faz o scroll vertical); -x mantido para a tabela */
@@ -2041,6 +2056,28 @@ function initDatePicker(data) {
       console.warn('data.json não encontrado — usando dados embutidos.', err);
       renderAll();
     });
+})();
+
+/* ── Blur-behind para imagem do modal ── */
+(function() {
+  function applyBlur() {
+    const imgCol = document.querySelector('.modal-img-col');
+    if (!imgCol || imgCol.querySelector('.m-blur-bg')) return;
+    const mainImg = imgCol.querySelector('img');
+    if (!mainImg || !mainImg.src) return;
+    const blur = document.createElement('img');
+    blur.className = 'm-blur-bg';
+    blur.src = mainImg.src;
+    blur.setAttribute('aria-hidden','true');
+    blur.setAttribute('alt','');
+    imgCol.insertBefore(blur, mainImg);
+  }
+  const obs = new MutationObserver(function(mutations) {
+    mutations.forEach(function(m) {
+      if (m.addedNodes.length) applyBlur();
+    });
+  });
+  obs.observe(document.body, { childList: true, subtree: true });
 })();
 </script>
 </body>
