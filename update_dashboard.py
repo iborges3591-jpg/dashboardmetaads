@@ -18,7 +18,6 @@ ADS_MAP = {k: v for k, v in {
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
     "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
-    "aux_pinos":  os.environ.get("META_AD_ID_AUX_PINOS"),
 }.items() if v}
 
 BUDGETS = {
@@ -80,7 +79,6 @@ BUDGETS = {
         "24/06": 60, "25/06": 60, "26/06": 60, "27/06": 60, "28/06": 60,
         "29/06": 60, "30/06": 60,
     },
-    "aux_pinos": {},  # nova campanha iniciada em 14/07/2026 — usa orçamento padrão
     "priscila_1": {
         "10/05": 50, "11/05": 50, "12/05": 50, "13/05": 50, "14/05": 50,
         "15/05": 50, "16/05": 50, "17/05": 50, "18/05": 50, "19/05": 50,
@@ -113,11 +111,10 @@ DEFAULT_BUDGET = 40
 CAMPAIGN_SINCE = "2026-05-10"
 
 # Campanhas com dados geridos manualmente — NÃO sobrescrever com API
-MANUAL_KEYS = {"aux_pinos"}
+MANUAL_KEYS = {}
 
 # Data de início efectiva por campanha (ignora dados anteriores)
 CAMPAIGN_START_DATES = {
-    "aux_pinos": (7, 14),  # (mês, dia) — nova campanha iniciada em 14/07/2026
 }
 
 # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Helpers Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
@@ -205,7 +202,7 @@ def main():
 
     # aux_1b ÃÂ© a continuaÃÂ§ÃÂ£o de aux_1 (mesmo anÃÂºncio, novo ID Meta a partir de 04/06).
     # ÃÂ tratado internamente mas fundido em "aux_1" no output final.
-    all_keys = ["apcd_3", "aux_1", "aux_pinos"]
+    all_keys = ["apcd_3", "aux_1"]
     missing = [k for k in all_keys if k not in ADS_MAP and "aux_1b" not in ADS_MAP]
     # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b Ã¢ÂÂ nÃÂ£o alertar nesse caso
     missing_display = [k for k in all_keys if k not in ADS_MAP and not (k == "aux_1" and "aux_1b" in ADS_MAP)]
@@ -277,7 +274,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_pinos"]:
+    for key in ["apcd_2", "apcd_3", ]:
         if key in MANUAL_KEYS:
             result[key] = existing.get(key, [])  # dados manuais — preservar
         elif key in raw:
@@ -318,7 +315,6 @@ ADS_MAP = {k: v for k, v in {
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
     "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
-    "aux_pinos":  os.environ.get("META_AD_ID_AUX_PINOS"),
 }.items() if v}
 
 BUDGETS = {
@@ -380,7 +376,6 @@ BUDGETS = {
         "24/06": 60, "25/06": 60, "26/06": 60, "27/06": 60, "28/06": 60,
         "29/06": 60, "30/06": 60,
     },
-    "aux_pinos": {},  # nova campanha iniciada em 14/07/2026 — usa orçamento padrão
     "priscila_1": {
         "10/05": 50, "11/05": 50, "12/05": 50, "13/05": 50, "14/05": 50,
         "15/05": 50, "16/05": 50, "17/05": 50, "18/05": 50, "19/05": 50,
@@ -414,7 +409,6 @@ CAMPAIGN_SINCE = "2026-05-10"
 
 # Data de início efectiva por campanha (ignora dados anteriores)
 CAMPAIGN_START_DATES = {
-    "aux_pinos": (7, 14),  # (mês, dia) — nova campanha iniciada em 14/07/2026
 }
 
 # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Helpers Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
@@ -502,7 +496,7 @@ def main():
 
     # aux_1b ÃÂ© a continuaÃÂ§ÃÂ£o de aux_1 (mesmo anÃÂºncio, novo ID Meta a partir de 04/06).
     # ÃÂ tratado internamente mas fundido em "aux_1" no output final.
-    all_keys = ["apcd_3", "aux_1", "aux_pinos"]
+    all_keys = ["apcd_3", "aux_1", ]
     missing = [k for k in all_keys if k not in ADS_MAP and "aux_1b" not in ADS_MAP]
     # aux_1 pode estar em falta do ADS_MAP mas ser coberto por aux_1b Ã¢ÂÂ nÃÂ£o alertar nesse caso
     missing_display = [k for k in all_keys if k not in ADS_MAP and not (k == "aux_1" and "aux_1b" in ADS_MAP)]
@@ -574,7 +568,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_pinos"]:
+    for key in ["apcd_2", "apcd_3", ]:
         if key in raw:
             result[key] = raw[key]
         elif key not in result:
