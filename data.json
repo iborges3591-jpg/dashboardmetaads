@@ -22,11 +22,11 @@
     },
     {
       "date": "03/08",
-      "views": 4012,
+      "views": 4052,
       "clicks": 28,
       "convs": 10,
-      "costPerConv": 10.64,
-      "spent": 106.4
+      "costPerConv": 10.71,
+      "spent": 107.13
     }
   ],
   "aux_1": [
@@ -48,11 +48,11 @@
     },
     {
       "date": "03/08",
-      "views": 690,
+      "views": 693,
       "clicks": 5,
       "convs": 4,
-      "costPerConv": 4.93,
-      "spent": 19.73
+      "costPerConv": 4.95,
+      "spent": 19.78
     }
   ],
   "aux_2": [],
