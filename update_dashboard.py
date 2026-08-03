@@ -21,7 +21,8 @@ ADS_MAP = {k: v for k, v in {
     "aux_2":     "120252735568490635",  # Já foi socorrido pelo SAMU
     "aux_3":     "120252735456570635",  # Sofreu acidente de moto
     "aux_4":     "120252735040200635",  # Trabalhador CLT Geral
-    "aux_5":     "120252671205230635",  # Trabalhador CLT MS   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
+    "aux_5":     "120252671205230635",  # Sequelas LIDERHUB
+    "aux_6":     "120252718767740635",  # Trabalhador Acidentado MS LIDERHUB
 }.items() if v}
 
 BUDGETS = {
@@ -278,7 +279,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5"]:
+    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6"]:
         if key in MANUAL_KEYS:
             result[key] = existing.get(key, [])  # dados manuais — preservar
         elif key in raw:
