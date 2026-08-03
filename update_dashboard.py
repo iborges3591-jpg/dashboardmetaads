@@ -17,7 +17,11 @@ ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 ADS_MAP = {k: v for k, v in {
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_1":     os.environ.get("META_AD_ID_AUX_1"),
-    "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
+    "aux_1b":    os.environ.get("META_AD_ID_AUX_1B"),
+    "aux_2":     "120252735568490635",  # Já foi socorrido pelo SAMU
+    "aux_3":     "120252735456570635",  # Sofreu acidente de moto
+    "aux_4":     "120252735040200635",  # Trabalhador CLT Geral
+    "aux_5":     "120252671205230635",  # Trabalhador CLT MS   # continuaÃÂ§ÃÂ£o de aux_1 a partir de 04/06
 }.items() if v}
 
 BUDGETS = {
