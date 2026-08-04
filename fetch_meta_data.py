@@ -25,15 +25,22 @@ CAMPAIGN_SINCE = "2026-05-10"
 hoje = datetime.today()
 fim  = hoje.strftime("%Y-%m-%d")
 
+# Data de início por anúncio (sobrepõe CAMPAIGN_SINCE quando definida)
+AD_START_DATES = {
+    "aux_2": "2026-07-30",  # Relançado 30/07 com novo criativo SAMU
+    "aux_3": "2026-07-30",  # Relançado 30/07 com novo criativo MOTO
+    "aux_4": "2026-07-30",  # Relançado 30/07 com novo criativo CLT GERAL
+}
 
-def buscar_insights_diarios(ad_id):
+
+def buscar_insights_diarios(ad_id, since=None):
     """Busca métricas diárias com suporte a paginação."""
     url    = f"{BASE_URL}/{ad_id}/insights"
     params = {
         "access_token":   ACCESS_TOKEN,
         "level":          "ad",
         "time_increment": 1,
-        "time_range":     json.dumps({"since": CAMPAIGN_SINCE, "until": fim}),
+        "time_range":     json.dumps({"since": since if since else CAMPAIGN_SINCE, "until": fim}),
         "fields":         "date_start,impressions,inline_link_clicks,spend,actions,cost_per_action_type",
         "limit":          90,
     }
@@ -89,7 +96,7 @@ resultado = {}
 for chave, ad_id in AD_MAP.items():
     print(f"Buscando dados para {chave} (ID: {ad_id})...")
     try:
-        registros = buscar_insights_diarios(ad_id)
+        registros = buscar_insights_diarios(ad_id, AD_START_DATES.get(chave))
         if not registros:
             print(f"  → 0 dias coletados. Mantendo histórico existente.")
             resultado[chave] = existing.get(chave, [])
@@ -142,3 +149,4 @@ with open(data_file, "w", encoding="utf-8") as f:
     json.dump(data_json, f, ensure_ascii=False, indent=2)
 
 print(f"\n✅ data.json gerado com sucesso! ({hoje.strftime('%d/%m/%Y')})")
+
