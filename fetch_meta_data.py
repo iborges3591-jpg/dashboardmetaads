@@ -13,6 +13,7 @@ AD_MAP = {k: v for k, v in {
     "apcd_3": os.environ.get("META_AD_ID_APCD_3", ""),
     "aux_5":  os.environ.get("META_AD_ID_AUX_5",  "") or "120252671205230635",
     "aux_6":  os.environ.get("META_AD_ID_AUX_6",  "") or "120252718767740635",
+        "aux_7":  os.environ.get("META_AD_ID_AUX_7",  "") or "120253194966830635",
 }.items() if v}
 
 # Período: data de início das campanhas até hoje (histórico completo)
