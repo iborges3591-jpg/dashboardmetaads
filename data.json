@@ -2970,5 +2970,16 @@
       "spent": 14.98,
       "budget": 40
     }
-  ]
+  ],
+    "aux_8": [
+          {
+                  "date": "31/08",
+                  "views": 12823,
+                  "clicks": 165,
+                  "convs": 9,
+                  "costPerConv": 18.78,
+                  "spent": 169.02,
+                  "budget": 40
+          }
+    ]
 }
