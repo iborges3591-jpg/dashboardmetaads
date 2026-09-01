@@ -2974,11 +2974,11 @@
     "aux_8": [
           {
                   "date": "31/08",
-                  "views": 12823,
+                  "views": 13438,
                   "clicks": 165,
-                  "convs": 9,
-                  "costPerConv": 18.78,
-                  "spent": 169.02,
+              "convs": 11,
+                            "costPerConv": 16.18,
+                          "spent": 178.03,
                   "budget": 40
           }
     ]
