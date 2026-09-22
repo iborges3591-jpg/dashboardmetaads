@@ -289,7 +289,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-        for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing"]:
+    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing"]:
         if key in MANUAL_KEYS:
             result[key] = existing.get(key, [])  # dados manuais — preservar
         elif key in raw:
