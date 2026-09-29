@@ -17,7 +17,6 @@ ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 ADS_MAP = {k: v for k, v in {
     "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
     "aux_5":     "120252671205230635",  # Sequelas LIDERHUB
-    "aux_6":     "120252718767740635",  # Trabalhador Acidentado MS LIDERHUB
         "aux_7":     "120253194966830635",  # Trabalhador de Frigorifico
             "aux_8":     "120253323210340635",  # Trabalhador Embarcado Offshore (Priscila)
         "aux_inocencia":      "120253640619910635",  # Inocência
@@ -30,9 +29,6 @@ ADS_MAP = {k: v for k, v in {
         "aux_navirai":         "120253640439090635",  # Naviraí
         "aux_corumba":         "120253640383790635",  # Corumbá
         "aux_maracaju":        "120253640563100635",  # Maracaju
-        "aux_novaandradina":   "120253640479420635",  # Nova Andradina
-        "aux_sidrolandia":     "120253640517650635",  # Sidrolândia
-        "aux_remarketing":     "120253666526490635",  # Remarketing Aux.Acidente
 }.items() if v}
 
 BUDGETS = {
