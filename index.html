@@ -1144,6 +1144,7 @@ body {
       <button class="pill" id="cat-btn-todos" onclick="setCat('todos')">Todas</button>
       <button class="pill" id="cat-btn-apo"   onclick="setCat('apo')">Aposentadoria PcD</button>
       <button class="pill" id="cat-btn-aux"   onclick="setCat('aux')">Auxílio-Acidente</button>
+      <button class="pill" id="cat-btn-trab"  onclick="setCat('trab')">Ação Trabalhista</button>
     </div>
   </div>
 
@@ -1313,19 +1314,6 @@ const ADS = [
     daily: []
   },
   {
-    id: 'aux_5',
-    cat: 'aux',
-    catLabel: 'Auxílio-Acidente',
-    num: 'Anúncio #1',
-    person: '',
-    headline: 'TRABALHADOR CLT COM SEQUELAS — INDENIZAÇÃO MENSAL DO INSS (LIDERHUB)',
-    reception: '#5 Tenho dúvidas sobre o benefício para trabalhador CLT com sequelas',
-    igUrl: '',
-    bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)',
-    imgFile: 'fotos/aux_liderhub.png',
-    daily: [],
-  },
-  {
         id: 'aux_7',
         cat: 'aux',
         catLabel: 'Auxílio-Acidente',
@@ -1351,59 +1339,7 @@ const ADS = [
                     imgFile: 'fotos/Trabalhador OFFSHORE.jpg',
             daily: [],
   },
-  {
-        id: 'aux_inocencia',
-        cat: 'aux',
-        catLabel: 'Auxílio-Acidente',
-          num: 'Anúncio #5',
-        person: '',
-        headline: 'TRABALHADOR CLT DE INOCÊNCIA — INDENIZAÇÃO DO INSS SE VOCÊ JÁ SOFREU UM ACIDENTE',
-        reception: '#9 Tenho dúvidas sobre o benefício para trabalhador de Inocência',
-        igUrl: '',
-        bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)',
-        imgFile: 'fotos/aux_inocencia.png',
-        daily: [],
-  },
-  {
-        id: 'aux_campogrande',
-        cat: 'aux',
-        catLabel: 'Auxílio-Acidente',
-        num: 'Anúncio #6',
-        person: '',
-        headline: 'TRABALHADOR CLT DE CAMPO GRANDE — INDENIZAÇÃO DO INSS SE VOCÊ JÁ SOFREU UM ACIDENTE',
-        reception: '#10 Tenho dúvidas sobre o benefício para trabalhador de Campo Grande',
-        igUrl: '',
-        bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)',
-        imgFile: 'fotos/aux_campogrande.png',
-        daily: [],
-  },
-  {
-        id: 'aux_treslagoas',
-        cat: 'aux',
-        catLabel: 'Auxílio-Acidente',
-        num: 'Anúncio #7',
-        person: '',
-        headline: 'TRABALHADOR CLT DE TRÊS LAGOAS — INDENIZAÇÃO DO INSS SE VOCÊ JÁ SOFREU UM ACIDENTE',
-        reception: '#11 Tenho dúvidas sobre o benefício para trabalhador de Três Lagoas',
-        igUrl: '',
-        bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)',
-        imgFile: 'fotos/aux_treslagoas.png',
-        daily: [],
-  },
-  {
-        id: 'aux_ribasriopardo',
-        cat: 'aux',
-        catLabel: 'Auxílio-Acidente',
-        num: 'Anúncio #8',
-        person: '',
-        headline: 'TRABALHADOR CLT DE RIBAS DO RIO PARDO — INDENIZAÇÃO DO INSS SE VOCÊ JÁ SOFREU UM ACIDENTE',
-        reception: '#12 Tenho dúvidas sobre o benefício para trabalhador de Ribas do Rio Pardo',
-        igUrl: '',
-        bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)',
-        imgFile: 'fotos/aux_ribasriopardo.png',
-        daily: [],
-  },
-  {
+{
         id: 'aux_pontapora',
         cat: 'aux',
         catLabel: 'Auxílio-Acidente',
@@ -1469,18 +1405,9 @@ const ADS = [
         daily: [],
   },
   {
-        id: 'aux_maracaju',
-        cat: 'aux',
-        catLabel: 'Auxílio-Acidente',
-        num: 'Anúncio #14',
-        person: '',
-        headline: 'TRABALHADOR CLT DE MARACAJU — INDENIZAÇÃO DO INSS SE VOCÊ JÁ SOFREU UM ACIDENTE',
-        reception: '#18 Tenho dúvidas sobre o benefício para trabalhador de Maracaju',
-        igUrl: '',
-        bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)',
-        imgFile: 'fotos/aux_maracaju.png',
-        daily: [],
+id: 'aux_motorista', cat: 'trab', catLabel: 'Ação Trabalhista', num: 'Anúncio #17', person: 'Dra. Priscila', headline: 'MOTORISTA DE CAMINHÃO — AÇÃO TRABALHISTA', reception: 'Motorista de caminhão — ação trabalhista', igUrl: '', bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)', imgFile: 'fotos/aux_motorista.png', daily: [],
   },
+  { id: 'trab_acidente', cat: 'trab', catLabel: 'Ação Trabalhista', num: 'Anúncio #18', person: 'Dra. Priscila', headline: 'ACIDENTE DE TRABALHO — AÇÃO TRABALHISTA', reception: 'Acidente de trabalho — ação trabalhista', igUrl: '', bgGradient: 'linear-gradient(160deg, #1B3464 0%, #2d5fa3 60%, #1B4B3B 100%)', imgFile: 'fotos/trab_acidente.png', daily: [] },
 ];
 
 // ═══════════════════════════════════════════════════════════
