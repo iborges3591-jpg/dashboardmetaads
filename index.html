@@ -1601,6 +1601,7 @@ function buildCards() {
       </div>
     `;
 
+card.dataset.cat = ad.cat; if (!grid.lastElementChild || grid.lastElementChild.dataset.cat !== ad.cat) { const h = document.createElement('div'); h.style.cssText = 'grid-column:1/-1;font-weight:800;font-size:15px;color:var(--navy);margin:14px 0 2px;padding-bottom:6px;border-bottom:2px solid var(--gold);'; h.textContent = 'Campanha ' + ({apo:'Aposentadoria PcD',aux:'Aux.Acidente',trab:'Ação Trabalhista'}[ad.cat] || ad.catLabel); grid.appendChild(h); }
     grid.appendChild(card);
 
     // Build sparkline after DOM
