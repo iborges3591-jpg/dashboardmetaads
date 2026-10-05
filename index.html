@@ -366,6 +366,7 @@ body {
 
 .cat-apo { background: rgba(27,52,100,.1); color: var(--navy); }
 .cat-aux { background: rgba(27,107,91,.1); color: var(--teal); }
+  .cat-trab { background: rgba(212,160,23,.18); color: #8a6200; }
 
 .ad-headline-text {
   font-size: 12px;
@@ -1554,7 +1555,7 @@ function buildCards() {
 
       <!-- Body -->
       <div class="ad-body" style="cursor:pointer;" onclick="openModal('${ad.id}')">
-        <div class="ad-cat ${ad.cat === 'apo' ? 'cat-apo' : 'cat-aux'}">${ad.catLabel}</div>
+        <div class="ad-cat ${ad.cat === 'apo' ? 'cat-apo' : (ad.cat === 'trab' ? 'cat-trab' : 'cat-aux')}">${ad.catLabel}</div>
         <div class="ad-headline-text">${ad.headline}</div>
 
         ${agg ? `
