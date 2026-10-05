@@ -15,20 +15,16 @@ from datetime import datetime
 ACCESS_TOKEN = os.environ["META_ACCESS_TOKEN"]
 
 ADS_MAP = {k: v for k, v in {
-    "apcd_3":    os.environ.get("META_AD_ID_APCD_3"),
-    "aux_5":     "120252671205230635",  # Sequelas LIDERHUB
-        "aux_7":     "120253194966830635",  # Trabalhador de Frigorifico
-            "aux_8":     "120253323210340635",  # Trabalhador Embarcado Offshore (Priscila)
-        "aux_inocencia":      "120253640619910635",  # Inocência
-        "aux_campogrande":     "120253640213410635",  # Campo Grande
-        "aux_treslagoas":      "120253640341380635",  # Três Lagoas
-        "aux_ribasriopardo":   "120253640650640635",  # Ribas do Rio Pardo
-        "aux_pontapora":       "120253640413650635",  # Ponta Porã
-        "aux_aquidauana":      "120253640235410635",  # Aquidauana
-        "aux_dourados":        "120253640254860635",  # Dourados
-        "aux_navirai":         "120253640439090635",  # Naviraí
-        "aux_corumba":         "120253640383790635",  # Corumbá
-        "aux_maracaju":        "120253640563100635",  # Maracaju
+    "apcd_3": "120253919185590635",  # Aposentadoria PcD (Dra. Carolina)
+"aux_corumba": "120253918609730635",  # Corumba
+"aux_dourados": "120253918624680635",  # Dourados
+"aux_navirai": "120253918700320635",  # Navirai
+"aux_aquidauana": "120253918712360635",  # Aquidauana
+"aux_7": "120253918752350635",  # Frigorifico
+"aux_8": "120253918790060635",  # Offshore
+"aux_pontapora": "120253919014800635",  # Ponta Pora
+"aux_motorista": "120253919073390635",  # Motorista de caminhao (Acao Trabalhista)
+"trab_acidente": "120253919083140635",  # Acidente de trabalho (Acao Trabalhista)
 }.items() if v}
 
 BUDGETS = {
@@ -285,7 +281,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing"]:
+    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing", "aux_motorista", "trab_acidente"]:
         if key in MANUAL_KEYS:
             result[key] = existing.get(key, [])  # dados manuais — preservar
         elif key in raw:
