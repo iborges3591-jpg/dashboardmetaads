@@ -1,0 +1,27 @@
+name: Gerar Historico Meta Ads
+
+on:
+  workflow_dispatch:
+
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Gerar historico.json
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        run: python fetch_historico.py
+      - name: Publicar historico.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add historico.json
+          git diff --staged --quiet || git commit -m "Gerar historico #${{ github.run_number }}"
+          git push
