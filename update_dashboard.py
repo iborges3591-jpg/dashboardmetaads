@@ -26,6 +26,8 @@ ADS_MAP = {k: v for k, v in {
 "aux_motorista": "120253919073390635",  # Motorista de caminhao (Acao Trabalhista)
 "trab_acidente": "120253919083140635",  # Acidente de trabalho (Acao Trabalhista)
     "apcd_25anos": "120254026885440635",
+    "apcd_lh1": "120254420599430635",
+    "apcd_lh2": "120254420613960635",
     "aux_maracaju2": "120253961164940635",
     "aux_inocencia2": "120253961137120635",
     "aux_cltnac": "120253960908000635",
@@ -292,7 +294,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing", "aux_motorista", "trab_acidente", "apcd_25anos", "aux_maracaju2", "aux_inocencia2", "aux_cltnac", "aux_cltms", "aux_liderhub", "aux_liderhub_reg", "trab_motorista2", "aux_liderhub_ms", "aux_cltnac2", "aux_cltreg2"]:
+    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing", "aux_motorista", "trab_acidente", "apcd_25anos", "aux_maracaju2", "aux_inocencia2", "aux_cltnac", "aux_cltms", "aux_liderhub", "aux_liderhub_reg", "trab_motorista2", "aux_liderhub_ms", "aux_cltnac2", "aux_cltreg2", "apcd_lh1", "apcd_lh2"]:
         if key in MANUAL_KEYS:
             result[key] = existing.get(key, [])  # dados manuais — preservar
         elif key in raw:
