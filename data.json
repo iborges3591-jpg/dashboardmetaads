@@ -1,6 +1,6 @@
 {
-  "ultima_atualizacao": "12/11/2026",
-  "periodo": "10/05 a 12/11",
+  "ultima_atualizacao": "13/11/2026",
+  "periodo": "10/05 a 13/11",
   "aux_1": [
     {
       "date": "10/05",
@@ -3206,20 +3206,29 @@
     },
     {
       "date": "11/11",
-      "views": 1409,
+      "views": 1412,
       "clicks": 6,
       "convs": 4,
-      "costPerConv": 6.33,
-      "spent": 25.33,
+      "costPerConv": 6.34,
+      "spent": 25.36,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 703,
-      "clicks": 5,
+      "views": 1385,
+      "clicks": 8,
+      "convs": 1,
+      "costPerConv": 23.18,
+      "spent": 23.18,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 558,
+      "clicks": 1,
       "convs": 0,
       "costPerConv": 0.0,
-      "spent": 12.43,
+      "spent": 9.52,
       "budget": 40
     }
   ],
@@ -4514,11 +4523,20 @@
     },
     {
       "date": "12/11",
-      "views": 792,
-      "clicks": 3,
-      "convs": 0,
-      "costPerConv": 0.0,
-      "spent": 11.09,
+      "views": 1521,
+      "clicks": 6,
+      "convs": 2,
+      "costPerConv": 9.17,
+      "spent": 18.34,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1155,
+      "clicks": 2,
+      "convs": 1,
+      "costPerConv": 10.37,
+      "spent": 10.37,
       "budget": 40
     }
   ],
@@ -4885,20 +4903,29 @@
     },
     {
       "date": "11/11",
-      "views": 2917,
+      "views": 2919,
       "clicks": 5,
       "convs": 0,
       "costPerConv": 0.0,
-      "spent": 28.54,
+      "spent": 28.57,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1399,
-      "clicks": 4,
+      "views": 2645,
+      "clicks": 7,
+      "convs": 2,
+      "costPerConv": 13.34,
+      "spent": 26.68,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1479,
+      "clicks": 2,
       "convs": 1,
-      "costPerConv": 14.31,
-      "spent": 14.31,
+      "costPerConv": 12.54,
+      "spent": 12.54,
       "budget": 40
     }
   ],
@@ -5265,20 +5292,29 @@
     },
     {
       "date": "11/11",
-      "views": 1972,
+      "views": 1974,
       "clicks": 8,
       "convs": 6,
-      "costPerConv": 4.08,
-      "spent": 24.48,
+      "costPerConv": 4.09,
+      "spent": 24.53,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 875,
-      "clicks": 5,
-      "convs": 2,
-      "costPerConv": 5.19,
-      "spent": 10.38,
+      "views": 1603,
+      "clicks": 6,
+      "convs": 3,
+      "costPerConv": 6.51,
+      "spent": 19.52,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 851,
+      "clicks": 2,
+      "convs": 0,
+      "costPerConv": 0.0,
+      "spent": 12.0,
       "budget": 40
     }
   ],
@@ -5645,20 +5681,29 @@
     },
     {
       "date": "11/11",
-      "views": 2456,
+      "views": 2459,
       "clicks": 9,
       "convs": 2,
-      "costPerConv": 14.19,
-      "spent": 28.38,
+      "costPerConv": 14.21,
+      "spent": 28.41,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1150,
-      "clicks": 2,
+      "views": 2397,
+      "clicks": 9,
+      "convs": 2,
+      "costPerConv": 13.72,
+      "spent": 27.44,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1168,
+      "clicks": 0,
       "convs": 0,
       "costPerConv": 0.0,
-      "spent": 13.82,
+      "spent": 13.31,
       "budget": 40
     }
   ],
@@ -6025,20 +6070,29 @@
     },
     {
       "date": "11/11",
-      "views": 2486,
+      "views": 2487,
       "clicks": 2,
       "convs": 0,
       "costPerConv": 0.0,
-      "spent": 21.25,
+      "spent": 21.26,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1048,
-      "clicks": 5,
-      "convs": 3,
-      "costPerConv": 3.71,
-      "spent": 11.13,
+      "views": 2177,
+      "clicks": 8,
+      "convs": 4,
+      "costPerConv": 5.06,
+      "spent": 20.25,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1118,
+      "clicks": 2,
+      "convs": 1,
+      "costPerConv": 9.33,
+      "spent": 9.33,
       "budget": 40
     }
   ],
@@ -7858,20 +7912,29 @@
     },
     {
       "date": "11/11",
-      "views": 1207,
+      "views": 1208,
       "clicks": 9,
       "convs": 3,
-      "costPerConv": 4.46,
-      "spent": 13.37,
+      "costPerConv": 4.49,
+      "spent": 13.46,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1240,
+      "views": 2091,
+      "clicks": 7,
+      "convs": 5,
+      "costPerConv": 4.56,
+      "spent": 22.79,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1006,
       "clicks": 3,
       "convs": 2,
-      "costPerConv": 6.71,
-      "spent": 13.41,
+      "costPerConv": 4.87,
+      "spent": 9.74,
       "budget": 40
     }
   ],
@@ -8422,20 +8485,29 @@
     },
     {
       "date": "11/11",
-      "views": 1313,
+      "views": 1317,
       "clicks": 5,
       "convs": 4,
-      "costPerConv": 4.2,
-      "spent": 16.8,
+      "costPerConv": 4.21,
+      "spent": 16.86,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1363,
+      "views": 2125,
+      "clicks": 7,
+      "convs": 3,
+      "costPerConv": 9.43,
+      "spent": 28.3,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1005,
       "clicks": 1,
       "convs": 1,
-      "costPerConv": 17.92,
-      "spent": 17.92,
+      "costPerConv": 11.53,
+      "spent": 11.53,
       "budget": 40
     }
   ],
@@ -8822,7 +8894,7 @@
     },
     {
       "date": "11/11",
-      "views": 1511,
+      "views": 1512,
       "clicks": 6,
       "convs": 3,
       "costPerConv": 9.03,
@@ -8831,11 +8903,20 @@
     },
     {
       "date": "12/11",
-      "views": 963,
-      "clicks": 5,
-      "convs": 2,
-      "costPerConv": 7.33,
-      "spent": 14.65,
+      "views": 1945,
+      "clicks": 8,
+      "convs": 5,
+      "costPerConv": 5.94,
+      "spent": 29.71,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 994,
+      "clicks": 1,
+      "convs": 1,
+      "costPerConv": 12.15,
+      "spent": 12.15,
       "budget": 40
     }
   ],
@@ -8914,20 +8995,29 @@
     },
     {
       "date": "11/11",
-      "views": 1341,
+      "views": 1342,
       "clicks": 33,
       "convs": 8,
       "costPerConv": 2.0,
-      "spent": 15.98,
+      "spent": 16.02,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1254,
-      "clicks": 22,
-      "convs": 5,
-      "costPerConv": 2.65,
-      "spent": 13.26,
+      "views": 2253,
+      "clicks": 56,
+      "convs": 16,
+      "costPerConv": 1.58,
+      "spent": 25.23,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 999,
+      "clicks": 30,
+      "convs": 2,
+      "costPerConv": 4.93,
+      "spent": 9.86,
       "budget": 40
     }
   ],
@@ -9006,20 +9096,29 @@
     },
     {
       "date": "11/11",
-      "views": 2384,
+      "views": 2386,
       "clicks": 42,
       "convs": 15,
       "costPerConv": 1.04,
-      "spent": 15.61,
+      "spent": 15.62,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 2275,
-      "clicks": 41,
-      "convs": 15,
-      "costPerConv": 0.95,
-      "spent": 14.31,
+      "views": 4221,
+      "clicks": 69,
+      "convs": 28,
+      "costPerConv": 0.91,
+      "spent": 25.6,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 1476,
+      "clicks": 17,
+      "convs": 9,
+      "costPerConv": 1.11,
+      "spent": 10.0,
       "budget": 40
     }
   ],
@@ -9044,20 +9143,29 @@
     },
     {
       "date": "11/11",
-      "views": 2187,
+      "views": 2192,
       "clicks": 6,
       "convs": 2,
-      "costPerConv": 11.58,
-      "spent": 23.16,
+      "costPerConv": 11.62,
+      "spent": 23.25,
       "budget": 40
     },
     {
       "date": "12/11",
-      "views": 1034,
+      "views": 1790,
       "clicks": 2,
       "convs": 1,
-      "costPerConv": 11.01,
-      "spent": 11.01,
+      "costPerConv": 20.6,
+      "spent": 20.6,
+      "budget": 40
+    },
+    {
+      "date": "13/11",
+      "views": 994,
+      "clicks": 5,
+      "convs": 1,
+      "costPerConv": 11.53,
+      "spent": 11.53,
       "budget": 40
     }
   ]
