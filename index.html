@@ -2235,11 +2235,11 @@ body{background:radial-gradient(1200px 500px at 10% -10%,#dfe9f7 0,transparent 6
 .kpi-help{position:absolute;bottom:12px;right:14px;width:20px;height:20px;border-radius:50%;background:#e8eef7;color:var(--muted);font:700 12px Montserrat,sans-serif;display:grid;place-items:center;cursor:help}
 .kpi-help .tip{position:absolute;bottom:28px;right:-6px;width:230px;background:#112244;color:#fff;font:500 12px/1.45 Montserrat,sans-serif;padding:10px 12px;border-radius:10px;opacity:0;pointer-events:none;transform:translateY(6px);transition:.2s;z-index:30;box-shadow:0 10px 24px rgba(0,0,0,.25);text-align:left}
 .kpi-help:hover .tip,.kpi-help:focus .tip{opacity:1;transform:none}
-.intel-bar{background:none!important;box-shadow:none!important;padding:0!important;display:grid!important;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px!important}
+.intel-bar{background:none!important;box-shadow:none!important;padding:0!important;display:grid!important;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px!important}
 .intel-item{background:#fff!important;border-radius:16px;padding:16px 18px!important;box-shadow:var(--shadow);border-left:5px solid var(--teal);display:flex!important;align-items:center;gap:14px;border-right:0!important;transition:transform .25s}
 .intel-item:hover{transform:translateY(-3px)}
 .intel-item,.intel-item *{color:var(--navy)!important}
-.intel-item:nth-child(2){border-left-color:#0891b2}.intel-item:nth-child(3){border-left-color:var(--gold)}.intel-item:nth-child(4){border-left-color:#dc2626}
+.intel-item.vl-empty{display:none!important}.intel-item.a1{border-left-color:var(--gold)}.intel-item.a2{border-left-color:#0891b2}.intel-item.a3{border-left-color:#059669}.intel-item.a4{border-left-color:#dc2626}.intel-item{flex-wrap:wrap;gap:4px 12px!important;line-height:1.35}
 .intel-item .ii-icon{font-size:26px;background:#f1f5fa;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none}
 .cards-grid>*{transition:transform .3s ease,box-shadow .3s ease}
 .cards-grid>*:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(27,52,100,.22)}
@@ -2267,6 +2267,7 @@ body{background:radial-gradient(1200px 500px at 10% -10%,#dfe9f7 0,transparent 6
       if(c.dataset.vl)return;var l=c.querySelector('.kpi-lbl');if(!l)return;var k=l.textContent.trim().toUpperCase();var h=HELP[k];if(!h)return;c.dataset.vl=1;
       c.insertAdjacentHTML('beforeend','<div class="kpi-ico">'+h[0]+'</div><div class="kpi-help" tabindex="0">?<span class="tip">'+h[1]+'</span></div>');
     });
+    var n=0;document.querySelectorAll('.intel-item').forEach(function(it){if(!it.querySelector('.ii-icon')){it.classList.add('vl-empty');return;}n++;var t=it.textContent;it.classList.remove('a1','a2','a3','a4');it.classList.add(/Melhor/.test(t)?'a1':/Total conversas/.test(t)?'a2':/investido/.test(t)?'a3':/caro/i.test(t)?'a4':'a2');});
     var kr=document.querySelector('.kpi-row');
     if(kr&&!document.getElementById('vl-legend')){
       kr.insertAdjacentHTML('afterend','<div class="vl-legend" id="vl-legend"><b>Como ler o custo por conversa:</b><span class="vl-tag"><i style="background:#059669"></i>Excelente ≤ R$ 5</span><span class="vl-tag"><i style="background:#0891b2"></i>Bom ≤ R$ 10</span><span class="vl-tag"><i style="background:#d97706"></i>Regular ≤ R$ 20</span><span class="vl-tag"><i style="background:#dc2626"></i>Caro &gt; R$ 20</span></div>'
