@@ -2304,16 +2304,17 @@ body{background:radial-gradient(1200px 500px at 10% -10%,#dfe9f7 0,transparent 6
   function col(){return document.getElementById('m-img-col');}
   function clearVid(){var o=document.getElementById('vl-vid');if(o)o.remove();var b=document.getElementById('vl-vtoggle');if(b)b.remove();}
   function play(id){
-    var v=VID[id];var c=col();if(!c||!v||!v.video_id)return;
+    var v=VID[id];var c=col();if(!c||!v||!(v.video_id||v.ig))return;
     var old=document.getElementById('vl-vid');if(old)old.remove();
     var w=document.createElement('div');w.id='vl-vid';
-    w.innerHTML='<iframe src="https://www.facebook.com/plugins/video.php?href='+encodeURIComponent('https://www.facebook.com/watch/?v='+v.video_id)+'&show_text=false&autoplay=true" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen scrolling="no"></iframe>';
+    var u=v.video_id?'https://www.facebook.com/plugins/video.php?href='+encodeURIComponent('https://www.facebook.com/watch/?v='+v.video_id)+'&show_text=false&autoplay=true':v.ig.split('?')[0].replace(/\/?$/,'/')+'embed';
+    w.innerHTML='<iframe src="'+u+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen scrolling="no"></iframe>';
     c.appendChild(w);
     var b=document.getElementById('vl-vtoggle');if(b)b.textContent='🖼️ Ver imagem';
   }
   function stop(){var o=document.getElementById('vl-vid');if(o)o.remove();var b=document.getElementById('vl-vtoggle');if(b)b.textContent='▶ Assistir vídeo';}
   function show(id){
-    clearVid();var v=VID[id];var c=col();if(!c||!v||!v.video_id)return;
+    clearVid();var v=VID[id];var c=col();if(!c||!v||!(v.video_id||v.ig))return;
     c.style.position='relative';
     var b=document.createElement('button');b.id='vl-vtoggle';b.className='vl-vtoggle';b.textContent='🖼️ Ver imagem';
     b.onclick=function(e){e.stopPropagation();document.getElementById('vl-vid')?stop():play(id);};
