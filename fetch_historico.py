@@ -42,7 +42,7 @@ def main():
     today = datetime.now().strftime("%Y-%m-%d")
     ads = paged(f"{API}/act_{ACCOUNT_ID}/ads", {
         "access_token": ACCESS_TOKEN,
-        "fields": "id,name,effective_status,created_time,campaign{id,name},adset{id,name}",
+        "fields": "id,name,effective_status,created_time,updated_time,campaign{id,name},adset{id,name}",
         "effective_status": json.dumps(STATUSES),
         "limit": 100,
     })
@@ -73,6 +73,7 @@ def main():
             "id": ad["id"], "nome": ad.get("name", ""),
             "status": ad.get("effective_status", ""),
             "criado": ad.get("created_time", "")[:10],
+                    "atualizado": ad.get("updated_time", "")[:10],
             "campanha": (ad.get("campaign") or {}).get("name", ""),
             "conjunto": (ad.get("adset") or {}).get("name", ""),
             "daily": daily,
