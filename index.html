@@ -1190,6 +1190,10 @@ body {
   <div class="section-title">📢 Anúncios ativos</div>
   <div class="cards-grid" id="cards-grid"></div>
 
+  <!-- ── PAUSED / DEACTIVATED ── -->
+  <div class="section-title">⏸️ Anúncios pausados / desativados</div>
+  <div id="paused-sec" style="overflow-x:auto;margin-bottom:28px"><div style="opacity:.7;padding:8px 0">Carregando…</div></div>
+
   <!-- ── COMPARISON CHART ── -->
   <div class="section-title">📈 Comparativo de desempenho</div>
   <div class="comparison-section">
@@ -2173,6 +2177,28 @@ function initDatePicker(data) {
     });
   });
   obs.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
+<script>
+(function(){
+  var ST={PAUSED:'Pausado',CAMPAIGN_PAUSED:'Campanha pausada',ADSET_PAUSED:'Conjunto pausado',ARCHIVED:'Arquivado',DELETED:'Excluído',DISAPPROVED:'Reprovado'};
+  var fmt=function(v){return 'R$ '+Number(v||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});};
+  var br=function(s){return s?s.split('-').reverse().join('/'):'—';};
+  fetch('historico.json?'+Date.now()).then(function(r){return r.json();}).then(function(d){
+    var act=(typeof ACTIVE_IDS!=='undefined')?ACTIVE_IDS:[];
+    var L=d.anuncios.filter(function(a){return a.status!=='ACTIVE';}).map(function(a){
+      var dl=(a.daily||[]).filter(function(x){return x.spent>0;});
+      var last=dl.length?dl[dl.length-1].iso:'';
+      var sp=0,cv=0;(a.daily||[]).forEach(function(x){sp+=x.spent||0;cv+=x.convs||0;});
+      return {n:a.campanha||a.nome,st:ST[a.status]||'Desativado',alt:a.atualizado||'',last:last,sp:sp,cv:cv};
+    }).filter(function(a){return a.sp>0;}).sort(function(a,b){return (b.alt||b.last).localeCompare(a.alt||a.last);});
+    var el=document.getElementById('paused-sec');
+    if(!L.length){el.innerHTML='<div style="opacity:.7">Nenhum anúncio pausado no período.</div>';return;}
+    var h='<table style="width:100%;border-collapse:collapse;font-size:13px"><tr style="text-align:left;opacity:.7"><th style="padding:8px">Anúncio / campanha</th><th>Status</th><th>Pausado/desativado em</th><th>Última veiculação</th><th>Gasto total</th><th>Conversas</th></tr>';
+    L.forEach(function(a){h+='<tr style="border-top:1px solid rgba(128,128,128,.25)"><td style="padding:8px">'+a.n+'</td><td><b>'+a.st+'</b></td><td>'+br(a.alt)+'</td><td>'+br(a.last)+'</td><td>'+fmt(a.sp)+'</td><td>'+a.cv+'</td></tr>';});
+    h+='</table><div style="opacity:.6;font-size:11px;margin-top:6px">Data de pausa = última alteração de status registrada pela Meta (histórico gerado em '+d.gerado_em+'). Histórico completo na aba Histórico.</div>';
+    el.innerHTML=h;
+  }).catch(function(){document.getElementById('paused-sec').textContent='Histórico indisponível.';});
 })();
 </script>
 </body>
