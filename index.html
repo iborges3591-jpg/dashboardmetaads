@@ -2223,5 +2223,62 @@ function initDatePicker(data) {
   }).catch(function(){document.getElementById('paused-sec').textContent='Histórico indisponível.';});
 })();
 </script>
+<style id="visual-layer">
+body{background:radial-gradient(1200px 500px at 10% -10%,#dfe9f7 0,transparent 60%),radial-gradient(900px 500px at 100% 0,#e6f4ef 0,transparent 55%),#EEF2F7}
+.topbar{background:linear-gradient(135deg,#0d1b3a,#1B3464 60%,#1B6B5B)}
+.section-title{font-size:15px!important;letter-spacing:.06em;display:flex;align-items:center;gap:10px;margin-top:34px!important}
+.section-title::before{content:"";width:5px;height:22px;border-radius:4px;background:linear-gradient(180deg,var(--gold),#f0c75e)}
+.kpi-card{position:relative;border-radius:18px!important;transition:transform .25s ease,box-shadow .25s ease;overflow:visible;background:linear-gradient(160deg,#fff,#f6f9fd)}
+.kpi-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(27,52,100,.18)}
+.kpi-ico{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:19px;background:rgba(27,52,100,.07)}
+.kpi-val{font-size:30px!important;letter-spacing:-.02em}
+.kpi-help{position:absolute;bottom:12px;right:14px;width:20px;height:20px;border-radius:50%;background:#e8eef7;color:var(--muted);font:700 12px Montserrat,sans-serif;display:grid;place-items:center;cursor:help}
+.kpi-help .tip{position:absolute;bottom:28px;right:-6px;width:230px;background:#112244;color:#fff;font:500 12px/1.45 Montserrat,sans-serif;padding:10px 12px;border-radius:10px;opacity:0;pointer-events:none;transform:translateY(6px);transition:.2s;z-index:30;box-shadow:0 10px 24px rgba(0,0,0,.25);text-align:left}
+.kpi-help:hover .tip,.kpi-help:focus .tip{opacity:1;transform:none}
+.intel-bar{background:none!important;box-shadow:none!important;padding:0!important;display:grid!important;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px!important}
+.intel-item{background:#fff!important;border-radius:16px;padding:16px 18px!important;box-shadow:var(--shadow);border-left:5px solid var(--teal);display:flex!important;align-items:center;gap:14px;border-right:0!important;transition:transform .25s}
+.intel-item:hover{transform:translateY(-3px)}
+.intel-item,.intel-item *{color:var(--navy)!important}
+.intel-item:nth-child(2){border-left-color:#0891b2}.intel-item:nth-child(3){border-left-color:var(--gold)}.intel-item:nth-child(4){border-left-color:#dc2626}
+.intel-item .ii-icon{font-size:26px;background:#f1f5fa;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none}
+.cards-grid>*{transition:transform .3s ease,box-shadow .3s ease}
+.cards-grid>*:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(27,52,100,.22)}
+.pill{transition:all .2s}.pill:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(27,52,100,.15)}
+.vl-legend{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:12px 16px;margin:16px 0 4px;box-shadow:var(--shadow);font:600 12px Montserrat,sans-serif;color:var(--muted)}
+.vl-legend b{color:var(--navy);margin-right:4px}
+.vl-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:#f4f7fb;color:var(--navy)}
+.vl-tag i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.vl-guide{background:#fff;border-radius:14px;box-shadow:var(--shadow);margin:14px 0}
+.vl-guide summary{cursor:pointer;padding:13px 18px;font:700 13px Montserrat,sans-serif;color:var(--navy);list-style:none;display:flex;align-items:center;gap:8px}
+.vl-guide summary::-webkit-details-marker{display:none}
+.vl-guide summary::after{content:"+";margin-left:auto;font-size:18px;color:var(--gold)}
+.vl-guide[open] summary::after{content:"–"}
+.vl-guide .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;padding:4px 18px 18px;font:500 12.5px/1.5 Montserrat,sans-serif;color:#475569}
+.vl-guide .g div{background:#f6f9fd;border-radius:12px;padding:12px 14px}.vl-guide .g b{display:block;color:var(--navy);margin-bottom:3px}
+.vl-rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.vl-rv.on{opacity:1;transform:none}
+.vl-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:0;background:var(--navy);color:#fff;font-size:20px;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:.3s;z-index:60}
+.vl-top.on{opacity:1;pointer-events:auto}
+</style>
+<script id="visual-layer-js">
+(function(){
+  var HELP={'TOTAL INVESTIDO':['💰','Soma do dinheiro gasto em anúncios no período escolhido.'],'TOTAL CONVERSAS':['💬','Quantas pessoas clicaram e iniciaram uma conversa no WhatsApp. É o resultado principal das campanhas.'],'CUSTO MÉDIO / CONVERSA':['🎯','Quanto, em média, custou cada conversa iniciada. Quanto menor, melhor. Verde = ótimo.'],'TOTAL VISUALIZAÇÕES':['👁️','Quantas vezes os anúncios apareceram na tela das pessoas.'],'TOTAL CLIQUES':['👆','Quantas vezes as pessoas clicaram nos anúncios. CTR = % de quem viu e clicou.']};
+  function deco(){
+    document.querySelectorAll('.kpi-card').forEach(function(c){
+      if(c.dataset.vl)return;var l=c.querySelector('.kpi-lbl');if(!l)return;var k=l.textContent.trim().toUpperCase();var h=HELP[k];if(!h)return;c.dataset.vl=1;
+      c.insertAdjacentHTML('beforeend','<div class="kpi-ico">'+h[0]+'</div><div class="kpi-help" tabindex="0">?<span class="tip">'+h[1]+'</span></div>');
+    });
+    var kr=document.querySelector('.kpi-row');
+    if(kr&&!document.getElementById('vl-legend')){
+      kr.insertAdjacentHTML('afterend','<div class="vl-legend" id="vl-legend"><b>Como ler o custo por conversa:</b><span class="vl-tag"><i style="background:#059669"></i>Excelente ≤ R$ 5</span><span class="vl-tag"><i style="background:#0891b2"></i>Bom ≤ R$ 10</span><span class="vl-tag"><i style="background:#d97706"></i>Regular ≤ R$ 20</span><span class="vl-tag"><i style="background:#dc2626"></i>Caro &gt; R$ 20</span></div>'
+      +'<details class="vl-guide" id="vl-guide"><summary>💡 Como usar este dashboard</summary><div class="g"><div><b>🗓️ Filtros</b>Escolha o período e a campanha no topo. Todos os números e cards se ajustam.</div><div><b>🃏 Cards dos anúncios</b>Clique em qualquer anúncio para ver o detalhe dia a dia, gráfico e custo por conversa.</div><div><b>🏆 Destaques</b>Mostram o melhor e o mais caro anúncio do período, de relance.</div><div><b>⏸️ Pausados</b>No fim da página, o histórico de anúncios desligados e quando pararam de veicular.</div></div></details>');
+    }
+    document.querySelectorAll('.cards-grid>*,.comparison-section,.kpi-card,.intel-item,.pz-card').forEach(function(e){if(!e.dataset.rv){e.dataset.rv=1;e.classList.add('vl-rv');io.observe(e);}});
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});},{threshold:.08});
+  var tb=document.createElement('button');tb.className='vl-top';tb.innerHTML='↑';tb.title='Voltar ao topo';tb.onclick=function(){scrollTo({top:0,behavior:'smooth'});};document.body.appendChild(tb);
+  addEventListener('scroll',function(){tb.classList.toggle('on',scrollY>500);});
+  deco();new MutationObserver(function(){deco();}).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
 </body>
 </html>
