@@ -1192,7 +1192,7 @@ body {
 
   <!-- ── PAUSED / DEACTIVATED ── -->
   <div class="section-title">⏸️ Anúncios pausados / desativados</div>
-  <div id="paused-sec" style="overflow-x:auto;margin-bottom:28px"><div style="opacity:.7;padding:8px 0">Carregando…</div></div>
+  <div id="paused-sec" style="margin-bottom:28px"><div style="opacity:.7;padding:8px 0">Carregando…</div></div>
 
   <!-- ── COMPARISON CHART ── -->
   <div class="section-title">📈 Comparativo de desempenho</div>
@@ -2181,23 +2181,45 @@ function initDatePicker(data) {
 </script>
 <script>
 (function(){
-  var ST={PAUSED:'Pausado',CAMPAIGN_PAUSED:'Campanha pausada',ADSET_PAUSED:'Conjunto pausado',ARCHIVED:'Arquivado',DELETED:'Excluído',DISAPPROVED:'Reprovado'};
+  var css='.pz-sum{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.pz-chip{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 16px;box-shadow:var(--shadow);min-width:150px}.pz-chip small{display:block;color:var(--muted);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}.pz-chip b{font-size:20px;color:var(--navy)}'
+  +'.pz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}'
+  +'.pz-card{background:#fff;border-radius:14px;box-shadow:var(--shadow);border:1px solid var(--border);border-left:5px solid #94a3b8;padding:16px 18px;display:flex;flex-direction:column;gap:12px}'
+  +'.pz-card.arq{border-left-color:#dc2626}.pz-card.rec{border-left-color:#d97706}'
+  +'.pz-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}'
+  +'.pz-title{font-size:14px;font-weight:700;line-height:1.3;color:var(--navy)}.pz-sub{font-size:11px;color:var(--muted);margin-top:3px}'
+  +'.pz-badge{font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:#eef2f7;color:#475569;white-space:nowrap}.pz-card.arq .pz-badge{background:#fee2e2;color:#b91c1c}'
+  +'.pz-stop{background:#f8fafc;border-radius:10px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center}.pz-stop small{font-size:10.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em;display:block}.pz-stop b{font-size:16px;color:var(--navy)}.pz-stop .r{text-align:right}.pz-stop .r b{font-size:13px;color:var(--muted);font-weight:600}'
+  +'.pz-m{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.pz-m div{border-top:1px solid var(--border);padding-top:8px}.pz-m small{display:block;font-size:10.5px;color:var(--muted);font-weight:600}.pz-m b{font-size:14px;color:var(--navy)}'
+  +'.pz-more{margin:18px auto 0;display:block;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:10px 22px;font:600 13px Montserrat,sans-serif;cursor:pointer}.pz-note{color:var(--muted);font-size:11px;margin-top:14px;text-align:center}';
+  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+  var ST={PAUSED:'Pausado',CAMPAIGN_PAUSED:'Pausado',ADSET_PAUSED:'Pausado',ARCHIVED:'Arquivado',DELETED:'Excluído',DISAPPROVED:'Reprovado'};
+  var MN=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
   var fmt=function(v){return 'R$ '+Number(v||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});};
-  var br=function(s){return s?s.split('-').reverse().join('/'):'—';};
+  var br=function(s){if(!s)return '—';var p=s.split('-');return p[2]+' '+MN[+p[1]-1]+' '+p[0];};
+  var brs=function(s){if(!s)return '—';var p=s.split('-');return p[2]+'/'+p[1]+'/'+p[0];};
+  var ago=function(s){if(!s)return '';var d=Math.round((new Date()-new Date(s+'T12:00:00'))/864e5);return d<=0?'hoje':d===1?'há 1 dia':'há '+d+' dias';};
   fetch('historico.json?'+Date.now()).then(function(r){return r.json();}).then(function(d){
-    var act=(typeof ACTIVE_IDS!=='undefined')?ACTIVE_IDS:[];
     var L=d.anuncios.filter(function(a){return a.status!=='ACTIVE';}).map(function(a){
       var dl=(a.daily||[]).filter(function(x){return x.spent>0;});
-      var last=dl.length?dl[dl.length-1].iso:'';
       var sp=0,cv=0;(a.daily||[]).forEach(function(x){sp+=x.spent||0;cv+=x.convs||0;});
-      return {n:a.campanha||a.nome,st:ST[a.status]||'Desativado',alt:a.atualizado||'',last:last,sp:sp,cv:cv};
+      var nm=(a.campanha||a.nome||'');var m=nm.match(/^\s*\[?(\d{2}\/\d{2}\/\d{4})\]?\s*/);
+      return {n:nm.replace(/^\s*\[?\d{2}\/\d{2}\/\d{4}\]?\s*/,''),cr:m?m[1]:'',st:a.status,stl:ST[a.status]||'Desativado',alt:a.atualizado||'',last:dl.length?dl[dl.length-1].iso:'',sp:sp,cv:cv};
     }).filter(function(a){return a.sp>0;}).sort(function(a,b){return (b.last||b.alt).localeCompare(a.last||a.alt);});
     var el=document.getElementById('paused-sec');
-    if(!L.length){el.innerHTML='<div style="opacity:.7">Nenhum anúncio pausado no período.</div>';return;}
-    var h='<table style="width:100%;border-collapse:collapse;font-size:13px"><tr style="text-align:left;opacity:.7"><th style="padding:8px">Anúncio / campanha</th><th>Status</th><th>Parou de veicular (último dia com gasto)</th><th>Status alterado em</th><th>Gasto total</th><th>Conversas</th></tr>';
-    L.forEach(function(a){h+='<tr style="border-top:1px solid rgba(128,128,128,.25)"><td style="padding:8px">'+a.n+'</td><td><b>'+a.st+'</b></td><td><b>'+br(a.last)+'</b></td><td>'+br(a.alt)+'</td><td>'+fmt(a.sp)+'</td><td>'+a.cv+'</td></tr>';});
-    h+='</table><div style="opacity:.6;font-size:11px;margin-top:6px">Parou de veicular = último dia com gasto; Status alterado em = última alteração registrada pela Meta (anúncio/campanha) (histórico gerado em '+d.gerado_em+'). Histórico completo na aba Histórico.</div>';
+    if(!L.length){el.innerHTML='<div class="pz-note">Nenhum anúncio pausado no período.</div>';return;}
+    var tg=0,tc=0;L.forEach(function(a){tg+=a.sp;tc+=a.cv;});
+    var h='<div class="pz-sum"><div class="pz-chip"><small>Anúncios pausados</small><b>'+L.length+'</b></div><div class="pz-chip"><small>Investido neles</small><b>'+fmt(tg)+'</b></div><div class="pz-chip"><small>Conversas geradas</small><b>'+tc+'</b></div></div><div class="pz-grid">';
+    L.forEach(function(a,i){
+      var cpc=a.cv?fmt(a.sp/a.cv):'—';
+      h+='<div class="pz-card '+(a.st==='ARCHIVED'?'arq':'')+'"'+(i>=9?' data-x="1" style="display:none"':'')+'><div class="pz-top"><div><div class="pz-title">'+a.n+'</div>'+(a.cr?'<div class="pz-sub">Criada em '+a.cr+'</div>':'')+'</div><span class="pz-badge">'+a.stl+'</span></div>'
+      +'<div class="pz-stop"><div><small>Parou de veicular</small><b>'+br(a.last)+'</b></div><div class="r"><small>'+ago(a.last)+'</small><b>alterado '+brs(a.alt)+'</b></div></div>'
+      +'<div class="pz-m"><div><small>Gasto</small><b>'+fmt(a.sp)+'</b></div><div><small>Conversas</small><b>'+a.cv+'</b></div><div><small>Custo/conv.</small><b>'+cpc+'</b></div></div></div>';
+    });
+    h+='</div>';
+    if(L.length>9)h+='<button class="pz-more" id="pz-more">Ver mais '+(L.length-9)+' anúncios</button>';
+    h+='<div class="pz-note">Parou de veicular = último dia com gasto. Alterado = última mudança de status registrada pela Meta. Atualizado em '+d.gerado_em+' · histórico completo na aba Histórico.</div>';
     el.innerHTML=h;
+    var b=document.getElementById('pz-more');if(b)b.onclick=function(){el.querySelectorAll('[data-x]').forEach(function(c){c.style.display='';});b.remove();};
   }).catch(function(){document.getElementById('paused-sec').textContent='Histórico indisponível.';});
 })();
 </script>
