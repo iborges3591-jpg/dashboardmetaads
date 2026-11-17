@@ -67,11 +67,11 @@ function render(){
   for(const c of ['apo','aux','trab']){
     const L=list.filter(a=>cat(a)===c).sort((a,b)=>b.criado.localeCompare(a.criado));
     if(!L.length) continue;
-    h+=`<h2>${CATS[c]}</h2><table><tr><th>Campanha</th><th>Status</th><th>Criada</th><th>Gasto</th><th>Views</th><th>Cliques</th><th>Conversas</th><th>Custo/conv.</th></tr>`;
+    h+=`<h2>${CATS[c]}</h2><table><tr><th>Campanha</th><th>Status</th><th>Criada</th><th>Alterada em</th><th>Últ. veiculação</th><th>Gasto</th><th>Views</th><th>Cliques</th><th>Conversas</th><th>Custo/conv.</th></tr>`;
     for(const a of L){
       const t=tot(a),[k,l]=stInfo(a.status),i=D.anuncios.indexOf(a);
-      h+=`<tr class="row" onclick="tg(${i})"><td>${a.campanha.replace(/</g,'&lt;')}</td><td><span class="st ${k}">${l}</span></td><td>${a.criado.split('-').reverse().join('/')}</td><td>${R(t.g)}</td><td>${N(t.v)}</td><td>${N(t.c)}</td><td>${N(t.cv)}</td><td>${t.cv?R(t.g/t.cv):'—'}</td></tr>`;
-      h+=`<tr class="det" id="d${i}" style="display:none"><td colspan="8"><table class="inner"><tr><th>Dia</th><th>Gasto</th><th>Views</th><th>Cliques</th><th>Conversas</th><th>Custo/conv.</th></tr>${[...a.daily].reverse().map(x=>`<tr><td>${x.date}</td><td>${R(x.spent)}</td><td>${N(x.views)}</td><td>${N(x.clicks)}</td><td>${N(x.convs)}</td><td>${x.convs?R(x.spent/x.convs):'—'}</td></tr>`).join('')}</table></td></tr>`;
+      h+=`<tr class="row" onclick="tg(${i})"><td>${a.campanha.replace(/</g,'&lt;')}</td><td><span class="st ${k}">${l}</span></td><td>${a.criado.split('-').reverse().join('/')}</td><td>${a.status==='ACTIVE'?'—':(a.atualizado?a.atualizado.split('-').reverse().join('/'):'—')}</td><td>${(((a.daily||[]).filter(x=>x.spent>0).slice(-1)[0]||{}).date||'—').split('-').reverse().join('/')}</td><td>${R(t.g)}</td><td>${N(t.v)}</td><td>${N(t.c)}</td><td>${N(t.cv)}</td><td>${t.cv?R(t.g/t.cv):'—'}</td></tr>`;
+      h+=`<tr class="det" id="d${i}" style="display:none"><td colspan="10"><table class="inner"><tr><th>Dia</th><th>Gasto</th><th>Views</th><th>Cliques</th><th>Conversas</th><th>Custo/conv.</th></tr>${[...a.daily].reverse().map(x=>`<tr><td>${x.date}</td><td>${R(x.spent)}</td><td>${N(x.views)}</td><td>${N(x.clicks)}</td><td>${N(x.convs)}</td><td>${x.convs?R(x.spent/x.convs):'—'}</td></tr>`).join('')}</table></td></tr>`;
     }
     h+='</table>';
   }
