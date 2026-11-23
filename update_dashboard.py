@@ -34,6 +34,11 @@ ADS_MAP = {k: v for k, v in {
     "aux_clt_sa": "120254688781700635",
     "aux_clt_mogi": "120254688790250635",
     "aux_frig_sidro": "120254689308590635",
+    "aux_clt_arara": "120254754463780635",
+    "aux_clt_bauru": "120254754493500635",
+    "aux_clt_bragan": "120254754536980635",
+    "aux_clt_itu": "120254754639560635",
+    "aux_clt_jundiai": "120254754671520635",
     "aux_maracaju2": "120253961164940635",
     "aux_inocencia2": "120253961137120635",
     "aux_cltnac": "120253960908000635",
@@ -300,7 +305,7 @@ def main():
     result["apcd_1"] = existing.get("apcd_1", [])
 
     # Copiar restantes (excluindo apcd_1b e aux_1b que jÃÂ¡ foram fundidos)
-    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing", "aux_motorista", "trab_acidente", "apcd_25anos", "aux_maracaju2", "aux_inocencia2", "aux_cltnac", "aux_cltms", "aux_liderhub", "aux_liderhub_reg", "trab_motorista2", "aux_liderhub_ms", "aux_cltnac2", "aux_cltreg2", "apcd_lh1", "apcd_lh2", "aux_frig2", "pen_1211", "apcd_hernia", "apcd_autismo", "apcd_audicao", "pen_1611", "aux_clt_bat", "aux_clt_bela", "aux_clt_soro", "aux_clt_sjc", "aux_clt_sbc", "aux_clt_sa", "aux_clt_mogi", "aux_frig_sidro"]:
+    for key in ["apcd_2", "apcd_3", "aux_2", "aux_3", "aux_4", "aux_5", "aux_6", "aux_7", "aux_8", "aux_inocencia", "aux_campogrande", "aux_treslagoas", "aux_ribasriopardo", "aux_pontapora", "aux_aquidauana", "aux_dourados", "aux_navirai", "aux_corumba", "aux_maracaju", "aux_novaandradina", "aux_sidrolandia", "aux_remarketing", "aux_motorista", "trab_acidente", "apcd_25anos", "aux_maracaju2", "aux_inocencia2", "aux_cltnac", "aux_cltms", "aux_liderhub", "aux_liderhub_reg", "trab_motorista2", "aux_liderhub_ms", "aux_cltnac2", "aux_cltreg2", "apcd_lh1", "apcd_lh2", "aux_frig2", "pen_1211", "apcd_hernia", "apcd_autismo", "apcd_audicao", "pen_1611", "aux_clt_bat", "aux_clt_bela", "aux_clt_soro", "aux_clt_sjc", "aux_clt_sbc", "aux_clt_sa", "aux_clt_mogi", "aux_frig_sidro", "aux_clt_arara", "aux_clt_bauru", "aux_clt_bragan", "aux_clt_itu", "aux_clt_jundiai"]:
         if key in MANUAL_KEYS:
             result[key] = existing.get(key, [])  # dados manuais — preservar
         elif key in raw:
