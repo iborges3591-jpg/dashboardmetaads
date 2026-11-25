@@ -1,1646 +1,93 @@
 {
- "gerado_em": "24/11/2026 17:43",
+ "gerado_em": "25/11/2026 17:12",
  "desde": "2026-05-10",
  "anuncios": [
   {
-   "id": "120254754671520635",
+   "id": "120254783174800635",
    "nome": "Promovendo o site: https://api.whatsapp.com/send",
    "status": "ACTIVE",
-   "criado": "2026-11-23",
-   "atualizado": "2026-11-23",
-   "campanha": "[23/11/2026] TRABALHADOR CLT JUNDIAÍ",
-   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "criado": "2026-11-25",
+   "atualizado": "2026-11-25",
+   "campanha": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "conjunto": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
    "daily": [
     {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 631,
-     "clicks": 10,
-     "convs": 10,
-     "spent": 8.46,
-     "costPerConv": 0.85
-    },
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 234,
+     "clicks": 4,
+     "convs": 2,
+     "spent": 3.6,
+     "costPerConv": 1.8
+    }
+   ]
+  },
+  {
+   "id": "120254783195490635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-25",
+   "atualizado": "2026-11-25",
+   "campanha": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "conjunto": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
     {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1603,
-     "clicks": 24,
-     "convs": 16,
-     "spent": 20.24,
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 336,
+     "clicks": 5,
+     "convs": 5,
+     "spent": 6.32,
      "costPerConv": 1.26
     }
    ]
   },
   {
-   "id": "120254754639560635",
+   "id": "120254783126870635",
    "nome": "Promovendo o site: https://api.whatsapp.com/send",
    "status": "ACTIVE",
-   "criado": "2026-11-23",
-   "atualizado": "2026-11-23",
-   "campanha": "[23/11/2026] TRABALHADOR CLT ITU",
-   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "criado": "2026-11-25",
+   "atualizado": "2026-11-25",
+   "campanha": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "conjunto": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
    "daily": [
     {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 803,
-     "clicks": 15,
-     "convs": 10,
-     "spent": 10.9,
-     "costPerConv": 1.09
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1909,
-     "clicks": 27,
-     "convs": 23,
-     "spent": 27.22,
-     "costPerConv": 1.18
-    }
-   ]
-  },
-  {
-   "id": "120254754536980635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-23",
-   "atualizado": "2026-11-23",
-   "campanha": "[23/11/2026] TRABALHADOR CLT BRAGANÇA PAULISTA",
-   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 696,
-     "clicks": 14,
-     "convs": 13,
-     "spent": 10.31,
-     "costPerConv": 0.79
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1502,
-     "clicks": 20,
-     "convs": 15,
-     "spent": 18.21,
-     "costPerConv": 1.21
-    }
-   ]
-  },
-  {
-   "id": "120254754493500635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-23",
-   "atualizado": "2026-11-23",
-   "campanha": "[23/11/2026] TRABALHADOR CLT BAURU",
-   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 627,
-     "clicks": 7,
-     "convs": 4,
-     "spent": 9.41,
-     "costPerConv": 2.35
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 956,
-     "clicks": 8,
-     "convs": 5,
-     "spent": 15.02,
-     "costPerConv": 3.0
-    }
-   ]
-  },
-  {
-   "id": "120254754463780635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-23",
-   "atualizado": "2026-11-23",
-   "campanha": "[23/11/2026] TRABALHADOR CLT ARARAQUARA",
-   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 699,
-     "clicks": 9,
-     "convs": 6,
-     "spent": 9.46,
-     "costPerConv": 1.58
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1172,
-     "clicks": 14,
-     "convs": 6,
-     "spent": 16.84,
-     "costPerConv": 2.81
-    }
-   ]
-  },
-  {
-   "id": "120254689308590635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-19",
-   "atualizado": "2026-11-19",
-   "campanha": "[19/11/2026] TRABALHADOR CLT SIDROLÂNDIA",
-   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1138,
-     "clicks": 1,
-     "convs": 0,
-     "spent": 10.64,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1704,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 13.56,
-     "costPerConv": 13.56
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 3501,
-     "clicks": 5,
-     "convs": 3,
-     "spent": 33.02,
-     "costPerConv": 11.01
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3083,
-     "clicks": 4,
-     "convs": 2,
-     "spent": 27.82,
-     "costPerConv": 13.91
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2943,
-     "clicks": 10,
-     "convs": 3,
-     "spent": 29.12,
-     "costPerConv": 9.71
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1624,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 16.39,
-     "costPerConv": 16.39
-    }
-   ]
-  },
-  {
-   "id": "120254688790250635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-19",
-   "atualizado": "2026-11-19",
-   "campanha": "[19/11/2026] TRABALHADOR CLT MOGI DAS CRUZES",
-   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 464,
-     "clicks": 4,
-     "convs": 3,
-     "spent": 8.98,
-     "costPerConv": 2.99
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2762,
-     "clicks": 31,
-     "convs": 20,
-     "spent": 36.98,
-     "costPerConv": 1.85
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 1044,
-     "clicks": 9,
-     "convs": 5,
-     "spent": 11.49,
-     "costPerConv": 2.3
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 2752,
-     "clicks": 28,
-     "convs": 22,
-     "spent": 28.02,
-     "costPerConv": 1.27
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 3778,
-     "clicks": 28,
-     "convs": 19,
-     "spent": 36.53,
-     "costPerConv": 1.92
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1656,
-     "clicks": 15,
-     "convs": 12,
-     "spent": 18.04,
-     "costPerConv": 1.5
-    }
-   ]
-  },
-  {
-   "id": "120254688781700635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-19",
-   "atualizado": "2026-11-19",
-   "campanha": "[19/11/2026] TRABALHADOR CLT SANTO ANDRÉ",
-   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 862,
-     "clicks": 7,
-     "convs": 5,
-     "spent": 10.19,
-     "costPerConv": 2.04
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1992,
-     "clicks": 8,
-     "convs": 6,
-     "spent": 23.36,
-     "costPerConv": 3.89
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2116,
-     "clicks": 8,
-     "convs": 5,
-     "spent": 23.42,
-     "costPerConv": 4.68
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 1983,
-     "clicks": 20,
-     "convs": 13,
-     "spent": 28.67,
-     "costPerConv": 2.21
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2479,
-     "clicks": 20,
-     "convs": 13,
-     "spent": 34.78,
-     "costPerConv": 2.68
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1169,
-     "clicks": 7,
-     "convs": 4,
-     "spent": 19.26,
-     "costPerConv": 4.82
-    }
-   ]
-  },
-  {
-   "id": "120254688757870635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-19",
-   "atualizado": "2026-11-19",
-   "campanha": "[19/11/2026] TRABALHADOR CLT SÃO BERNARDO DO CAMPO",
-   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 445,
-     "clicks": 0,
-     "convs": 0,
-     "spent": 7.04,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2153,
-     "clicks": 15,
-     "convs": 7,
-     "spent": 34.01,
-     "costPerConv": 4.86
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 913,
-     "clicks": 9,
-     "convs": 5,
-     "spent": 16.57,
-     "costPerConv": 3.31
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 2158,
-     "clicks": 16,
-     "convs": 8,
-     "spent": 30.41,
-     "costPerConv": 3.8
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2670,
-     "clicks": 19,
-     "convs": 13,
-     "spent": 36.43,
-     "costPerConv": 2.8
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1195,
-     "clicks": 13,
-     "convs": 5,
-     "spent": 17.01,
-     "costPerConv": 3.4
-    }
-   ]
-  },
-  {
-   "id": "120254688719760635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-19",
-   "atualizado": "2026-11-19",
-   "campanha": "[19/11/2026] TRABALHADOR CLT SÃO JOSÉ DOS CAMPOS",
-   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 634,
-     "clicks": 4,
-     "convs": 2,
-     "spent": 10.02,
-     "costPerConv": 5.01
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1879,
-     "clicks": 15,
-     "convs": 4,
-     "spent": 22.94,
-     "costPerConv": 5.74
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2046,
-     "clicks": 15,
-     "convs": 12,
-     "spent": 25.34,
-     "costPerConv": 2.11
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 2726,
-     "clicks": 15,
-     "convs": 8,
-     "spent": 30.94,
-     "costPerConv": 3.87
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2720,
-     "clicks": 27,
-     "convs": 17,
-     "spent": 33.0,
-     "costPerConv": 1.94
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1438,
-     "clicks": 6,
-     "convs": 5,
-     "spent": 19.07,
-     "costPerConv": 3.81
-    }
-   ]
-  },
-  {
-   "id": "120254688691770635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-19",
-   "atualizado": "2026-11-19",
-   "campanha": "[19/11/2026] TRABALHADOR CLT SOROCABA",
-   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 973,
-     "clicks": 13,
-     "convs": 8,
-     "spent": 14.73,
-     "costPerConv": 1.84
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2203,
-     "clicks": 24,
-     "convs": 12,
-     "spent": 25.8,
-     "costPerConv": 2.15
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 1675,
-     "clicks": 14,
-     "convs": 7,
-     "spent": 16.92,
-     "costPerConv": 2.42
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 2556,
-     "clicks": 20,
-     "convs": 15,
-     "spent": 24.99,
-     "costPerConv": 1.67
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2941,
-     "clicks": 22,
-     "convs": 12,
-     "spent": 31.89,
-     "costPerConv": 2.66
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1266,
-     "clicks": 10,
-     "convs": 7,
-     "spent": 17.32,
-     "costPerConv": 2.47
-    }
-   ]
-  },
-  {
-   "id": "120254626040720635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-16",
-   "atualizado": "2026-11-19",
-   "campanha": "[16/11/2026] APOSENTADORIA PCD - AUTISMO]",
-   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 960,
-     "clicks": 9,
-     "convs": 7,
-     "spent": 21.64,
-     "costPerConv": 3.09
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 1619,
-     "clicks": 20,
-     "convs": 12,
-     "spent": 30.6,
-     "costPerConv": 2.55
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 1601,
-     "clicks": 22,
-     "convs": 18,
-     "spent": 28.06,
-     "costPerConv": 1.56
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1103,
-     "clicks": 12,
-     "convs": 10,
-     "spent": 21.98,
-     "costPerConv": 2.2
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1566,
-     "clicks": 27,
-     "convs": 20,
-     "spent": 23.35,
-     "costPerConv": 1.17
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 937,
-     "clicks": 15,
-     "convs": 12,
-     "spent": 15.09,
-     "costPerConv": 1.26
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 2407,
-     "clicks": 34,
-     "convs": 24,
-     "spent": 30.21,
-     "costPerConv": 1.26
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2628,
-     "clicks": 60,
-     "convs": 35,
-     "spent": 32.9,
-     "costPerConv": 0.94
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1211,
-     "clicks": 20,
-     "convs": 14,
-     "spent": 15.07,
-     "costPerConv": 1.08
-    }
-   ]
-  },
-  {
-   "id": "120254626686770635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-16",
-   "atualizado": "2026-11-16",
-   "campanha": "[16/11/2026] TRABALHADOR CLT BELA VISTA",
-   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 2724,
-     "clicks": 17,
-     "convs": 4,
-     "spent": 33.65,
-     "costPerConv": 8.41
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 3148,
-     "clicks": 17,
-     "convs": 9,
-     "spent": 34.24,
-     "costPerConv": 3.8
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2277,
-     "clicks": 14,
-     "convs": 2,
-     "spent": 19.01,
-     "costPerConv": 9.51
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1898,
-     "clicks": 5,
-     "convs": 2,
-     "spent": 16.73,
-     "costPerConv": 8.37
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 3938,
-     "clicks": 18,
-     "convs": 6,
-     "spent": 28.53,
-     "costPerConv": 4.75
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 4317,
-     "clicks": 19,
-     "convs": 4,
-     "spent": 31.17,
-     "costPerConv": 7.79
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3766,
-     "clicks": 13,
-     "convs": 1,
-     "spent": 29.78,
-     "costPerConv": 29.78
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 4420,
-     "clicks": 20,
-     "convs": 7,
-     "spent": 38.8,
-     "costPerConv": 5.54
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1567,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 14.18,
-     "costPerConv": 14.18
-    }
-   ]
-  },
-  {
-   "id": "120254626631750635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-16",
-   "atualizado": "2026-11-16",
-   "campanha": "[16/11/2026] Traballhador CLT  - Batayporã",
-   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 1967,
-     "clicks": 4,
-     "convs": 2,
-     "spent": 24.75,
-     "costPerConv": 12.38
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2800,
-     "clicks": 8,
-     "convs": 5,
-     "spent": 30.89,
-     "costPerConv": 6.18
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2046,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 20.29,
-     "costPerConv": 20.29
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 2031,
-     "clicks": 5,
-     "convs": 4,
-     "spent": 19.57,
-     "costPerConv": 4.89
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2568,
-     "clicks": 4,
-     "convs": 2,
-     "spent": 20.16,
-     "costPerConv": 10.08
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2564,
-     "clicks": 5,
-     "convs": 2,
-     "spent": 25.92,
-     "costPerConv": 12.96
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3496,
-     "clicks": 7,
-     "convs": 2,
-     "spent": 30.64,
-     "costPerConv": 15.32
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 3109,
-     "clicks": 8,
-     "convs": 1,
-     "spent": 31.65,
-     "costPerConv": 31.65
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1184,
-     "clicks": 2,
-     "convs": 0,
-     "spent": 13.46,
-     "costPerConv": 0.0
-    }
-   ]
-  },
-  {
-   "id": "120254626518590635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "CAMPAIGN_PAUSED",
-   "criado": "2026-11-16",
-   "atualizado": "2026-11-16",
-   "campanha": "[16/11/2026] PENSÃO POR MORTE",
-   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 2051,
-     "clicks": 20,
-     "convs": 16,
-     "spent": 25.54,
-     "costPerConv": 1.6
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2987,
-     "clicks": 22,
-     "convs": 16,
-     "spent": 31.66,
-     "costPerConv": 1.98
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2921,
-     "clicks": 17,
-     "convs": 13,
-     "spent": 24.35,
-     "costPerConv": 1.87
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 2125,
-     "clicks": 14,
-     "convs": 11,
-     "spent": 18.93,
-     "costPerConv": 1.72
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2529,
-     "clicks": 16,
-     "convs": 9,
-     "spent": 19.21,
-     "costPerConv": 2.13
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2706,
-     "clicks": 12,
-     "convs": 10,
-     "spent": 21.95,
-     "costPerConv": 2.19
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 4110,
-     "clicks": 22,
-     "convs": 15,
-     "spent": 31.53,
-     "costPerConv": 2.1
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 4027,
-     "clicks": 12,
-     "convs": 10,
-     "spent": 28.47,
-     "costPerConv": 2.85
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 418,
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 356,
      "clicks": 3,
-     "convs": 1,
-     "spent": 4.43,
-     "costPerConv": 4.43
-    }
-   ]
-  },
-  {
-   "id": "120254626488910635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-16",
-   "atualizado": "2026-11-16",
-   "campanha": "[16/11/2026] TEM PERDA AUDITIVA - APOSENTADORIA PCD",
-   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 1875,
-     "clicks": 28,
-     "convs": 17,
-     "spent": 27.63,
-     "costPerConv": 1.63
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2720,
-     "clicks": 44,
-     "convs": 25,
-     "spent": 34.1,
-     "costPerConv": 1.36
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2322,
-     "clicks": 38,
-     "convs": 15,
-     "spent": 22.56,
-     "costPerConv": 1.5
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1421,
-     "clicks": 25,
-     "convs": 13,
-     "spent": 15.52,
-     "costPerConv": 1.19
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2002,
-     "clicks": 34,
-     "convs": 26,
-     "spent": 21.38,
-     "costPerConv": 0.82
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 1876,
-     "clicks": 31,
-     "convs": 20,
-     "spent": 19.78,
-     "costPerConv": 0.99
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3054,
-     "clicks": 41,
-     "convs": 24,
-     "spent": 30.93,
-     "costPerConv": 1.29
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2966,
-     "clicks": 44,
-     "convs": 26,
-     "spent": 32.05,
-     "costPerConv": 1.23
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1267,
-     "clicks": 14,
-     "convs": 4,
-     "spent": 14.6,
-     "costPerConv": 3.65
-    }
-   ]
-  },
-  {
-   "id": "120254420599430635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-03",
-   "atualizado": "2026-11-16",
-   "campanha": "[03/11/2026] APOSENTADORIA PCD - 25 ANOS LIDERHUB",
-   "conjunto": "[03/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "03/11",
-     "iso": "2026-11-03",
-     "views": 2563,
-     "clicks": 45,
-     "convs": 9,
-     "spent": 32.71,
-     "costPerConv": 3.63
-    },
-    {
-     "date": "04/11",
-     "iso": "2026-11-04",
-     "views": 2536,
-     "clicks": 45,
-     "convs": 12,
-     "spent": 26.44,
-     "costPerConv": 2.2
-    },
-    {
-     "date": "05/11",
-     "iso": "2026-11-05",
-     "views": 2009,
-     "clicks": 35,
-     "convs": 10,
-     "spent": 22.1,
-     "costPerConv": 2.21
-    },
-    {
-     "date": "06/11",
-     "iso": "2026-11-06",
-     "views": 2538,
-     "clicks": 51,
-     "convs": 7,
-     "spent": 20.11,
-     "costPerConv": 2.87
-    },
-    {
-     "date": "07/11",
-     "iso": "2026-11-07",
-     "views": 2392,
-     "clicks": 42,
-     "convs": 9,
-     "spent": 18.25,
-     "costPerConv": 2.03
-    },
-    {
-     "date": "08/11",
-     "iso": "2026-11-08",
-     "views": 3727,
-     "clicks": 53,
-     "convs": 10,
-     "spent": 27.34,
-     "costPerConv": 2.73
-    },
-    {
-     "date": "09/11",
-     "iso": "2026-11-09",
-     "views": 3968,
-     "clicks": 64,
-     "convs": 10,
-     "spent": 32.55,
-     "costPerConv": 3.25
-    },
-    {
-     "date": "10/11",
-     "iso": "2026-11-10",
-     "views": 3641,
-     "clicks": 67,
-     "convs": 11,
-     "spent": 27.61,
-     "costPerConv": 2.51
-    },
-    {
-     "date": "11/11",
-     "iso": "2026-11-11",
-     "views": 1342,
-     "clicks": 33,
-     "convs": 8,
-     "spent": 16.02,
-     "costPerConv": 2.0
-    },
-    {
-     "date": "12/11",
-     "iso": "2026-11-12",
-     "views": 2257,
-     "clicks": 56,
-     "convs": 16,
-     "spent": 25.36,
-     "costPerConv": 1.58
-    },
-    {
-     "date": "13/11",
-     "iso": "2026-11-13",
-     "views": 1927,
-     "clicks": 57,
-     "convs": 9,
-     "spent": 21.06,
-     "costPerConv": 2.34
-    },
-    {
-     "date": "14/11",
-     "iso": "2026-11-14",
-     "views": 1796,
-     "clicks": 42,
-     "convs": 6,
-     "spent": 24.34,
-     "costPerConv": 4.06
-    },
-    {
-     "date": "15/11",
-     "iso": "2026-11-15",
-     "views": 2217,
-     "clicks": 54,
-     "convs": 8,
-     "spent": 27.33,
-     "costPerConv": 3.42
-    },
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 1589,
-     "clicks": 45,
-     "convs": 4,
-     "spent": 26.79,
-     "costPerConv": 6.7
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2610,
-     "clicks": 77,
-     "convs": 11,
-     "spent": 30.01,
-     "costPerConv": 2.73
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 1739,
-     "clicks": 51,
-     "convs": 9,
-     "spent": 22.41,
-     "costPerConv": 2.49
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1649,
-     "clicks": 52,
-     "convs": 9,
-     "spent": 19.49,
-     "costPerConv": 2.17
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1984,
-     "clicks": 50,
-     "convs": 8,
-     "spent": 23.43,
-     "costPerConv": 2.93
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2181,
-     "clicks": 56,
-     "convs": 21,
-     "spent": 25.4,
-     "costPerConv": 1.21
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3266,
-     "clicks": 79,
-     "convs": 8,
-     "spent": 33.81,
-     "costPerConv": 4.23
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2208,
-     "clicks": 63,
-     "convs": 7,
-     "spent": 30.52,
-     "costPerConv": 4.36
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 973,
-     "clicks": 30,
-     "convs": 5,
-     "spent": 12.13,
-     "costPerConv": 2.43
-    }
-   ]
-  },
-  {
-   "id": "120254626278780635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-16",
-   "atualizado": "2026-11-16",
-   "campanha": "[16/11/2026] TEM HÉRNIA DE DISCO E ARTROSE - APOSENTADORIA PCD",
-   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 2263,
-     "clicks": 37,
-     "convs": 19,
-     "spent": 31.38,
-     "costPerConv": 1.65
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 3075,
-     "clicks": 43,
-     "convs": 25,
-     "spent": 31.41,
-     "costPerConv": 1.26
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2532,
-     "clicks": 40,
-     "convs": 26,
-     "spent": 22.96,
-     "costPerConv": 0.88
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1924,
-     "clicks": 24,
-     "convs": 11,
-     "spent": 16.61,
-     "costPerConv": 1.51
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 2401,
-     "clicks": 34,
-     "convs": 15,
-     "spent": 19.13,
-     "costPerConv": 1.28
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2206,
-     "clicks": 28,
-     "convs": 20,
-     "spent": 20.02,
-     "costPerConv": 1.0
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 4269,
-     "clicks": 63,
-     "convs": 37,
-     "spent": 32.04,
-     "costPerConv": 0.87
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 3949,
-     "clicks": 58,
-     "convs": 27,
-     "spent": 31.11,
-     "costPerConv": 1.15
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1418,
-     "clicks": 27,
-     "convs": 17,
-     "spent": 12.92,
-     "costPerConv": 0.76
-    }
-   ]
-  },
-  {
-   "id": "120254420613960635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-03",
-   "atualizado": "2026-11-16",
-   "campanha": "[03/11/2026] Tem 25 anos de INSS - NOVO LIDER HUB",
-   "conjunto": "[03/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "03/11",
-     "iso": "2026-11-03",
-     "views": 1085,
-     "clicks": 39,
-     "convs": 18,
-     "spent": 18.21,
-     "costPerConv": 1.01
-    },
-    {
-     "date": "04/11",
-     "iso": "2026-11-04",
-     "views": 2054,
-     "clicks": 39,
-     "convs": 27,
-     "spent": 33.8,
-     "costPerConv": 1.25
-    },
-    {
-     "date": "05/11",
-     "iso": "2026-11-05",
-     "views": 2113,
-     "clicks": 47,
-     "convs": 27,
-     "spent": 19.92,
-     "costPerConv": 0.74
-    },
-    {
-     "date": "06/11",
-     "iso": "2026-11-06",
-     "views": 2255,
-     "clicks": 46,
-     "convs": 19,
-     "spent": 29.67,
-     "costPerConv": 1.56
-    },
-    {
-     "date": "07/11",
-     "iso": "2026-11-07",
-     "views": 1852,
-     "clicks": 36,
-     "convs": 17,
-     "spent": 17.57,
-     "costPerConv": 1.03
-    },
-    {
-     "date": "08/11",
-     "iso": "2026-11-08",
-     "views": 4684,
-     "clicks": 84,
-     "convs": 47,
-     "spent": 33.39,
-     "costPerConv": 0.71
-    },
-    {
-     "date": "09/11",
-     "iso": "2026-11-09",
-     "views": 5427,
-     "clicks": 81,
-     "convs": 32,
-     "spent": 32.46,
-     "costPerConv": 1.01
-    },
-    {
-     "date": "10/11",
-     "iso": "2026-11-10",
-     "views": 4786,
-     "clicks": 57,
-     "convs": 24,
-     "spent": 25.58,
-     "costPerConv": 1.07
-    },
-    {
-     "date": "11/11",
-     "iso": "2026-11-11",
-     "views": 2386,
-     "clicks": 42,
-     "convs": 15,
-     "spent": 15.62,
-     "costPerConv": 1.04
-    },
-    {
-     "date": "12/11",
-     "iso": "2026-11-12",
-     "views": 4225,
-     "clicks": 69,
-     "convs": 28,
-     "spent": 25.61,
-     "costPerConv": 0.91
-    },
-    {
-     "date": "13/11",
-     "iso": "2026-11-13",
-     "views": 2640,
-     "clicks": 28,
-     "convs": 14,
-     "spent": 18.12,
-     "costPerConv": 1.29
-    },
-    {
-     "date": "14/11",
-     "iso": "2026-11-14",
-     "views": 3166,
-     "clicks": 59,
-     "convs": 30,
-     "spent": 23.67,
-     "costPerConv": 0.79
-    },
-    {
-     "date": "15/11",
-     "iso": "2026-11-15",
-     "views": 4220,
-     "clicks": 61,
-     "convs": 27,
-     "spent": 26.08,
-     "costPerConv": 0.97
-    },
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 4410,
-     "clicks": 84,
-     "convs": 30,
-     "spent": 28.06,
-     "costPerConv": 0.94
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 4139,
-     "clicks": 80,
-     "convs": 26,
-     "spent": 28.56,
-     "costPerConv": 1.1
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 3569,
-     "clicks": 71,
-     "convs": 28,
-     "spent": 24.76,
-     "costPerConv": 0.88
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 2829,
-     "clicks": 57,
-     "convs": 18,
-     "spent": 18.9,
-     "costPerConv": 1.05
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 3260,
-     "clicks": 64,
-     "convs": 24,
-     "spent": 24.03,
-     "costPerConv": 1.0
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 3682,
-     "clicks": 46,
-     "convs": 17,
-     "spent": 24.46,
-     "costPerConv": 1.44
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 4731,
-     "clicks": 59,
-     "convs": 23,
-     "spent": 30.97,
-     "costPerConv": 1.35
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 3943,
-     "clicks": 82,
-     "convs": 37,
-     "spent": 29.3,
-     "costPerConv": 0.79
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1313,
-     "clicks": 29,
-     "convs": 20,
-     "spent": 11.27,
-     "costPerConv": 0.56
-    }
-   ]
-  },
-  {
-   "id": "120254564559120635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "CAMPAIGN_PAUSED",
-   "criado": "2026-11-12",
-   "atualizado": "2026-11-12",
-   "campanha": "[12/11/2026] Pensão por Morte",
-   "conjunto": "[12/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "12/11",
-     "iso": "2026-11-12",
-     "views": 850,
-     "clicks": 6,
-     "convs": 5,
-     "spent": 12.22,
-     "costPerConv": 2.44
-    },
-    {
-     "date": "13/11",
-     "iso": "2026-11-13",
-     "views": 1805,
-     "clicks": 14,
-     "convs": 12,
-     "spent": 22.76,
-     "costPerConv": 1.9
-    },
-    {
-     "date": "14/11",
-     "iso": "2026-11-14",
-     "views": 1955,
-     "clicks": 14,
-     "convs": 9,
-     "spent": 20.48,
-     "costPerConv": 2.28
-    },
-    {
-     "date": "15/11",
-     "iso": "2026-11-15",
-     "views": 2037,
-     "clicks": 18,
-     "convs": 12,
-     "spent": 17.92,
-     "costPerConv": 1.49
-    },
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 3878,
-     "clicks": 32,
-     "convs": 26,
-     "spent": 31.02,
-     "costPerConv": 1.19
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2670,
-     "clicks": 24,
-     "convs": 17,
-     "spent": 23.7,
-     "costPerConv": 1.39
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2193,
-     "clicks": 12,
-     "convs": 9,
-     "spent": 18.75,
-     "costPerConv": 2.08
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1903,
-     "clicks": 13,
-     "convs": 11,
-     "spent": 15.27,
-     "costPerConv": 1.39
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1688,
-     "clicks": 11,
-     "convs": 6,
-     "spent": 13.76,
-     "costPerConv": 2.29
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 2495,
-     "clicks": 11,
-     "convs": 6,
-     "spent": 19.39,
-     "costPerConv": 3.23
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3169,
-     "clicks": 19,
-     "convs": 13,
-     "spent": 24.3,
-     "costPerConv": 1.87
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 3142,
-     "clicks": 11,
-     "convs": 10,
-     "spent": 24.71,
-     "costPerConv": 2.47
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 496,
-     "clicks": 5,
      "convs": 3,
-     "spent": 4.89,
-     "costPerConv": 1.63
+     "spent": 6.6,
+     "costPerConv": 2.2
+    }
+   ]
+  },
+  {
+   "id": "120254783084830635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-25",
+   "atualizado": "2026-11-25",
+   "campanha": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "conjunto": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 270,
+     "clicks": 2,
+     "convs": 1,
+     "spent": 5.2,
+     "costPerConv": 5.2
     }
    ]
   },
   {
    "id": "120254026885440635",
    "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "CAMPAIGN_PAUSED",
+   "status": "PAUSED",
    "criado": "2026-10-09",
-   "atualizado": "2026-11-10",
+   "atualizado": "2026-11-25",
    "campanha": "[09/10/2026] Tem 25 anos de tempo e + 55 anos de idade -  PCD",
    "conjunto": "[09/10/2026] Promovendo \"https://api.whatsapp.com/send\"",
    "daily": [
@@ -1953,6 +400,1821 @@
    ]
   },
   {
+   "id": "120254420613960635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "PAUSED",
+   "criado": "2026-11-03",
+   "atualizado": "2026-11-25",
+   "campanha": "[03/11/2026] Tem 25 anos de INSS - NOVO LIDER HUB",
+   "conjunto": "[03/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "03/11",
+     "iso": "2026-11-03",
+     "views": 1085,
+     "clicks": 39,
+     "convs": 18,
+     "spent": 18.21,
+     "costPerConv": 1.01
+    },
+    {
+     "date": "04/11",
+     "iso": "2026-11-04",
+     "views": 2054,
+     "clicks": 39,
+     "convs": 27,
+     "spent": 33.8,
+     "costPerConv": 1.25
+    },
+    {
+     "date": "05/11",
+     "iso": "2026-11-05",
+     "views": 2113,
+     "clicks": 47,
+     "convs": 27,
+     "spent": 19.92,
+     "costPerConv": 0.74
+    },
+    {
+     "date": "06/11",
+     "iso": "2026-11-06",
+     "views": 2255,
+     "clicks": 46,
+     "convs": 19,
+     "spent": 29.67,
+     "costPerConv": 1.56
+    },
+    {
+     "date": "07/11",
+     "iso": "2026-11-07",
+     "views": 1852,
+     "clicks": 36,
+     "convs": 17,
+     "spent": 17.57,
+     "costPerConv": 1.03
+    },
+    {
+     "date": "08/11",
+     "iso": "2026-11-08",
+     "views": 4684,
+     "clicks": 84,
+     "convs": 47,
+     "spent": 33.39,
+     "costPerConv": 0.71
+    },
+    {
+     "date": "09/11",
+     "iso": "2026-11-09",
+     "views": 5427,
+     "clicks": 81,
+     "convs": 32,
+     "spent": 32.46,
+     "costPerConv": 1.01
+    },
+    {
+     "date": "10/11",
+     "iso": "2026-11-10",
+     "views": 4786,
+     "clicks": 57,
+     "convs": 24,
+     "spent": 25.58,
+     "costPerConv": 1.07
+    },
+    {
+     "date": "11/11",
+     "iso": "2026-11-11",
+     "views": 2386,
+     "clicks": 42,
+     "convs": 15,
+     "spent": 15.62,
+     "costPerConv": 1.04
+    },
+    {
+     "date": "12/11",
+     "iso": "2026-11-12",
+     "views": 4225,
+     "clicks": 69,
+     "convs": 28,
+     "spent": 25.61,
+     "costPerConv": 0.91
+    },
+    {
+     "date": "13/11",
+     "iso": "2026-11-13",
+     "views": 2640,
+     "clicks": 28,
+     "convs": 14,
+     "spent": 18.12,
+     "costPerConv": 1.29
+    },
+    {
+     "date": "14/11",
+     "iso": "2026-11-14",
+     "views": 3166,
+     "clicks": 59,
+     "convs": 30,
+     "spent": 23.67,
+     "costPerConv": 0.79
+    },
+    {
+     "date": "15/11",
+     "iso": "2026-11-15",
+     "views": 4220,
+     "clicks": 61,
+     "convs": 27,
+     "spent": 26.08,
+     "costPerConv": 0.97
+    },
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 4410,
+     "clicks": 84,
+     "convs": 30,
+     "spent": 28.06,
+     "costPerConv": 0.94
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 4139,
+     "clicks": 80,
+     "convs": 26,
+     "spent": 28.56,
+     "costPerConv": 1.1
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 3569,
+     "clicks": 71,
+     "convs": 28,
+     "spent": 24.76,
+     "costPerConv": 0.88
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 2829,
+     "clicks": 57,
+     "convs": 18,
+     "spent": 18.9,
+     "costPerConv": 1.05
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 3260,
+     "clicks": 64,
+     "convs": 24,
+     "spent": 24.03,
+     "costPerConv": 1.0
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 3682,
+     "clicks": 46,
+     "convs": 17,
+     "spent": 24.46,
+     "costPerConv": 1.44
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 4731,
+     "clicks": 59,
+     "convs": 23,
+     "spent": 30.97,
+     "costPerConv": 1.35
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 3944,
+     "clicks": 82,
+     "convs": 37,
+     "spent": 29.3,
+     "costPerConv": 0.79
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 3308,
+     "clicks": 55,
+     "convs": 30,
+     "spent": 25.33,
+     "costPerConv": 0.84
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 323,
+     "clicks": 6,
+     "convs": 3,
+     "spent": 2.73,
+     "costPerConv": 0.91
+    }
+   ]
+  },
+  {
+   "id": "120254420599430635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "PAUSED",
+   "criado": "2026-11-03",
+   "atualizado": "2026-11-25",
+   "campanha": "[03/11/2026] APOSENTADORIA PCD - 25 ANOS LIDERHUB",
+   "conjunto": "[03/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "03/11",
+     "iso": "2026-11-03",
+     "views": 2563,
+     "clicks": 45,
+     "convs": 9,
+     "spent": 32.71,
+     "costPerConv": 3.63
+    },
+    {
+     "date": "04/11",
+     "iso": "2026-11-04",
+     "views": 2536,
+     "clicks": 45,
+     "convs": 12,
+     "spent": 26.44,
+     "costPerConv": 2.2
+    },
+    {
+     "date": "05/11",
+     "iso": "2026-11-05",
+     "views": 2009,
+     "clicks": 35,
+     "convs": 10,
+     "spent": 22.1,
+     "costPerConv": 2.21
+    },
+    {
+     "date": "06/11",
+     "iso": "2026-11-06",
+     "views": 2538,
+     "clicks": 51,
+     "convs": 7,
+     "spent": 20.11,
+     "costPerConv": 2.87
+    },
+    {
+     "date": "07/11",
+     "iso": "2026-11-07",
+     "views": 2392,
+     "clicks": 42,
+     "convs": 9,
+     "spent": 18.25,
+     "costPerConv": 2.03
+    },
+    {
+     "date": "08/11",
+     "iso": "2026-11-08",
+     "views": 3727,
+     "clicks": 53,
+     "convs": 10,
+     "spent": 27.34,
+     "costPerConv": 2.73
+    },
+    {
+     "date": "09/11",
+     "iso": "2026-11-09",
+     "views": 3968,
+     "clicks": 64,
+     "convs": 10,
+     "spent": 32.55,
+     "costPerConv": 3.25
+    },
+    {
+     "date": "10/11",
+     "iso": "2026-11-10",
+     "views": 3641,
+     "clicks": 67,
+     "convs": 11,
+     "spent": 27.61,
+     "costPerConv": 2.51
+    },
+    {
+     "date": "11/11",
+     "iso": "2026-11-11",
+     "views": 1342,
+     "clicks": 33,
+     "convs": 8,
+     "spent": 16.02,
+     "costPerConv": 2.0
+    },
+    {
+     "date": "12/11",
+     "iso": "2026-11-12",
+     "views": 2257,
+     "clicks": 56,
+     "convs": 16,
+     "spent": 25.36,
+     "costPerConv": 1.58
+    },
+    {
+     "date": "13/11",
+     "iso": "2026-11-13",
+     "views": 1927,
+     "clicks": 57,
+     "convs": 9,
+     "spent": 21.06,
+     "costPerConv": 2.34
+    },
+    {
+     "date": "14/11",
+     "iso": "2026-11-14",
+     "views": 1796,
+     "clicks": 42,
+     "convs": 6,
+     "spent": 24.34,
+     "costPerConv": 4.06
+    },
+    {
+     "date": "15/11",
+     "iso": "2026-11-15",
+     "views": 2217,
+     "clicks": 54,
+     "convs": 8,
+     "spent": 27.33,
+     "costPerConv": 3.42
+    },
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 1589,
+     "clicks": 45,
+     "convs": 4,
+     "spent": 26.79,
+     "costPerConv": 6.7
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2610,
+     "clicks": 77,
+     "convs": 11,
+     "spent": 30.01,
+     "costPerConv": 2.73
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 1739,
+     "clicks": 51,
+     "convs": 9,
+     "spent": 22.41,
+     "costPerConv": 2.49
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1649,
+     "clicks": 52,
+     "convs": 9,
+     "spent": 19.49,
+     "costPerConv": 2.17
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1984,
+     "clicks": 50,
+     "convs": 8,
+     "spent": 23.43,
+     "costPerConv": 2.93
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2181,
+     "clicks": 56,
+     "convs": 21,
+     "spent": 25.4,
+     "costPerConv": 1.21
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3266,
+     "clicks": 79,
+     "convs": 8,
+     "spent": 33.81,
+     "costPerConv": 4.23
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2209,
+     "clicks": 63,
+     "convs": 7,
+     "spent": 30.52,
+     "costPerConv": 4.36
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2178,
+     "clicks": 72,
+     "convs": 13,
+     "spent": 27.76,
+     "costPerConv": 2.14
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 359,
+     "clicks": 11,
+     "convs": 3,
+     "spent": 4.87,
+     "costPerConv": 1.62
+    }
+   ]
+  },
+  {
+   "id": "120254782989800635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-25",
+   "atualizado": "2026-11-25",
+   "campanha": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "conjunto": "[25/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 337,
+     "clicks": 5,
+     "convs": 5,
+     "spent": 6.55,
+     "costPerConv": 1.31
+    }
+   ]
+  },
+  {
+   "id": "120254754671520635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-23",
+   "atualizado": "2026-11-23",
+   "campanha": "[23/11/2026] TRABALHADOR CLT JUNDIAÍ",
+   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 633,
+     "clicks": 10,
+     "convs": 10,
+     "spent": 8.48,
+     "costPerConv": 0.85
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2854,
+     "clicks": 40,
+     "convs": 26,
+     "spent": 33.76,
+     "costPerConv": 1.3
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1079,
+     "clicks": 7,
+     "convs": 6,
+     "spent": 11.05,
+     "costPerConv": 1.84
+    }
+   ]
+  },
+  {
+   "id": "120254754639560635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-23",
+   "atualizado": "2026-11-23",
+   "campanha": "[23/11/2026] TRABALHADOR CLT ITU",
+   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 804,
+     "clicks": 15,
+     "convs": 10,
+     "spent": 10.91,
+     "costPerConv": 1.09
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 3233,
+     "clicks": 45,
+     "convs": 36,
+     "spent": 40.56,
+     "costPerConv": 1.13
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1218,
+     "clicks": 16,
+     "convs": 10,
+     "spent": 14.17,
+     "costPerConv": 1.42
+    }
+   ]
+  },
+  {
+   "id": "120254754536980635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-23",
+   "atualizado": "2026-11-23",
+   "campanha": "[23/11/2026] TRABALHADOR CLT BRAGANÇA PAULISTA",
+   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 697,
+     "clicks": 14,
+     "convs": 13,
+     "spent": 10.31,
+     "costPerConv": 0.79
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2931,
+     "clicks": 38,
+     "convs": 29,
+     "spent": 32.29,
+     "costPerConv": 1.11
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1006,
+     "clicks": 13,
+     "convs": 7,
+     "spent": 10.49,
+     "costPerConv": 1.5
+    }
+   ]
+  },
+  {
+   "id": "120254754493500635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-23",
+   "atualizado": "2026-11-23",
+   "campanha": "[23/11/2026] TRABALHADOR CLT BAURU",
+   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 627,
+     "clicks": 7,
+     "convs": 4,
+     "spent": 9.41,
+     "costPerConv": 2.35
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2251,
+     "clicks": 16,
+     "convs": 12,
+     "spent": 30.13,
+     "costPerConv": 2.51
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 673,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 8.34,
+     "costPerConv": 8.34
+    }
+   ]
+  },
+  {
+   "id": "120254754463780635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-23",
+   "atualizado": "2026-11-23",
+   "campanha": "[23/11/2026] TRABALHADOR CLT ARARAQUARA",
+   "conjunto": "[23/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 699,
+     "clicks": 9,
+     "convs": 6,
+     "spent": 9.46,
+     "costPerConv": 1.58
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2542,
+     "clicks": 35,
+     "convs": 18,
+     "spent": 32.17,
+     "costPerConv": 1.79
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 794,
+     "clicks": 8,
+     "convs": 6,
+     "spent": 10.74,
+     "costPerConv": 1.79
+    }
+   ]
+  },
+  {
+   "id": "120254689308590635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-19",
+   "atualizado": "2026-11-19",
+   "campanha": "[19/11/2026] TRABALHADOR CLT SIDROLÂNDIA",
+   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1138,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 10.64,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1704,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 13.56,
+     "costPerConv": 13.56
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 3501,
+     "clicks": 5,
+     "convs": 3,
+     "spent": 33.02,
+     "costPerConv": 11.01
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3083,
+     "clicks": 4,
+     "convs": 2,
+     "spent": 27.82,
+     "costPerConv": 13.91
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2949,
+     "clicks": 10,
+     "convs": 3,
+     "spent": 29.21,
+     "costPerConv": 9.74
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2949,
+     "clicks": 7,
+     "convs": 3,
+     "spent": 29.57,
+     "costPerConv": 9.86
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 792,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 9.39,
+     "costPerConv": 0.0
+    }
+   ]
+  },
+  {
+   "id": "120254688790250635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-19",
+   "atualizado": "2026-11-19",
+   "campanha": "[19/11/2026] TRABALHADOR CLT MOGI DAS CRUZES",
+   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 464,
+     "clicks": 4,
+     "convs": 3,
+     "spent": 8.98,
+     "costPerConv": 2.99
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2762,
+     "clicks": 31,
+     "convs": 20,
+     "spent": 36.98,
+     "costPerConv": 1.85
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 1044,
+     "clicks": 9,
+     "convs": 5,
+     "spent": 11.49,
+     "costPerConv": 2.3
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 2752,
+     "clicks": 28,
+     "convs": 22,
+     "spent": 28.02,
+     "costPerConv": 1.27
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 3785,
+     "clicks": 28,
+     "convs": 19,
+     "spent": 36.59,
+     "costPerConv": 1.93
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 3138,
+     "clicks": 26,
+     "convs": 19,
+     "spent": 33.66,
+     "costPerConv": 1.77
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 866,
+     "clicks": 8,
+     "convs": 4,
+     "spent": 9.85,
+     "costPerConv": 2.46
+    }
+   ]
+  },
+  {
+   "id": "120254688781700635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-19",
+   "atualizado": "2026-11-19",
+   "campanha": "[19/11/2026] TRABALHADOR CLT SANTO ANDRÉ",
+   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 862,
+     "clicks": 7,
+     "convs": 5,
+     "spent": 10.19,
+     "costPerConv": 2.04
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1992,
+     "clicks": 8,
+     "convs": 6,
+     "spent": 23.36,
+     "costPerConv": 3.89
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2116,
+     "clicks": 8,
+     "convs": 5,
+     "spent": 23.42,
+     "costPerConv": 4.68
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 1983,
+     "clicks": 20,
+     "convs": 13,
+     "spent": 28.67,
+     "costPerConv": 2.21
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2480,
+     "clicks": 20,
+     "convs": 13,
+     "spent": 34.84,
+     "costPerConv": 2.68
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2324,
+     "clicks": 17,
+     "convs": 9,
+     "spent": 35.62,
+     "costPerConv": 3.96
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 607,
+     "clicks": 0,
+     "convs": 0,
+     "spent": 9.99,
+     "costPerConv": 0.0
+    }
+   ]
+  },
+  {
+   "id": "120254688757870635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-19",
+   "atualizado": "2026-11-19",
+   "campanha": "[19/11/2026] TRABALHADOR CLT SÃO BERNARDO DO CAMPO",
+   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 445,
+     "clicks": 0,
+     "convs": 0,
+     "spent": 7.04,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2153,
+     "clicks": 15,
+     "convs": 7,
+     "spent": 34.01,
+     "costPerConv": 4.86
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 913,
+     "clicks": 9,
+     "convs": 5,
+     "spent": 16.57,
+     "costPerConv": 3.31
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 2158,
+     "clicks": 16,
+     "convs": 8,
+     "spent": 30.41,
+     "costPerConv": 3.8
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2675,
+     "clicks": 19,
+     "convs": 13,
+     "spent": 36.53,
+     "costPerConv": 2.81
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2511,
+     "clicks": 26,
+     "convs": 12,
+     "spent": 35.89,
+     "costPerConv": 2.99
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 648,
+     "clicks": 5,
+     "convs": 3,
+     "spent": 10.94,
+     "costPerConv": 3.65
+    }
+   ]
+  },
+  {
+   "id": "120254688719760635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-19",
+   "atualizado": "2026-11-19",
+   "campanha": "[19/11/2026] TRABALHADOR CLT SÃO JOSÉ DOS CAMPOS",
+   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 634,
+     "clicks": 4,
+     "convs": 2,
+     "spent": 10.02,
+     "costPerConv": 5.01
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1879,
+     "clicks": 15,
+     "convs": 4,
+     "spent": 22.94,
+     "costPerConv": 5.74
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2046,
+     "clicks": 15,
+     "convs": 12,
+     "spent": 25.34,
+     "costPerConv": 2.11
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 2726,
+     "clicks": 15,
+     "convs": 8,
+     "spent": 30.94,
+     "costPerConv": 3.87
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2725,
+     "clicks": 27,
+     "convs": 17,
+     "spent": 33.09,
+     "costPerConv": 1.95
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2904,
+     "clicks": 15,
+     "convs": 13,
+     "spent": 37.31,
+     "costPerConv": 2.87
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 910,
+     "clicks": 9,
+     "convs": 5,
+     "spent": 12.38,
+     "costPerConv": 2.48
+    }
+   ]
+  },
+  {
+   "id": "120254688691770635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-19",
+   "atualizado": "2026-11-19",
+   "campanha": "[19/11/2026] TRABALHADOR CLT SOROCABA",
+   "conjunto": "[19/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 973,
+     "clicks": 13,
+     "convs": 8,
+     "spent": 14.73,
+     "costPerConv": 1.84
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2203,
+     "clicks": 24,
+     "convs": 12,
+     "spent": 25.8,
+     "costPerConv": 2.15
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 1675,
+     "clicks": 14,
+     "convs": 7,
+     "spent": 16.92,
+     "costPerConv": 2.42
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 2556,
+     "clicks": 20,
+     "convs": 15,
+     "spent": 24.99,
+     "costPerConv": 1.67
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2945,
+     "clicks": 22,
+     "convs": 12,
+     "spent": 31.97,
+     "costPerConv": 2.66
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2710,
+     "clicks": 22,
+     "convs": 13,
+     "spent": 34.03,
+     "costPerConv": 2.62
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 699,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 9.62,
+     "costPerConv": 9.62
+    }
+   ]
+  },
+  {
+   "id": "120254626040720635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-16",
+   "atualizado": "2026-11-19",
+   "campanha": "[16/11/2026] APOSENTADORIA PCD - AUTISMO]",
+   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 960,
+     "clicks": 9,
+     "convs": 7,
+     "spent": 21.64,
+     "costPerConv": 3.09
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 1619,
+     "clicks": 20,
+     "convs": 12,
+     "spent": 30.6,
+     "costPerConv": 2.55
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 1601,
+     "clicks": 22,
+     "convs": 18,
+     "spent": 28.06,
+     "costPerConv": 1.56
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1103,
+     "clicks": 12,
+     "convs": 10,
+     "spent": 21.98,
+     "costPerConv": 2.2
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1566,
+     "clicks": 27,
+     "convs": 20,
+     "spent": 23.35,
+     "costPerConv": 1.17
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 937,
+     "clicks": 15,
+     "convs": 12,
+     "spent": 15.09,
+     "costPerConv": 1.26
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 2407,
+     "clicks": 34,
+     "convs": 24,
+     "spent": 30.21,
+     "costPerConv": 1.26
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2628,
+     "clicks": 60,
+     "convs": 35,
+     "spent": 32.9,
+     "costPerConv": 0.94
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2262,
+     "clicks": 42,
+     "convs": 31,
+     "spent": 28.14,
+     "costPerConv": 0.91
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 520,
+     "clicks": 15,
+     "convs": 9,
+     "spent": 7.66,
+     "costPerConv": 0.85
+    }
+   ]
+  },
+  {
+   "id": "120254626686770635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-16",
+   "atualizado": "2026-11-16",
+   "campanha": "[16/11/2026] TRABALHADOR CLT BELA VISTA",
+   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 2724,
+     "clicks": 17,
+     "convs": 4,
+     "spent": 33.65,
+     "costPerConv": 8.41
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 3148,
+     "clicks": 17,
+     "convs": 9,
+     "spent": 34.24,
+     "costPerConv": 3.8
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2277,
+     "clicks": 14,
+     "convs": 2,
+     "spent": 19.01,
+     "costPerConv": 9.51
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1898,
+     "clicks": 5,
+     "convs": 2,
+     "spent": 16.73,
+     "costPerConv": 8.37
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 3938,
+     "clicks": 18,
+     "convs": 6,
+     "spent": 28.53,
+     "costPerConv": 4.75
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 4317,
+     "clicks": 19,
+     "convs": 4,
+     "spent": 31.17,
+     "costPerConv": 7.79
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3766,
+     "clicks": 13,
+     "convs": 1,
+     "spent": 29.78,
+     "costPerConv": 29.78
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 4426,
+     "clicks": 21,
+     "convs": 7,
+     "spent": 38.86,
+     "costPerConv": 5.55
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 3267,
+     "clicks": 7,
+     "convs": 2,
+     "spent": 28.92,
+     "costPerConv": 14.46
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1209,
+     "clicks": 2,
+     "convs": 0,
+     "spent": 13.04,
+     "costPerConv": 0.0
+    }
+   ]
+  },
+  {
+   "id": "120254626631750635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-16",
+   "atualizado": "2026-11-16",
+   "campanha": "[16/11/2026] Traballhador CLT  - Batayporã",
+   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 1967,
+     "clicks": 4,
+     "convs": 2,
+     "spent": 24.75,
+     "costPerConv": 12.38
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2800,
+     "clicks": 8,
+     "convs": 5,
+     "spent": 30.89,
+     "costPerConv": 6.18
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2046,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 20.29,
+     "costPerConv": 20.29
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 2031,
+     "clicks": 5,
+     "convs": 4,
+     "spent": 19.57,
+     "costPerConv": 4.89
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2568,
+     "clicks": 4,
+     "convs": 2,
+     "spent": 20.16,
+     "costPerConv": 10.08
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2564,
+     "clicks": 5,
+     "convs": 2,
+     "spent": 25.92,
+     "costPerConv": 12.96
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3496,
+     "clicks": 7,
+     "convs": 2,
+     "spent": 30.64,
+     "costPerConv": 15.32
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 3110,
+     "clicks": 8,
+     "convs": 1,
+     "spent": 31.65,
+     "costPerConv": 31.65
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2476,
+     "clicks": 3,
+     "convs": 0,
+     "spent": 25.01,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 635,
+     "clicks": 0,
+     "convs": 0,
+     "spent": 7.98,
+     "costPerConv": 0.0
+    }
+   ]
+  },
+  {
+   "id": "120254626518590635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "CAMPAIGN_PAUSED",
+   "criado": "2026-11-16",
+   "atualizado": "2026-11-16",
+   "campanha": "[16/11/2026] PENSÃO POR MORTE",
+   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 2051,
+     "clicks": 20,
+     "convs": 16,
+     "spent": 25.54,
+     "costPerConv": 1.6
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2987,
+     "clicks": 22,
+     "convs": 16,
+     "spent": 31.66,
+     "costPerConv": 1.98
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2921,
+     "clicks": 17,
+     "convs": 13,
+     "spent": 24.35,
+     "costPerConv": 1.87
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 2125,
+     "clicks": 14,
+     "convs": 11,
+     "spent": 18.93,
+     "costPerConv": 1.72
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2529,
+     "clicks": 16,
+     "convs": 9,
+     "spent": 19.21,
+     "costPerConv": 2.13
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2706,
+     "clicks": 12,
+     "convs": 10,
+     "spent": 21.95,
+     "costPerConv": 2.19
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 4110,
+     "clicks": 22,
+     "convs": 15,
+     "spent": 31.53,
+     "costPerConv": 2.1
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 4030,
+     "clicks": 12,
+     "convs": 10,
+     "spent": 28.51,
+     "costPerConv": 2.85
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 423,
+     "clicks": 3,
+     "convs": 1,
+     "spent": 4.52,
+     "costPerConv": 4.52
+    }
+   ]
+  },
+  {
+   "id": "120254626488910635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-16",
+   "atualizado": "2026-11-16",
+   "campanha": "[16/11/2026] TEM PERDA AUDITIVA - APOSENTADORIA PCD",
+   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 1875,
+     "clicks": 28,
+     "convs": 17,
+     "spent": 27.63,
+     "costPerConv": 1.63
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2720,
+     "clicks": 44,
+     "convs": 25,
+     "spent": 34.1,
+     "costPerConv": 1.36
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2322,
+     "clicks": 38,
+     "convs": 15,
+     "spent": 22.56,
+     "costPerConv": 1.5
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1421,
+     "clicks": 25,
+     "convs": 13,
+     "spent": 15.52,
+     "costPerConv": 1.19
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2002,
+     "clicks": 34,
+     "convs": 26,
+     "spent": 21.38,
+     "costPerConv": 0.82
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 1876,
+     "clicks": 31,
+     "convs": 20,
+     "spent": 19.78,
+     "costPerConv": 0.99
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3054,
+     "clicks": 41,
+     "convs": 24,
+     "spent": 30.93,
+     "costPerConv": 1.29
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2967,
+     "clicks": 44,
+     "convs": 26,
+     "spent": 32.05,
+     "costPerConv": 1.23
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2369,
+     "clicks": 29,
+     "convs": 15,
+     "spent": 26.07,
+     "costPerConv": 1.74
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 511,
+     "clicks": 7,
+     "convs": 5,
+     "spent": 5.44,
+     "costPerConv": 1.09
+    }
+   ]
+  },
+  {
+   "id": "120254626278780635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "ACTIVE",
+   "criado": "2026-11-16",
+   "atualizado": "2026-11-16",
+   "campanha": "[16/11/2026] TEM HÉRNIA DE DISCO E ARTROSE - APOSENTADORIA PCD",
+   "conjunto": "[16/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 2263,
+     "clicks": 37,
+     "convs": 19,
+     "spent": 31.38,
+     "costPerConv": 1.65
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 3075,
+     "clicks": 43,
+     "convs": 25,
+     "spent": 31.41,
+     "costPerConv": 1.26
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2532,
+     "clicks": 40,
+     "convs": 26,
+     "spent": 22.96,
+     "costPerConv": 0.88
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1924,
+     "clicks": 24,
+     "convs": 11,
+     "spent": 16.61,
+     "costPerConv": 1.51
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 2401,
+     "clicks": 34,
+     "convs": 15,
+     "spent": 19.13,
+     "costPerConv": 1.28
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2206,
+     "clicks": 28,
+     "convs": 20,
+     "spent": 20.02,
+     "costPerConv": 1.0
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 4269,
+     "clicks": 63,
+     "convs": 37,
+     "spent": 32.04,
+     "costPerConv": 0.87
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 3950,
+     "clicks": 58,
+     "convs": 27,
+     "spent": 31.11,
+     "costPerConv": 1.15
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 3075,
+     "clicks": 47,
+     "convs": 29,
+     "spent": 26.72,
+     "costPerConv": 0.92
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 644,
+     "clicks": 8,
+     "convs": 4,
+     "spent": 6.43,
+     "costPerConv": 1.61
+    }
+   ]
+  },
+  {
+   "id": "120254564559120635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "CAMPAIGN_PAUSED",
+   "criado": "2026-11-12",
+   "atualizado": "2026-11-12",
+   "campanha": "[12/11/2026] Pensão por Morte",
+   "conjunto": "[12/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "12/11",
+     "iso": "2026-11-12",
+     "views": 850,
+     "clicks": 6,
+     "convs": 5,
+     "spent": 12.22,
+     "costPerConv": 2.44
+    },
+    {
+     "date": "13/11",
+     "iso": "2026-11-13",
+     "views": 1805,
+     "clicks": 14,
+     "convs": 12,
+     "spent": 22.76,
+     "costPerConv": 1.9
+    },
+    {
+     "date": "14/11",
+     "iso": "2026-11-14",
+     "views": 1955,
+     "clicks": 14,
+     "convs": 9,
+     "spent": 20.48,
+     "costPerConv": 2.28
+    },
+    {
+     "date": "15/11",
+     "iso": "2026-11-15",
+     "views": 2037,
+     "clicks": 18,
+     "convs": 12,
+     "spent": 17.92,
+     "costPerConv": 1.49
+    },
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 3878,
+     "clicks": 32,
+     "convs": 26,
+     "spent": 31.02,
+     "costPerConv": 1.19
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2670,
+     "clicks": 24,
+     "convs": 17,
+     "spent": 23.7,
+     "costPerConv": 1.39
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2193,
+     "clicks": 12,
+     "convs": 9,
+     "spent": 18.75,
+     "costPerConv": 2.08
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1903,
+     "clicks": 13,
+     "convs": 11,
+     "spent": 15.27,
+     "costPerConv": 1.39
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1688,
+     "clicks": 11,
+     "convs": 6,
+     "spent": 13.76,
+     "costPerConv": 2.29
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 2495,
+     "clicks": 11,
+     "convs": 6,
+     "spent": 19.39,
+     "costPerConv": 3.23
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3169,
+     "clicks": 19,
+     "convs": 13,
+     "spent": 24.3,
+     "costPerConv": 1.87
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 3142,
+     "clicks": 11,
+     "convs": 10,
+     "spent": 24.71,
+     "costPerConv": 2.47
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 498,
+     "clicks": 5,
+     "convs": 3,
+     "spent": 4.91,
+     "costPerConv": 1.64
+    }
+   ]
+  },
+  {
    "id": "120254517532630635",
    "nome": "Promovendo o site: https://api.whatsapp.com/send",
    "status": "ACTIVE",
@@ -2090,20 +2352,29 @@
     {
      "date": "23/11",
      "iso": "2026-11-23",
-     "views": 1796,
+     "views": 1797,
      "clicks": 13,
      "convs": 1,
-     "spent": 28.15,
-     "costPerConv": 28.15
+     "spent": 28.16,
+     "costPerConv": 28.16
     },
     {
      "date": "24/11",
      "iso": "2026-11-24",
-     "views": 509,
+     "views": 1485,
      "clicks": 1,
      "convs": 1,
-     "spent": 10.31,
-     "costPerConv": 10.31
+     "spent": 26.26,
+     "costPerConv": 26.26
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 348,
+     "clicks": 2,
+     "convs": 0,
+     "spent": 7.01,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -3279,20 +3550,29 @@
     {
      "date": "23/11",
      "iso": "2026-11-23",
-     "views": 3568,
+     "views": 3572,
      "clicks": 10,
      "convs": 7,
-     "spent": 44.61,
-     "costPerConv": 6.37
+     "spent": 44.63,
+     "costPerConv": 6.38
     },
     {
      "date": "24/11",
      "iso": "2026-11-24",
-     "views": 1670,
-     "clicks": 2,
-     "convs": 1,
-     "spent": 19.36,
-     "costPerConv": 19.36
+     "views": 3376,
+     "clicks": 7,
+     "convs": 3,
+     "spent": 39.29,
+     "costPerConv": 13.1
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 902,
+     "clicks": 3,
+     "convs": 2,
+     "spent": 14.65,
+     "costPerConv": 7.33
     }
    ]
   },
@@ -3850,20 +4130,29 @@
     {
      "date": "23/11",
      "iso": "2026-11-23",
-     "views": 2460,
+     "views": 2465,
      "clicks": 14,
      "convs": 8,
-     "spent": 23.49,
+     "spent": 23.56,
      "costPerConv": 2.94
     },
     {
      "date": "24/11",
      "iso": "2026-11-24",
-     "views": 878,
-     "clicks": 7,
-     "convs": 2,
-     "spent": 8.59,
-     "costPerConv": 4.29
+     "views": 2195,
+     "clicks": 21,
+     "convs": 11,
+     "spent": 21.32,
+     "costPerConv": 1.94
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 447,
+     "clicks": 0,
+     "convs": 0,
+     "spent": 5.03,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -5349,20 +5638,29 @@
     {
      "date": "23/11",
      "iso": "2026-11-23",
-     "views": 2596,
+     "views": 2600,
      "clicks": 5,
      "convs": 2,
-     "spent": 28.87,
-     "costPerConv": 14.44
+     "spent": 28.92,
+     "costPerConv": 14.46
     },
     {
      "date": "24/11",
      "iso": "2026-11-24",
-     "views": 834,
-     "clicks": 2,
+     "views": 2025,
+     "clicks": 4,
      "convs": 1,
-     "spent": 11.54,
-     "costPerConv": 11.54
+     "spent": 24.58,
+     "costPerConv": 24.58
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 758,
+     "clicks": 2,
+     "convs": 0,
+     "spent": 10.33,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -7413,20 +7711,29 @@
     {
      "date": "23/11",
      "iso": "2026-11-23",
-     "views": 3486,
+     "views": 3488,
      "clicks": 19,
      "convs": 17,
-     "spent": 36.28,
-     "costPerConv": 2.13
+     "spent": 36.35,
+     "costPerConv": 2.14
     },
     {
      "date": "24/11",
      "iso": "2026-11-24",
-     "views": 1132,
-     "clicks": 2,
+     "views": 2374,
+     "clicks": 4,
+     "convs": 3,
+     "spent": 33.6,
+     "costPerConv": 11.2
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1023,
+     "clicks": 5,
      "convs": 2,
-     "spent": 16.66,
-     "costPerConv": 8.33
+     "spent": 11.57,
+     "costPerConv": 5.79
     }
    ]
   },
@@ -7910,20 +8217,29 @@
     {
      "date": "23/11",
      "iso": "2026-11-23",
-     "views": 3284,
+     "views": 3286,
      "clicks": 8,
      "convs": 4,
-     "spent": 38.16,
-     "costPerConv": 9.54
+     "spent": 38.25,
+     "costPerConv": 9.56
     },
     {
      "date": "24/11",
      "iso": "2026-11-24",
-     "views": 1523,
+     "views": 3071,
+     "clicks": 12,
+     "convs": 4,
+     "spent": 32.61,
+     "costPerConv": 8.15
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 987,
      "clicks": 3,
      "convs": 2,
-     "spent": 16.87,
-     "costPerConv": 8.44
+     "spent": 11.99,
+     "costPerConv": 6.0
     }
    ]
   },
