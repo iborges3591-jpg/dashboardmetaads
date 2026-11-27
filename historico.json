@@ -1,7 +1,695 @@
 {
- "gerado_em": "26/11/2026 16:53",
+ "gerado_em": "27/11/2026 16:38",
  "desde": "2026-05-10",
  "anuncios": [
+  {
+   "id": "120254517532630635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "CAMPAIGN_PAUSED",
+   "criado": "2026-11-09",
+   "atualizado": "2026-11-26",
+   "campanha": "[09/11/2026] FRIGORÍFICO 02",
+   "conjunto": "[09/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "09/11",
+     "iso": "2026-11-09",
+     "views": 1075,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 9.75,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "10/11",
+     "iso": "2026-11-10",
+     "views": 2618,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 26.29,
+     "costPerConv": 26.29
+    },
+    {
+     "date": "11/11",
+     "iso": "2026-11-11",
+     "views": 2192,
+     "clicks": 6,
+     "convs": 2,
+     "spent": 23.25,
+     "costPerConv": 11.62
+    },
+    {
+     "date": "12/11",
+     "iso": "2026-11-12",
+     "views": 1792,
+     "clicks": 2,
+     "convs": 1,
+     "spent": 20.63,
+     "costPerConv": 20.63
+    },
+    {
+     "date": "13/11",
+     "iso": "2026-11-13",
+     "views": 2406,
+     "clicks": 9,
+     "convs": 1,
+     "spent": 27.63,
+     "costPerConv": 27.63
+    },
+    {
+     "date": "14/11",
+     "iso": "2026-11-14",
+     "views": 1661,
+     "clicks": 11,
+     "convs": 2,
+     "spent": 25.58,
+     "costPerConv": 12.79
+    },
+    {
+     "date": "15/11",
+     "iso": "2026-11-15",
+     "views": 2741,
+     "clicks": 13,
+     "convs": 1,
+     "spent": 33.65,
+     "costPerConv": 33.65
+    },
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 1930,
+     "clicks": 9,
+     "convs": 3,
+     "spent": 25.33,
+     "costPerConv": 8.44
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2216,
+     "clicks": 9,
+     "convs": 1,
+     "spent": 28.56,
+     "costPerConv": 28.56
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 2003,
+     "clicks": 9,
+     "convs": 1,
+     "spent": 23.7,
+     "costPerConv": 23.7
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1731,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 22.19,
+     "costPerConv": 22.19
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1949,
+     "clicks": 7,
+     "convs": 1,
+     "spent": 22.17,
+     "costPerConv": 22.17
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 1843,
+     "clicks": 6,
+     "convs": 2,
+     "spent": 19.03,
+     "costPerConv": 9.52
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 2350,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 29.63,
+     "costPerConv": 29.63
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 1797,
+     "clicks": 13,
+     "convs": 1,
+     "spent": 28.16,
+     "costPerConv": 28.16
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 1491,
+     "clicks": 1,
+     "convs": 1,
+     "spent": 26.3,
+     "costPerConv": 26.3
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1217,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 21.72,
+     "costPerConv": 21.72
+    },
+    {
+     "date": "26/11",
+     "iso": "2026-11-26",
+     "views": 537,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 12.26,
+     "costPerConv": 12.26
+    }
+   ]
+  },
+  {
+   "id": "120253919014800635",
+   "nome": "Promovendo o site: https://api.whatsapp.com/send",
+   "status": "PAUSED",
+   "criado": "2026-10-02",
+   "atualizado": "2026-11-26",
+   "campanha": "[02/10/2026] Ponta Porâ",
+   "conjunto": "[02/10/2026] Promovendo \"https://api.whatsapp.com/send\"",
+   "daily": [
+    {
+     "date": "02/10",
+     "iso": "2026-10-02",
+     "views": 859,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 8.1,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "03/10",
+     "iso": "2026-10-03",
+     "views": 2869,
+     "clicks": 13,
+     "convs": 1,
+     "spent": 24.4,
+     "costPerConv": 24.4
+    },
+    {
+     "date": "04/10",
+     "iso": "2026-10-04",
+     "views": 3665,
+     "clicks": 13,
+     "convs": 5,
+     "spent": 26.02,
+     "costPerConv": 5.2
+    },
+    {
+     "date": "05/10",
+     "iso": "2026-10-05",
+     "views": 4591,
+     "clicks": 8,
+     "convs": 4,
+     "spent": 34.31,
+     "costPerConv": 8.58
+    },
+    {
+     "date": "06/10",
+     "iso": "2026-10-06",
+     "views": 3238,
+     "clicks": 15,
+     "convs": 7,
+     "spent": 29.53,
+     "costPerConv": 4.22
+    },
+    {
+     "date": "07/10",
+     "iso": "2026-10-07",
+     "views": 2538,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 18.95,
+     "costPerConv": 18.95
+    },
+    {
+     "date": "08/10",
+     "iso": "2026-10-08",
+     "views": 3314,
+     "clicks": 10,
+     "convs": 9,
+     "spent": 25.6,
+     "costPerConv": 2.84
+    },
+    {
+     "date": "09/10",
+     "iso": "2026-10-09",
+     "views": 3136,
+     "clicks": 9,
+     "convs": 3,
+     "spent": 22.35,
+     "costPerConv": 7.45
+    },
+    {
+     "date": "10/10",
+     "iso": "2026-10-10",
+     "views": 2759,
+     "clicks": 5,
+     "convs": 0,
+     "spent": 18.24,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "11/10",
+     "iso": "2026-10-11",
+     "views": 3267,
+     "clicks": 9,
+     "convs": 5,
+     "spent": 24.91,
+     "costPerConv": 4.98
+    },
+    {
+     "date": "12/10",
+     "iso": "2026-10-12",
+     "views": 4763,
+     "clicks": 12,
+     "convs": 2,
+     "spent": 32.81,
+     "costPerConv": 16.41
+    },
+    {
+     "date": "13/10",
+     "iso": "2026-10-13",
+     "views": 3756,
+     "clicks": 4,
+     "convs": 3,
+     "spent": 27.71,
+     "costPerConv": 9.24
+    },
+    {
+     "date": "14/10",
+     "iso": "2026-10-14",
+     "views": 2392,
+     "clicks": 9,
+     "convs": 2,
+     "spent": 24.09,
+     "costPerConv": 12.04
+    },
+    {
+     "date": "15/10",
+     "iso": "2026-10-15",
+     "views": 1786,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 17.97,
+     "costPerConv": 17.97
+    },
+    {
+     "date": "16/10",
+     "iso": "2026-10-16",
+     "views": 2151,
+     "clicks": 9,
+     "convs": 2,
+     "spent": 20.66,
+     "costPerConv": 10.33
+    },
+    {
+     "date": "17/10",
+     "iso": "2026-10-17",
+     "views": 1931,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 18.66,
+     "costPerConv": 18.66
+    },
+    {
+     "date": "18/10",
+     "iso": "2026-10-18",
+     "views": 2095,
+     "clicks": 11,
+     "convs": 4,
+     "spent": 23.77,
+     "costPerConv": 5.94
+    },
+    {
+     "date": "19/10",
+     "iso": "2026-10-19",
+     "views": 2726,
+     "clicks": 2,
+     "convs": 1,
+     "spent": 25.51,
+     "costPerConv": 25.51
+    },
+    {
+     "date": "20/10",
+     "iso": "2026-10-20",
+     "views": 2339,
+     "clicks": 8,
+     "convs": 4,
+     "spent": 24.65,
+     "costPerConv": 6.16
+    },
+    {
+     "date": "21/10",
+     "iso": "2026-10-21",
+     "views": 2378,
+     "clicks": 12,
+     "convs": 3,
+     "spent": 24.63,
+     "costPerConv": 8.21
+    },
+    {
+     "date": "22/10",
+     "iso": "2026-10-22",
+     "views": 1893,
+     "clicks": 10,
+     "convs": 5,
+     "spent": 22.3,
+     "costPerConv": 4.46
+    },
+    {
+     "date": "23/10",
+     "iso": "2026-10-23",
+     "views": 2175,
+     "clicks": 5,
+     "convs": 2,
+     "spent": 22.16,
+     "costPerConv": 11.08
+    },
+    {
+     "date": "24/10",
+     "iso": "2026-10-24",
+     "views": 2206,
+     "clicks": 8,
+     "convs": 5,
+     "spent": 21.0,
+     "costPerConv": 4.2
+    },
+    {
+     "date": "25/10",
+     "iso": "2026-10-25",
+     "views": 4162,
+     "clicks": 11,
+     "convs": 2,
+     "spent": 27.11,
+     "costPerConv": 13.55
+    },
+    {
+     "date": "26/10",
+     "iso": "2026-10-26",
+     "views": 3971,
+     "clicks": 11,
+     "convs": 2,
+     "spent": 26.87,
+     "costPerConv": 13.44
+    },
+    {
+     "date": "27/10",
+     "iso": "2026-10-27",
+     "views": 3015,
+     "clicks": 7,
+     "convs": 2,
+     "spent": 25.45,
+     "costPerConv": 12.72
+    },
+    {
+     "date": "28/10",
+     "iso": "2026-10-28",
+     "views": 2796,
+     "clicks": 14,
+     "convs": 5,
+     "spent": 25.18,
+     "costPerConv": 5.04
+    },
+    {
+     "date": "29/10",
+     "iso": "2026-10-29",
+     "views": 2310,
+     "clicks": 6,
+     "convs": 2,
+     "spent": 22.59,
+     "costPerConv": 11.29
+    },
+    {
+     "date": "30/10",
+     "iso": "2026-10-30",
+     "views": 1569,
+     "clicks": 6,
+     "convs": 0,
+     "spent": 16.59,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "31/10",
+     "iso": "2026-10-31",
+     "views": 2746,
+     "clicks": 10,
+     "convs": 6,
+     "spent": 24.16,
+     "costPerConv": 4.03
+    },
+    {
+     "date": "01/11",
+     "iso": "2026-11-01",
+     "views": 3188,
+     "clicks": 11,
+     "convs": 1,
+     "spent": 26.16,
+     "costPerConv": 26.16
+    },
+    {
+     "date": "02/11",
+     "iso": "2026-11-02",
+     "views": 3753,
+     "clicks": 13,
+     "convs": 5,
+     "spent": 29.53,
+     "costPerConv": 5.91
+    },
+    {
+     "date": "03/11",
+     "iso": "2026-11-03",
+     "views": 4005,
+     "clicks": 10,
+     "convs": 3,
+     "spent": 28.72,
+     "costPerConv": 9.57
+    },
+    {
+     "date": "04/11",
+     "iso": "2026-11-04",
+     "views": 2340,
+     "clicks": 5,
+     "convs": 0,
+     "spent": 20.87,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "05/11",
+     "iso": "2026-11-05",
+     "views": 2605,
+     "clicks": 5,
+     "convs": 2,
+     "spent": 25.07,
+     "costPerConv": 12.54
+    },
+    {
+     "date": "06/11",
+     "iso": "2026-11-06",
+     "views": 2124,
+     "clicks": 2,
+     "convs": 3,
+     "spent": 19.89,
+     "costPerConv": 6.63
+    },
+    {
+     "date": "07/11",
+     "iso": "2026-11-07",
+     "views": 2198,
+     "clicks": 5,
+     "convs": 2,
+     "spent": 17.46,
+     "costPerConv": 8.73
+    },
+    {
+     "date": "08/11",
+     "iso": "2026-11-08",
+     "views": 3061,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 25.38,
+     "costPerConv": 25.38
+    },
+    {
+     "date": "09/11",
+     "iso": "2026-11-09",
+     "views": 3537,
+     "clicks": 4,
+     "convs": 2,
+     "spent": 34.3,
+     "costPerConv": 17.15
+    },
+    {
+     "date": "10/11",
+     "iso": "2026-11-10",
+     "views": 3191,
+     "clicks": 5,
+     "convs": 0,
+     "spent": 26.51,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "11/11",
+     "iso": "2026-11-11",
+     "views": 1939,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 23.99,
+     "costPerConv": 23.99
+    },
+    {
+     "date": "12/11",
+     "iso": "2026-11-12",
+     "views": 1522,
+     "clicks": 6,
+     "convs": 2,
+     "spent": 18.35,
+     "costPerConv": 9.18
+    },
+    {
+     "date": "13/11",
+     "iso": "2026-11-13",
+     "views": 2138,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 20.45,
+     "costPerConv": 20.45
+    },
+    {
+     "date": "14/11",
+     "iso": "2026-11-14",
+     "views": 2011,
+     "clicks": 0,
+     "convs": 0,
+     "spent": 18.64,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "15/11",
+     "iso": "2026-11-15",
+     "views": 3166,
+     "clicks": 12,
+     "convs": 4,
+     "spent": 28.57,
+     "costPerConv": 7.14
+    },
+    {
+     "date": "16/11",
+     "iso": "2026-11-16",
+     "views": 2829,
+     "clicks": 8,
+     "convs": 1,
+     "spent": 29.82,
+     "costPerConv": 29.82
+    },
+    {
+     "date": "17/11",
+     "iso": "2026-11-17",
+     "views": 2355,
+     "clicks": 2,
+     "convs": 2,
+     "spent": 26.03,
+     "costPerConv": 13.02
+    },
+    {
+     "date": "18/11",
+     "iso": "2026-11-18",
+     "views": 1976,
+     "clicks": 13,
+     "convs": 4,
+     "spent": 23.22,
+     "costPerConv": 5.8
+    },
+    {
+     "date": "19/11",
+     "iso": "2026-11-19",
+     "views": 1901,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 21.39,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "20/11",
+     "iso": "2026-11-20",
+     "views": 1787,
+     "clicks": 6,
+     "convs": 2,
+     "spent": 19.45,
+     "costPerConv": 9.72
+    },
+    {
+     "date": "21/11",
+     "iso": "2026-11-21",
+     "views": 1932,
+     "clicks": 5,
+     "convs": 1,
+     "spent": 19.22,
+     "costPerConv": 19.22
+    },
+    {
+     "date": "22/11",
+     "iso": "2026-11-22",
+     "views": 3050,
+     "clicks": 8,
+     "convs": 2,
+     "spent": 31.82,
+     "costPerConv": 15.91
+    },
+    {
+     "date": "23/11",
+     "iso": "2026-11-23",
+     "views": 2600,
+     "clicks": 5,
+     "convs": 2,
+     "spent": 28.92,
+     "costPerConv": 14.46
+    },
+    {
+     "date": "24/11",
+     "iso": "2026-11-24",
+     "views": 2031,
+     "clicks": 4,
+     "convs": 1,
+     "spent": 24.67,
+     "costPerConv": 24.67
+    },
+    {
+     "date": "25/11",
+     "iso": "2026-11-25",
+     "views": 1610,
+     "clicks": 2,
+     "convs": 0,
+     "spent": 21.21,
+     "costPerConv": 0.0
+    },
+    {
+     "date": "26/11",
+     "iso": "2026-11-26",
+     "views": 761,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 11.03,
+     "costPerConv": 0.0
+    }
+   ]
+  },
   {
    "id": "120254783174800635",
    "nome": "Promovendo o site: https://api.whatsapp.com/send",
@@ -14,20 +702,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1796,
+     "views": 1800,
      "clicks": 31,
      "convs": 22,
-     "spent": 23.38,
-     "costPerConv": 1.06
+     "spent": 23.58,
+     "costPerConv": 1.07
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 1285,
-     "clicks": 20,
-     "convs": 14,
-     "spent": 16.2,
-     "costPerConv": 1.16
+     "views": 2174,
+     "clicks": 33,
+     "convs": 21,
+     "spent": 26.29,
+     "costPerConv": 1.25
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 595,
+     "clicks": 5,
+     "convs": 3,
+     "spent": 7.49,
+     "costPerConv": 2.5
     }
    ]
   },
@@ -43,20 +740,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1783,
+     "views": 1788,
      "clicks": 50,
      "convs": 32,
-     "spent": 25.88,
+     "spent": 25.94,
      "costPerConv": 0.81
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 1251,
-     "clicks": 23,
-     "convs": 15,
-     "spent": 13.96,
-     "costPerConv": 0.93
+     "views": 2394,
+     "clicks": 37,
+     "convs": 23,
+     "spent": 27.21,
+     "costPerConv": 1.18
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 787,
+     "clicks": 15,
+     "convs": 10,
+     "spent": 8.92,
+     "costPerConv": 0.89
     }
    ]
   },
@@ -72,20 +778,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1007,
+     "views": 1011,
      "clicks": 7,
      "convs": 7,
-     "spent": 16.63,
+     "spent": 16.66,
      "costPerConv": 2.38
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 467,
-     "clicks": 5,
-     "convs": 4,
-     "spent": 7.01,
-     "costPerConv": 1.75
+     "views": 1397,
+     "clicks": 13,
+     "convs": 9,
+     "spent": 20.24,
+     "costPerConv": 2.25
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 809,
+     "clicks": 7,
+     "convs": 2,
+     "spent": 11.75,
+     "costPerConv": 5.88
     }
    ]
   },
@@ -101,20 +816,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1578,
+     "views": 1586,
      "clicks": 34,
      "convs": 23,
-     "spent": 23.68,
-     "costPerConv": 1.03
+     "spent": 23.85,
+     "costPerConv": 1.04
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 1275,
-     "clicks": 16,
-     "convs": 10,
-     "spent": 15.9,
-     "costPerConv": 1.59
+     "views": 2106,
+     "clicks": 24,
+     "convs": 16,
+     "spent": 26.69,
+     "costPerConv": 1.67
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 507,
+     "clicks": 9,
+     "convs": 7,
+     "spent": 5.59,
+     "costPerConv": 0.8
     }
    ]
   },
@@ -645,11 +1369,20 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 331,
+     "views": 332,
      "clicks": 6,
      "convs": 3,
-     "spent": 2.86,
-     "costPerConv": 0.95
+     "spent": 2.89,
+     "costPerConv": 0.96
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 0,
+     "clicks": 0,
+     "convs": 1,
+     "spent": 0.0,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -863,11 +1596,11 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 372,
+     "views": 373,
      "clicks": 11,
      "convs": 3,
-     "spent": 4.94,
-     "costPerConv": 1.65
+     "spent": 5.05,
+     "costPerConv": 1.68
     }
    ]
   },
@@ -883,7 +1616,7 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1391,
+     "views": 1392,
      "clicks": 21,
      "convs": 17,
      "spent": 22.45,
@@ -892,11 +1625,20 @@
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 745,
-     "clicks": 8,
-     "convs": 4,
-     "spent": 11.28,
-     "costPerConv": 2.82
+     "views": 1871,
+     "clicks": 23,
+     "convs": 16,
+     "spent": 25.56,
+     "costPerConv": 1.6
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 1167,
+     "clicks": 16,
+     "convs": 10,
+     "spent": 15.16,
+     "costPerConv": 1.52
     }
    ]
   },
@@ -930,20 +1672,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2219,
+     "views": 2221,
      "clicks": 16,
      "convs": 11,
-     "spent": 23.46,
+     "spent": 23.47,
      "costPerConv": 2.13
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 598,
-     "clicks": 4,
+     "views": 1349,
+     "clicks": 11,
+     "convs": 8,
+     "spent": 15.46,
+     "costPerConv": 1.93
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 547,
+     "clicks": 5,
      "convs": 3,
-     "spent": 6.1,
-     "costPerConv": 2.03
+     "spent": 7.89,
+     "costPerConv": 2.63
     }
    ]
   },
@@ -977,20 +1728,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2044,
+     "views": 2049,
      "clicks": 35,
      "convs": 19,
-     "spent": 23.05,
-     "costPerConv": 1.21
+     "spent": 23.23,
+     "costPerConv": 1.22
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 674,
-     "clicks": 14,
-     "convs": 10,
-     "spent": 7.48,
-     "costPerConv": 0.75
+     "views": 1639,
+     "clicks": 23,
+     "convs": 17,
+     "spent": 18.03,
+     "costPerConv": 1.06
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 880,
+     "clicks": 8,
+     "convs": 5,
+     "spent": 9.46,
+     "costPerConv": 1.89
     }
    ]
   },
@@ -1024,20 +1784,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2250,
+     "views": 2254,
      "clicks": 35,
      "convs": 24,
-     "spent": 22.35,
+     "spent": 22.39,
      "costPerConv": 0.93
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 825,
+     "views": 1752,
+     "clicks": 17,
+     "convs": 14,
+     "spent": 17.37,
+     "costPerConv": 1.24
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 701,
      "clicks": 7,
-     "convs": 7,
-     "spent": 7.66,
-     "costPerConv": 1.09
+     "convs": 5,
+     "spent": 7.87,
+     "costPerConv": 1.57
     }
    ]
   },
@@ -1071,20 +1840,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1667,
+     "views": 1669,
      "clicks": 16,
      "convs": 5,
-     "spent": 20.03,
+     "spent": 20.05,
      "costPerConv": 4.01
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 691,
+     "views": 1423,
+     "clicks": 10,
+     "convs": 7,
+     "spent": 19.07,
+     "costPerConv": 2.72
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 583,
      "clicks": 3,
-     "convs": 3,
-     "spent": 9.04,
-     "costPerConv": 3.01
+     "convs": 2,
+     "spent": 8.22,
+     "costPerConv": 4.11
     }
    ]
   },
@@ -1118,20 +1896,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1785,
+     "views": 1789,
      "clicks": 23,
      "convs": 13,
-     "spent": 21.94,
+     "spent": 21.97,
      "costPerConv": 1.69
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 697,
-     "clicks": 2,
-     "convs": 1,
-     "spent": 7.33,
-     "costPerConv": 7.33
+     "views": 1442,
+     "clicks": 6,
+     "convs": 3,
+     "spent": 16.98,
+     "costPerConv": 5.66
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 554,
+     "clicks": 5,
+     "convs": 3,
+     "spent": 7.53,
+     "costPerConv": 2.51
     }
    ]
   },
@@ -1201,20 +1988,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1745,
+     "views": 1749,
      "clicks": 2,
      "convs": 0,
-     "spent": 20.99,
+     "spent": 21.02,
      "costPerConv": 0.0
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 664,
-     "clicks": 4,
+     "views": 1843,
+     "clicks": 9,
+     "convs": 2,
+     "spent": 22.87,
+     "costPerConv": 11.44
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 735,
+     "clicks": 1,
      "convs": 1,
-     "spent": 7.87,
-     "costPerConv": 7.87
+     "spent": 8.78,
+     "costPerConv": 8.78
     }
    ]
   },
@@ -1284,20 +2080,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2317,
+     "views": 2324,
      "clicks": 20,
      "convs": 10,
-     "spent": 26.4,
-     "costPerConv": 2.64
+     "spent": 26.47,
+     "costPerConv": 2.65
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 647,
-     "clicks": 6,
-     "convs": 4,
-     "spent": 8.61,
-     "costPerConv": 2.15
+     "views": 2008,
+     "clicks": 16,
+     "convs": 11,
+     "spent": 25.41,
+     "costPerConv": 2.31
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 919,
+     "clicks": 7,
+     "convs": 3,
+     "spent": 12.06,
+     "costPerConv": 4.02
     }
    ]
   },
@@ -1367,19 +2172,28 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1505,
+     "views": 1510,
      "clicks": 5,
      "convs": 4,
-     "spent": 24.29,
-     "costPerConv": 6.07
+     "spent": 24.46,
+     "costPerConv": 6.12
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 765,
-     "clicks": 0,
+     "views": 1495,
+     "clicks": 7,
+     "convs": 3,
+     "spent": 25.52,
+     "costPerConv": 8.51
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 537,
+     "clicks": 1,
      "convs": 0,
-     "spent": 10.87,
+     "spent": 8.68,
      "costPerConv": 0.0
     }
    ]
@@ -1450,20 +2264,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1784,
+     "views": 1787,
      "clicks": 13,
      "convs": 6,
-     "spent": 27.31,
-     "costPerConv": 4.55
+     "spent": 27.37,
+     "costPerConv": 4.56
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 676,
-     "clicks": 8,
-     "convs": 8,
-     "spent": 11.58,
-     "costPerConv": 1.45
+     "views": 1662,
+     "clicks": 16,
+     "convs": 11,
+     "spent": 26.92,
+     "costPerConv": 2.45
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 526,
+     "clicks": 3,
+     "convs": 1,
+     "spent": 8.04,
+     "costPerConv": 8.04
     }
    ]
   },
@@ -1533,20 +2356,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2198,
+     "views": 2204,
      "clicks": 20,
      "convs": 9,
-     "spent": 27.39,
-     "costPerConv": 3.04
+     "spent": 27.44,
+     "costPerConv": 3.05
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 688,
-     "clicks": 7,
-     "convs": 5,
-     "spent": 10.9,
-     "costPerConv": 2.18
+     "views": 1563,
+     "clicks": 17,
+     "convs": 10,
+     "spent": 24.6,
+     "costPerConv": 2.46
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 580,
+     "clicks": 6,
+     "convs": 4,
+     "spent": 9.7,
+     "costPerConv": 2.42
     }
    ]
   },
@@ -1616,20 +2448,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1861,
-     "clicks": 14,
+     "views": 1863,
+     "clicks": 15,
      "convs": 8,
-     "spent": 25.73,
+     "spent": 25.75,
      "costPerConv": 3.22
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 747,
-     "clicks": 8,
-     "convs": 2,
-     "spent": 11.31,
-     "costPerConv": 5.66
+     "views": 1628,
+     "clicks": 21,
+     "convs": 6,
+     "spent": 26.08,
+     "costPerConv": 4.35
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 631,
+     "clicks": 3,
+     "convs": 0,
+     "spent": 9.17,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -1726,27 +2567,36 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1777,
-     "clicks": 39,
+     "views": 1781,
+     "clicks": 40,
      "convs": 23,
-     "spent": 24.85,
+     "spent": 24.92,
      "costPerConv": 1.08
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 555,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 6.69,
-     "costPerConv": 6.69
+     "views": 1413,
+     "clicks": 28,
+     "convs": 18,
+     "spent": 17.62,
+     "costPerConv": 0.98
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 602,
+     "clicks": 4,
+     "convs": 4,
+     "spent": 8.28,
+     "costPerConv": 2.07
     }
    ]
   },
   {
    "id": "120254626686770635",
    "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
+   "status": "CAMPAIGN_PAUSED",
    "criado": "2026-11-16",
    "atualizado": "2026-11-16",
    "campanha": "[16/11/2026] TRABALHADOR CLT BELA VISTA",
@@ -1836,20 +2686,20 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2817,
+     "views": 2827,
      "clicks": 6,
      "convs": 2,
-     "spent": 28.38,
-     "costPerConv": 14.19
+     "spent": 28.4,
+     "costPerConv": 14.2
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 847,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 9.05,
-     "costPerConv": 9.05
+     "views": 1290,
+     "clicks": 6,
+     "convs": 2,
+     "spent": 13.27,
+     "costPerConv": 6.63
     }
    ]
   },
@@ -1946,20 +2796,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1602,
+     "views": 1606,
      "clicks": 2,
      "convs": 0,
-     "spent": 19.2,
+     "spent": 19.27,
      "costPerConv": 0.0
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 656,
+     "views": 1683,
      "clicks": 3,
      "convs": 1,
-     "spent": 7.72,
-     "costPerConv": 7.72
+     "spent": 22.29,
+     "costPerConv": 22.29
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 549,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 8.39,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -2148,7 +3007,7 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1768,
+     "views": 1769,
      "clicks": 19,
      "convs": 15,
      "spent": 19.52,
@@ -2157,11 +3016,20 @@
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 574,
-     "clicks": 9,
-     "convs": 2,
-     "spent": 6.51,
-     "costPerConv": 3.25
+     "views": 1727,
+     "clicks": 30,
+     "convs": 17,
+     "spent": 20.95,
+     "costPerConv": 1.23
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 659,
+     "clicks": 8,
+     "convs": 5,
+     "spent": 7.15,
+     "costPerConv": 1.43
     }
    ]
   },
@@ -2258,20 +3126,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1832,
+     "views": 1834,
      "clicks": 23,
      "convs": 14,
-     "spent": 17.4,
+     "spent": 17.43,
      "costPerConv": 1.24
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 817,
+     "views": 2478,
+     "clicks": 39,
+     "convs": 22,
+     "spent": 24.15,
+     "costPerConv": 1.1
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 555,
      "clicks": 8,
      "convs": 4,
-     "spent": 7.33,
-     "costPerConv": 1.83
+     "spent": 5.98,
+     "costPerConv": 1.5
     }
    ]
   },
@@ -2400,179 +3277,6 @@
      "convs": 3,
      "spent": 4.92,
      "costPerConv": 1.64
-    }
-   ]
-  },
-  {
-   "id": "120254517532630635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-11-09",
-   "atualizado": "2026-11-09",
-   "campanha": "[09/11/2026] FRIGORÍFICO 02",
-   "conjunto": "[09/11/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "09/11",
-     "iso": "2026-11-09",
-     "views": 1075,
-     "clicks": 1,
-     "convs": 0,
-     "spent": 9.75,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "10/11",
-     "iso": "2026-11-10",
-     "views": 2618,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 26.29,
-     "costPerConv": 26.29
-    },
-    {
-     "date": "11/11",
-     "iso": "2026-11-11",
-     "views": 2192,
-     "clicks": 6,
-     "convs": 2,
-     "spent": 23.25,
-     "costPerConv": 11.62
-    },
-    {
-     "date": "12/11",
-     "iso": "2026-11-12",
-     "views": 1792,
-     "clicks": 2,
-     "convs": 1,
-     "spent": 20.63,
-     "costPerConv": 20.63
-    },
-    {
-     "date": "13/11",
-     "iso": "2026-11-13",
-     "views": 2406,
-     "clicks": 9,
-     "convs": 1,
-     "spent": 27.63,
-     "costPerConv": 27.63
-    },
-    {
-     "date": "14/11",
-     "iso": "2026-11-14",
-     "views": 1661,
-     "clicks": 11,
-     "convs": 2,
-     "spent": 25.58,
-     "costPerConv": 12.79
-    },
-    {
-     "date": "15/11",
-     "iso": "2026-11-15",
-     "views": 2741,
-     "clicks": 13,
-     "convs": 1,
-     "spent": 33.65,
-     "costPerConv": 33.65
-    },
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 1930,
-     "clicks": 9,
-     "convs": 3,
-     "spent": 25.33,
-     "costPerConv": 8.44
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2216,
-     "clicks": 9,
-     "convs": 1,
-     "spent": 28.56,
-     "costPerConv": 28.56
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 2003,
-     "clicks": 9,
-     "convs": 1,
-     "spent": 23.7,
-     "costPerConv": 23.7
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1731,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 22.19,
-     "costPerConv": 22.19
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1949,
-     "clicks": 7,
-     "convs": 1,
-     "spent": 22.17,
-     "costPerConv": 22.17
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 1843,
-     "clicks": 6,
-     "convs": 2,
-     "spent": 19.03,
-     "costPerConv": 9.52
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 2350,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 29.63,
-     "costPerConv": 29.63
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 1797,
-     "clicks": 13,
-     "convs": 1,
-     "spent": 28.16,
-     "costPerConv": 28.16
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 1491,
-     "clicks": 1,
-     "convs": 1,
-     "spent": 26.3,
-     "costPerConv": 26.3
-    },
-    {
-     "date": "25/11",
-     "iso": "2026-11-25",
-     "views": 1215,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 21.72,
-     "costPerConv": 21.72
-    },
-    {
-     "date": "26/11",
-     "iso": "2026-11-26",
-     "views": 362,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 8.1,
-     "costPerConv": 8.1
     }
    ]
   },
@@ -3766,20 +4470,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2203,
+     "views": 2204,
      "clicks": 8,
      "convs": 3,
-     "spent": 32.9,
+     "spent": 32.91,
      "costPerConv": 10.97
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 984,
-     "clicks": 2,
+     "views": 2264,
+     "clicks": 3,
      "convs": 2,
-     "spent": 11.68,
-     "costPerConv": 5.84
+     "spent": 27.43,
+     "costPerConv": 13.71
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 1033,
+     "clicks": 1,
+     "convs": 0,
+     "spent": 15.1,
+     "costPerConv": 0.0
     }
    ]
   },
@@ -4355,20 +5068,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 1364,
+     "views": 1370,
      "clicks": 6,
      "convs": 2,
-     "spent": 15.47,
-     "costPerConv": 7.74
+     "spent": 15.58,
+     "costPerConv": 7.79
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 511,
-     "clicks": 0,
-     "convs": 0,
-     "spent": 6.78,
-     "costPerConv": 0.0
+     "views": 1282,
+     "clicks": 8,
+     "convs": 5,
+     "spent": 18.12,
+     "costPerConv": 3.62
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 414,
+     "clicks": 1,
+     "convs": 1,
+     "spent": 6.22,
+     "costPerConv": 6.22
     }
    ]
   },
@@ -5370,521 +6092,6 @@
      "clicks": 2,
      "convs": 0,
      "spent": 13.29,
-     "costPerConv": 0.0
-    }
-   ]
-  },
-  {
-   "id": "120253919014800635",
-   "nome": "Promovendo o site: https://api.whatsapp.com/send",
-   "status": "ACTIVE",
-   "criado": "2026-10-02",
-   "atualizado": "2026-10-02",
-   "campanha": "[02/10/2026] Ponta Porâ",
-   "conjunto": "[02/10/2026] Promovendo \"https://api.whatsapp.com/send\"",
-   "daily": [
-    {
-     "date": "02/10",
-     "iso": "2026-10-02",
-     "views": 859,
-     "clicks": 1,
-     "convs": 0,
-     "spent": 8.1,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "03/10",
-     "iso": "2026-10-03",
-     "views": 2869,
-     "clicks": 13,
-     "convs": 1,
-     "spent": 24.4,
-     "costPerConv": 24.4
-    },
-    {
-     "date": "04/10",
-     "iso": "2026-10-04",
-     "views": 3665,
-     "clicks": 13,
-     "convs": 5,
-     "spent": 26.02,
-     "costPerConv": 5.2
-    },
-    {
-     "date": "05/10",
-     "iso": "2026-10-05",
-     "views": 4591,
-     "clicks": 8,
-     "convs": 4,
-     "spent": 34.31,
-     "costPerConv": 8.58
-    },
-    {
-     "date": "06/10",
-     "iso": "2026-10-06",
-     "views": 3238,
-     "clicks": 15,
-     "convs": 7,
-     "spent": 29.53,
-     "costPerConv": 4.22
-    },
-    {
-     "date": "07/10",
-     "iso": "2026-10-07",
-     "views": 2538,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 18.95,
-     "costPerConv": 18.95
-    },
-    {
-     "date": "08/10",
-     "iso": "2026-10-08",
-     "views": 3314,
-     "clicks": 10,
-     "convs": 9,
-     "spent": 25.6,
-     "costPerConv": 2.84
-    },
-    {
-     "date": "09/10",
-     "iso": "2026-10-09",
-     "views": 3136,
-     "clicks": 9,
-     "convs": 3,
-     "spent": 22.35,
-     "costPerConv": 7.45
-    },
-    {
-     "date": "10/10",
-     "iso": "2026-10-10",
-     "views": 2759,
-     "clicks": 5,
-     "convs": 0,
-     "spent": 18.24,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "11/10",
-     "iso": "2026-10-11",
-     "views": 3267,
-     "clicks": 9,
-     "convs": 5,
-     "spent": 24.91,
-     "costPerConv": 4.98
-    },
-    {
-     "date": "12/10",
-     "iso": "2026-10-12",
-     "views": 4763,
-     "clicks": 12,
-     "convs": 2,
-     "spent": 32.81,
-     "costPerConv": 16.41
-    },
-    {
-     "date": "13/10",
-     "iso": "2026-10-13",
-     "views": 3756,
-     "clicks": 4,
-     "convs": 3,
-     "spent": 27.71,
-     "costPerConv": 9.24
-    },
-    {
-     "date": "14/10",
-     "iso": "2026-10-14",
-     "views": 2392,
-     "clicks": 9,
-     "convs": 2,
-     "spent": 24.09,
-     "costPerConv": 12.04
-    },
-    {
-     "date": "15/10",
-     "iso": "2026-10-15",
-     "views": 1786,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 17.97,
-     "costPerConv": 17.97
-    },
-    {
-     "date": "16/10",
-     "iso": "2026-10-16",
-     "views": 2151,
-     "clicks": 9,
-     "convs": 2,
-     "spent": 20.66,
-     "costPerConv": 10.33
-    },
-    {
-     "date": "17/10",
-     "iso": "2026-10-17",
-     "views": 1931,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 18.66,
-     "costPerConv": 18.66
-    },
-    {
-     "date": "18/10",
-     "iso": "2026-10-18",
-     "views": 2095,
-     "clicks": 11,
-     "convs": 4,
-     "spent": 23.77,
-     "costPerConv": 5.94
-    },
-    {
-     "date": "19/10",
-     "iso": "2026-10-19",
-     "views": 2726,
-     "clicks": 2,
-     "convs": 1,
-     "spent": 25.51,
-     "costPerConv": 25.51
-    },
-    {
-     "date": "20/10",
-     "iso": "2026-10-20",
-     "views": 2339,
-     "clicks": 8,
-     "convs": 4,
-     "spent": 24.65,
-     "costPerConv": 6.16
-    },
-    {
-     "date": "21/10",
-     "iso": "2026-10-21",
-     "views": 2378,
-     "clicks": 12,
-     "convs": 3,
-     "spent": 24.63,
-     "costPerConv": 8.21
-    },
-    {
-     "date": "22/10",
-     "iso": "2026-10-22",
-     "views": 1893,
-     "clicks": 10,
-     "convs": 5,
-     "spent": 22.3,
-     "costPerConv": 4.46
-    },
-    {
-     "date": "23/10",
-     "iso": "2026-10-23",
-     "views": 2175,
-     "clicks": 5,
-     "convs": 2,
-     "spent": 22.16,
-     "costPerConv": 11.08
-    },
-    {
-     "date": "24/10",
-     "iso": "2026-10-24",
-     "views": 2206,
-     "clicks": 8,
-     "convs": 5,
-     "spent": 21.0,
-     "costPerConv": 4.2
-    },
-    {
-     "date": "25/10",
-     "iso": "2026-10-25",
-     "views": 4162,
-     "clicks": 11,
-     "convs": 2,
-     "spent": 27.11,
-     "costPerConv": 13.55
-    },
-    {
-     "date": "26/10",
-     "iso": "2026-10-26",
-     "views": 3971,
-     "clicks": 11,
-     "convs": 2,
-     "spent": 26.87,
-     "costPerConv": 13.44
-    },
-    {
-     "date": "27/10",
-     "iso": "2026-10-27",
-     "views": 3015,
-     "clicks": 7,
-     "convs": 2,
-     "spent": 25.45,
-     "costPerConv": 12.72
-    },
-    {
-     "date": "28/10",
-     "iso": "2026-10-28",
-     "views": 2796,
-     "clicks": 14,
-     "convs": 5,
-     "spent": 25.18,
-     "costPerConv": 5.04
-    },
-    {
-     "date": "29/10",
-     "iso": "2026-10-29",
-     "views": 2310,
-     "clicks": 6,
-     "convs": 2,
-     "spent": 22.59,
-     "costPerConv": 11.29
-    },
-    {
-     "date": "30/10",
-     "iso": "2026-10-30",
-     "views": 1569,
-     "clicks": 6,
-     "convs": 0,
-     "spent": 16.59,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "31/10",
-     "iso": "2026-10-31",
-     "views": 2746,
-     "clicks": 10,
-     "convs": 6,
-     "spent": 24.16,
-     "costPerConv": 4.03
-    },
-    {
-     "date": "01/11",
-     "iso": "2026-11-01",
-     "views": 3188,
-     "clicks": 11,
-     "convs": 1,
-     "spent": 26.16,
-     "costPerConv": 26.16
-    },
-    {
-     "date": "02/11",
-     "iso": "2026-11-02",
-     "views": 3753,
-     "clicks": 13,
-     "convs": 5,
-     "spent": 29.53,
-     "costPerConv": 5.91
-    },
-    {
-     "date": "03/11",
-     "iso": "2026-11-03",
-     "views": 4005,
-     "clicks": 10,
-     "convs": 3,
-     "spent": 28.72,
-     "costPerConv": 9.57
-    },
-    {
-     "date": "04/11",
-     "iso": "2026-11-04",
-     "views": 2340,
-     "clicks": 5,
-     "convs": 0,
-     "spent": 20.87,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "05/11",
-     "iso": "2026-11-05",
-     "views": 2605,
-     "clicks": 5,
-     "convs": 2,
-     "spent": 25.07,
-     "costPerConv": 12.54
-    },
-    {
-     "date": "06/11",
-     "iso": "2026-11-06",
-     "views": 2124,
-     "clicks": 2,
-     "convs": 3,
-     "spent": 19.89,
-     "costPerConv": 6.63
-    },
-    {
-     "date": "07/11",
-     "iso": "2026-11-07",
-     "views": 2198,
-     "clicks": 5,
-     "convs": 2,
-     "spent": 17.46,
-     "costPerConv": 8.73
-    },
-    {
-     "date": "08/11",
-     "iso": "2026-11-08",
-     "views": 3061,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 25.38,
-     "costPerConv": 25.38
-    },
-    {
-     "date": "09/11",
-     "iso": "2026-11-09",
-     "views": 3537,
-     "clicks": 4,
-     "convs": 2,
-     "spent": 34.3,
-     "costPerConv": 17.15
-    },
-    {
-     "date": "10/11",
-     "iso": "2026-11-10",
-     "views": 3191,
-     "clicks": 5,
-     "convs": 0,
-     "spent": 26.51,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "11/11",
-     "iso": "2026-11-11",
-     "views": 1939,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 23.99,
-     "costPerConv": 23.99
-    },
-    {
-     "date": "12/11",
-     "iso": "2026-11-12",
-     "views": 1522,
-     "clicks": 6,
-     "convs": 2,
-     "spent": 18.35,
-     "costPerConv": 9.18
-    },
-    {
-     "date": "13/11",
-     "iso": "2026-11-13",
-     "views": 2138,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 20.45,
-     "costPerConv": 20.45
-    },
-    {
-     "date": "14/11",
-     "iso": "2026-11-14",
-     "views": 2011,
-     "clicks": 0,
-     "convs": 0,
-     "spent": 18.64,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "15/11",
-     "iso": "2026-11-15",
-     "views": 3166,
-     "clicks": 12,
-     "convs": 4,
-     "spent": 28.57,
-     "costPerConv": 7.14
-    },
-    {
-     "date": "16/11",
-     "iso": "2026-11-16",
-     "views": 2829,
-     "clicks": 8,
-     "convs": 1,
-     "spent": 29.82,
-     "costPerConv": 29.82
-    },
-    {
-     "date": "17/11",
-     "iso": "2026-11-17",
-     "views": 2355,
-     "clicks": 2,
-     "convs": 2,
-     "spent": 26.03,
-     "costPerConv": 13.02
-    },
-    {
-     "date": "18/11",
-     "iso": "2026-11-18",
-     "views": 1976,
-     "clicks": 13,
-     "convs": 4,
-     "spent": 23.22,
-     "costPerConv": 5.8
-    },
-    {
-     "date": "19/11",
-     "iso": "2026-11-19",
-     "views": 1901,
-     "clicks": 1,
-     "convs": 0,
-     "spent": 21.39,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "20/11",
-     "iso": "2026-11-20",
-     "views": 1787,
-     "clicks": 6,
-     "convs": 2,
-     "spent": 19.45,
-     "costPerConv": 9.72
-    },
-    {
-     "date": "21/11",
-     "iso": "2026-11-21",
-     "views": 1932,
-     "clicks": 5,
-     "convs": 1,
-     "spent": 19.22,
-     "costPerConv": 19.22
-    },
-    {
-     "date": "22/11",
-     "iso": "2026-11-22",
-     "views": 3050,
-     "clicks": 8,
-     "convs": 2,
-     "spent": 31.82,
-     "costPerConv": 15.91
-    },
-    {
-     "date": "23/11",
-     "iso": "2026-11-23",
-     "views": 2600,
-     "clicks": 5,
-     "convs": 2,
-     "spent": 28.92,
-     "costPerConv": 14.46
-    },
-    {
-     "date": "24/11",
-     "iso": "2026-11-24",
-     "views": 2031,
-     "clicks": 4,
-     "convs": 1,
-     "spent": 24.67,
-     "costPerConv": 24.67
-    },
-    {
-     "date": "25/11",
-     "iso": "2026-11-25",
-     "views": 1606,
-     "clicks": 2,
-     "convs": 0,
-     "spent": 21.14,
-     "costPerConv": 0.0
-    },
-    {
-     "date": "26/11",
-     "iso": "2026-11-26",
-     "views": 531,
-     "clicks": 0,
-     "convs": 0,
-     "spent": 7.3,
      "costPerConv": 0.0
     }
    ]
@@ -7954,19 +8161,28 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2119,
+     "views": 2124,
      "clicks": 12,
      "convs": 7,
-     "spent": 27.13,
-     "costPerConv": 3.88
+     "spent": 27.25,
+     "costPerConv": 3.89
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 486,
-     "clicks": 0,
+     "views": 1252,
+     "clicks": 2,
+     "convs": 1,
+     "spent": 21.46,
+     "costPerConv": 21.46
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 805,
+     "clicks": 2,
      "convs": 0,
-     "spent": 8.98,
+     "spent": 10.78,
      "costPerConv": 0.0
     }
    ]
@@ -8469,20 +8685,29 @@
     {
      "date": "25/11",
      "iso": "2026-11-25",
-     "views": 2346,
+     "views": 2351,
      "clicks": 10,
      "convs": 6,
-     "spent": 28.02,
-     "costPerConv": 4.67
+     "spent": 28.18,
+     "costPerConv": 4.7
     },
     {
      "date": "26/11",
      "iso": "2026-11-26",
-     "views": 880,
-     "clicks": 2,
+     "views": 1807,
+     "clicks": 4,
      "convs": 2,
-     "spent": 11.02,
-     "costPerConv": 5.51
+     "spent": 23.58,
+     "costPerConv": 11.79
+    },
+    {
+     "date": "27/11",
+     "iso": "2026-11-27",
+     "views": 805,
+     "clicks": 4,
+     "convs": 3,
+     "spent": 9.49,
+     "costPerConv": 3.16
     }
    ]
   },
